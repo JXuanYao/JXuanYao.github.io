@@ -2397,7 +2397,7 @@ figure.highlight pre .javascript .function {
 }
 :root {
   --recent-post-bgcolor: rgba(255,255,255,0.9);
-  --article-content-bgcolor: #49b1f5;
+  --article-content-bgcolor: #f8ccdc;
   --recent-post-triangle: #fff;
   --recent-post-cover-shadow: #fff;
 }
