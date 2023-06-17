@@ -1,0 +1,391 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>路由交换技术 | 玄  爻</title><meta name="author" content="江玄爻"><meta name="copyright" content="江玄爻"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="理由交换技术复习笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="路由交换技术">
+<meta property="og:url" content="https://jxuanyao.github.io/xuanyao/a9bc7a91.html">
+<meta property="og:site_name" content="玄  爻">
+<meta property="og:description" content="理由交换技术复习笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg">
+<meta property="article:published_time" content="2023-06-16T04:00:00.000Z">
+<meta property="article:modified_time" content="2023-06-17T10:58:27.314Z">
+<meta property="article:author" content="江玄爻">
+<meta property="article:tag" content="赖总笔记">
+<meta property="article:tag" content="路由交换">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://jxuanyao.github.io/xuanyao/a9bc7a91.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '路由交换技术',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-17 18:58:27'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/bywen.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="wizard-scene"><div class="wizard-objects"><div class="wizard-square"></div><div class="wizard-circle"></div><div class="wizard-triangle"></div></div><div class="wizard"><div class="wizard-body"></div><div class="wizard-right-arm"><div class="wizard-right-hand"></div></div><div class="wizard-left-arm"><div class="wizard-left-hand"></div></div><div class="wizard-head"><div class="wizard-beard"></div><div class="wizard-face"><div class="wizard-adds"></div></div><div class="wizard-hat"><div class="wizard-hat-of-the-hat"></div><div class="wizard-four-point-star --first"></div><div class="wizard-four-point-star --second"></div><div class="wizard-four-point-star --third"></div></div></div></div></div></div><script async="async">var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> {preloader.endLoading()})
+document.getElementById('loading-box').addEventListener('click',()=> {preloader.endLoading()})
+setTimeout(function(){preloader.endLoading();}, 10000);</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="玄  爻"><img class="site-icon" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="/img/favicon.png"/><span class="site-name">玄  爻</span></a></span><div id="menus"></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="nav-right"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">路由交换技术</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-06-16T04:00:00.000Z" title="发表于 2023-06-16 12:00:00">2023-06-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-17T10:58:27.314Z" title="更新于 2023-06-17 18:58:27">2023-06-17</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%B5%96%E6%80%BB%E7%AC%94%E8%AE%B0/">赖总笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="路由交换技术"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="简答（20）"><a href="#简答（20）" class="headerlink" title="简答（20）"></a>简答（20）</h2><h3 id="一、交换机、路由器"><a href="#一、交换机、路由器" class="headerlink" title="一、交换机、路由器"></a>一、交换机、路由器</h3><h4 id="交换机"><a href="#交换机" class="headerlink" title="交换机"></a>交换机</h4><ol>
+<li><strong>概念：</strong> 一种用于电信号转发的网络设备 </li>
+<li><strong>作用：</strong> 负责连接网络设备和终端设备。</li>
+<li><strong>功能：</strong> 核心功能是完成MAC帧输入端口至输出端口的交换过程。连接终端设备，是实现与其它交换机、无线接入点、路由器、网络防火墙等网络设备的互联，从而构建局域网络，实现所有设备之间的通信。</li>
+<li><strong>工作原理：</strong> 某端口接到数据包，获取源MAC地址，源MAC地址和端口对应添加到地址表中；</li>
+</ol>
+<p>​                            再获取目标MAC地址，查表，找到对应端口，将数据包复制到对应端口上转发；</p>
+<p>​                            未找到端口，则向除源端口外的所有端口广播该帧，与目标MAC地址相同的终端会接收该帧；</p>
+<p>​                            将接收该帧的端口与目标MAC地址对应起来，存入地址表</p>
+<ol start="5">
+<li><strong>转发方式</strong></li>
+</ol>
+<ul>
+<li><p><strong>直通转发方式：</strong>交换机无需接收完整的MAC帧，在接收到该帧的目标MAC地址后就开始转发过程</p>
+<ul>
+<li><strong>缺陷：</strong>有可能转发长度小于64B的MAC帧和已经发生传输错误的MAC帧</li>
+</ul>
+</li>
+<li><p><strong>碎片避免转发方式：</strong>交换机在接收到64B后，在开始MAC帧输入端口至输出端口的交换操作。通过输出端口转发MAC帧，避免了碎片的转发。</p>
+</li>
+<li><p><strong>存储转发方式：</strong> 交换机接收完完整的MAC帧，再计算CRC码，将CRC码与FCS字段比较，相等，则传输未发生错误，转发；不相等，丢弃该MAC帧。</p>
+<ol start="6">
+<li><strong>交换机端到端传输过程功能：</strong></li>
+</ol>
+</li>
+<li><p>检测MAC帧经过每一段物理链路传输后是否出错，并丢弃出错的MAC帧；</p>
+</li>
+<li><p>选择通往目的终端的传输路径。</p>
+</li>
+</ul>
+<h4 id="路由器"><a href="#路由器" class="headerlink" title="路由器"></a>路由器</h4><h5 id="1、路由器功能"><a href="#1、路由器功能" class="headerlink" title="1、路由器功能"></a>1、路由器功能</h5><ul>
+<li><strong>网络互联：</strong> 用于互联局域网和广域网，实现不同网络互相通信</li>
+<li><strong>数据处理：</strong> 提供包括：分组过滤、分组转发、优先级、复用、加密、防火墙等功能</li>
+<li><strong>网络管理：</strong> 提供包括：配置管理、性能管理、容错管理、流量控制等功能</li>
+</ul>
+<h5 id="2、路由项"><a href="#2、路由项" class="headerlink" title="2、路由项"></a>2、路由项</h5><ul>
+<li><p>直连路由项：IP和子网掩码配置过程中自动生成</p>
+</li>
+<li><p><strong>静态路由项：</strong> 人工配置，指明没有直接和路由器连接的网络传输路径</p>
+<ol>
+<li><p><strong>特点：</strong></p>
+<ul>
+<li>不进行路由交换，减少网络流量</li>
+<li>具有更高的安全性</li>
+<li>是单向的</li>
+<li>配置简单</li>
+<li>允许对路由的行为进行精确控制</li>
+</ul>
+</li>
+<li><p><strong>缺陷：</strong> </p>
+<ul>
+<li><p>难以为大型网络中各路由器配置一致的静态路由</p>
+</li>
+<li><p>不能动态适应不断变化地互联网络拓扑结构</p>
+</li>
+<li><p>容错难以实现</p>
+</li>
+<li><p>为大型网络所有路由器配置静态路由项工作量巨大</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p><strong>动态路由项：</strong> 路由器运行路由协议生成的与互联网络拓扑结构一致的、用于指明网络传输路径 </p>
+<ol>
+<li>特点：<ul>
+<li>无需管理员手工维护，减轻了管理员工作负担</li>
+<li>进行路由交换，占用了网络宽带</li>
+<li>运行路由协议，自动根据网络拓扑结构变化调整路由条目</li>
+</ul>
+</li>
+<li>缺陷：<ul>
+<li>路由广播更新信息占据大量地网络宽带</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="二、广播域和冲突域"><a href="#二、广播域和冲突域" class="headerlink" title="二、广播域和冲突域"></a>二、广播域和冲突域</h3><h4 id="1、冲突域"><a href="#1、冲突域" class="headerlink" title="1、冲突域"></a>1、冲突域</h4><p>​        <strong>冲突域：</strong> 总线上的终端中只能有一个终端发送数据，一旦两个或两个以上发送，就产生冲突，因此，具有这种特性的网络所覆盖的地理范围叫冲突域。</p>
+<h4 id="2、广播域"><a href="#2、广播域" class="headerlink" title="2、广播域"></a>2、广播域</h4><ol>
+<li><p><strong>定义：</strong> 目的MAC地址为广播地址的MAC帧在网络中的传播范围。</p>
+</li>
+<li><p><strong>广播域和冲突域的区别：</strong> 任何终端发送的MAC帧均覆盖整个冲突域，而只有以广播方式传输的MAC帧才能覆盖整个广播域。</p>
+<p>支持广播型传输方式的网络被称为广播型网络。整个交换式以太网就是一个广播域。</p>
+</li>
+<li><p>对于以太网，广播操作不可避免：一是通过不断广播才能建立完整的转发表；二是TCP&#x2F;IP协议栈中很多协议（ARP、DHCP等）都是面向广播的协议。</p>
+<p><strong>频繁广播导致：</strong> 网络带宽利用率及终端负荷加大，且由于广播将MAC帧传输个广播域中每一个终端，从而引发了MAC中数据安全问题。 </p>
+</li>
+<li><p><strong>解决问题的方法条件：</strong> </p>
+<ul>
+<li>不改变大型以太网物理连接的前提下，任意划分子网</li>
+<li>每个子网的终端具备物理位置无关性</li>
+<li>子网划分和子网中终端的组成通过改变配置改变，对网络物理连接没新要求。</li>
+</ul>
+</li>
+</ol>
+<h3 id="三、VLAN"><a href="#三、VLAN" class="headerlink" title="三、VLAN"></a>三、VLAN</h3><ol>
+<li><p><strong>子网划分技术：</strong> 对连接到的第二层交换机端口的网络用户的逻辑分段，不受网络用户的物理位置限制而根据用户需求进行网络分段。</p>
+</li>
+<li><p><strong>分类：</strong> a. 基于端口划分的VLAN</p>
+<p>​                b. 基于MAC地址划分的VLAN</p>
+<p>​                c. 基于协议划分的VLAN</p>
+<p>​                d. 基于网络划分的VLAN</p>
+<p><strong>数据vlan、默认vlan、黑洞vlan、本征vlan、管理vlan、语音vlan</strong></p>
+</li>
+<li><p><strong>故障排除</strong></p>
+<ul>
+<li>本征VLAN不匹配</li>
+<li>vlan和IP子网</li>
+<li>中继模式不匹配</li>
+<li>中继上允许的vlan</li>
+</ul>
+</li>
+</ol>
+<h3 id="四、RIP、OSPF"><a href="#四、RIP、OSPF" class="headerlink" title="四、RIP、OSPF"></a>四、RIP、OSPF</h3><h4 id="RIP"><a href="#RIP" class="headerlink" title="RIP"></a>RIP</h4><h5 id="1、工作原理"><a href="#1、工作原理" class="headerlink" title="1、工作原理"></a>1、工作原理</h5><ul>
+<li>更新周期到来时，向邻居发送整个路由表</li>
+<li>以跳数为度量值，根据跳数多少选择最佳路由</li>
+<li>每经过一个路由器跳数加一，最大15，16为不可达</li>
+<li>默认情况下，每30秒广播一次更新信息</li>
+</ul>
+<h5 id="2、缺陷"><a href="#2、缺陷" class="headerlink" title="2、缺陷"></a>2、缺陷</h5><ul>
+<li>以跳数为距离的最短路由并非最佳路由</li>
+<li>只适用于小规模的互联网络</li>
+<li>好消息传的快，坏消息传的慢</li>
+<li>发送全部路由项浪费带宽和时间</li>
+<li>无法避免计数到无穷大情况</li>
+</ul>
+<h4 id="OSPF"><a href="#OSPF" class="headerlink" title="OSPF"></a>OSPF</h4><h5 id="1、工作原理-1"><a href="#1、工作原理-1" class="headerlink" title="1、工作原理"></a>1、工作原理</h5><ul>
+<li>向相邻路由器发送Hello报文，确定每一条链路状态</li>
+<li>构建链路状态公告</li>
+<li>通过泛洪机制交换链路状态信息</li>
+<li>建立链路状态数据库</li>
+</ul>
+<h5 id="2、优点"><a href="#2、优点" class="headerlink" title="2、优点"></a>2、优点</h5><ul>
+<li>适用大范围网络</li>
+<li>组播触发式更新</li>
+<li>收敛速度快</li>
+<li>开销作为度量值</li>
+<li>避免路由环路产生</li>
+<li>应用广泛</li>
+</ul>
+<h5 id="3、缺点"><a href="#3、缺点" class="headerlink" title="3、缺点"></a>3、缺点</h5><ul>
+<li>配置复杂，技术水平比较高</li>
+<li>路由自身负载分担能力低</li>
+</ul>
+<h4 id="RIP和OSPF区别"><a href="#RIP和OSPF区别" class="headerlink" title="RIP和OSPF区别"></a>RIP和OSPF区别</h4><ul>
+<li>适用范围不同，RIP适用于中小型网络，OSPF适用于大型网络</li>
+<li>RIP周期性更新所有路由项，OSPF实时更新部分链路状态</li>
+<li>RIP以跳数为度量值，OSPF以链路状态为度量值</li>
+<li>RIP向相邻路由器发送整个路由表，OSPF向互联网中所有路由器发送状态信息</li>
+</ul>
+<h2 id="计算（30）"><a href="#计算（30）" class="headerlink" title="计算（30）"></a>计算（30）</h2><h3 id="一、STP生成树"><a href="#一、STP生成树" class="headerlink" title="一、STP生成树"></a>一、STP生成树</h3><h4 id="1、定义"><a href="#1、定义" class="headerlink" title="1、定义"></a>1、定义</h4><p><strong>根网桥：</strong> 网桥标识符（<strong>BID</strong>）最小的网桥 （优先级采用相同的默认值时，最小MAC地址为根网桥)</p>
+<p><strong>根路径：</strong> 通往<strong>根网桥</strong>的路径</p>
+<p><strong>根路径开销：</strong> 根路径通过的所有端口路径开销之和</p>
+<p><strong>根端口（Root）：</strong> 该网桥的一条根路径通过的端口；该网桥所有根路径中，经过该端口的根路径开销最小</p>
+<p><strong>指定端口（Desg）：</strong> 向网段转发来自根网桥的MAC帧的端口（连接终端的指定端口为指定端口）</p>
+<p><strong>网桥协议数据单元：</strong> <strong>BPDU</strong>，只在两个网桥之间传输，不能转发</p>
+<h4 id="2、计算"><a href="#2、计算" class="headerlink" title="2、计算"></a>2、计算</h4><ul>
+<li><p><strong>确定根网桥：</strong> <strong>网桥标识符（BID）</strong> 最小</p>
+</li>
+<li><p><strong>确定根端口（非根网桥）：</strong> </p>
+<p>​        a.   比较该网桥所有端口接受的BPDU中<strong>根网桥的BID</strong>，BID最小为Root</p>
+<p>​        b.   最小存在多个时，<strong>比较根路径开销</strong>，最小为Root</p>
+<p>​        <strong>c.</strong>   满足以上条件的端口存在多个时，比较与端口<strong>相连的网桥的BID</strong>，最小的为Root</p>
+<p>​        <strong>d.</strong>   满足以上条件的端口存在多个时，<strong>比较BPDU中</strong>发送端口标识符，最小为Root</p>
+</li>
+<li><p><strong>确定指定端口：</strong>非根端口接收到BPDU后</p>
+<p>​        a.   BPDU的根网桥标识符大于该端口的根网桥标识符</p>
+<p>​        b.   BID相等时，BPDU中路径开销大于该端口路径开销的为指定端口</p>
+<p>​        <strong>c.</strong>    满足以上条件的端口存在多个时，比较与端口<strong>相连的网桥的BID</strong> 与<strong>端口所在网桥BID</strong> ，前者大，则为                     指定端口</p>
+<p>​        <strong>d.</strong>  满足以上条件的端口存在多个时，比较<strong>BPDU中发送端口标识符</strong>和<strong>自身标识符</strong> ，前者大，则为指                定端口</p>
+<p><strong>注：</strong> 根网桥所有端口为指定端口；</p>
+<p>​            每一个网段都有一个指定端口，其余为根或非指定；</p>
+<p>​            每个网桥都有一个根端口</p>
+<h3 id="3、端口状态"><a href="#3、端口状态" class="headerlink" title="3、端口状态"></a>3、端口状态</h3><ol>
+<li><strong>关闭状态：</strong> 物理上与网络分离</li>
+<li><strong>阻塞状态：</strong> 只允许接收、处理BPDU</li>
+<li><strong>侦听状态：</strong> 不允许输入输出数据帧，可以输入输出BPDU</li>
+<li><strong>学习状态：</strong> 允许输入输出数据帧、BPDU、建立MAC地址转发表，但不能转发</li>
+<li><strong>转发状态：</strong> 允许输入输出数据帧、BPDU，以及正常接收、转发数据帧</li>
+</ol>
+</li>
+</ul>
+<h3 id="二、子网划分"><a href="#二、子网划分" class="headerlink" title="二、子网划分"></a>二、子网划分</h3><h2 id="综合（50）"><a href="#综合（50）" class="headerlink" title="综合（50）"></a>综合（50）</h2><h3 id="一、VLAN划分"><a href="#一、VLAN划分" class="headerlink" title="一、VLAN划分"></a>一、VLAN划分</h3><p><strong>1、基于端口划分：</strong>  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">1、创建vlan</span><br><span class="line">Switch&gt;enable</span><br><span class="line">Switch#conf t    //进入特权模式</span><br><span class="line">Switch(config)#vlan 2</span><br><span class="line">Switch(config-vlan)#name A  //vlan名称</span><br><span class="line">Switch(config-vlan)#exit</span><br><span class="line"></span><br><span class="line">2、分配接入端口  //用于和终端连接的端口</span><br><span class="line">Switch(config)#int fa0/1</span><br><span class="line">Switch(config-if)#switchport mode access//指定为接入端口</span><br><span class="line">Switch(config-if)#switchport access vlan 2</span><br><span class="line">Switch(config-if)#no shut  </span><br><span class="line">Switch(config-if)#exit</span><br><span class="line"></span><br><span class="line">3、分配共享端口 （中继）  //用于将多个接收多个vlan数据，一般在与其他VLAN相连的端口配置</span><br><span class="line">S1(config)#int fa0/2</span><br><span class="line">S1(config-if)#sw mo tr</span><br><span class="line">S1(config-if)#sw tr allowed vlan 2,3</span><br><span class="line">Switch(config-if)#no shut  </span><br><span class="line">S1(config-if)#exit</span><br><span class="line"></span><br><span class="line">4、同时操作多个端口</span><br><span class="line">S1(config)#int range fa0/1-4</span><br><span class="line">S1(config-if-range)#sw mo ac</span><br><span class="line">S1(config-if-range)#sw ac vlan 3</span><br><span class="line">Switch(config-if)#no shut  </span><br><span class="line">S1(config-if-range)#exit</span><br><span class="line"></span><br><span class="line">5、本征vlan配置</span><br><span class="line">S1(config)#interface fa0/1</span><br><span class="line">S1(config-if)#switchport mode trunk//配置为中继端口</span><br><span class="line">S1(config-if)#switchport trunk native vlan 99//为fa0/2配置本征vlan99</span><br><span class="line">Switch(config-if)#no shut  </span><br><span class="line">S1(config-if)#exit</span><br><span class="line"></span><br><span class="line">6、查看命令</span><br><span class="line">S1#show vlan brief //显示VLAN名称和端口状态</span><br><span class="line">S1#show interfaces trunk//能够给出哪些接口是中继以及允许（allowed）哪些vlan等</span><br><span class="line">S1#show interfaces fa0/1 switchport//显示端口是access/trunk,如果是access,显示属于哪个vlan以及属于哪个本征vlan</span><br></pre></td></tr></table></figure>
+
+<p><strong>跨交换机VLAN配置：</strong> 与交换机相接的端口要配置共享端口<strong>trunk</strong> </p>
+<h3 id="二、密码配置"><a href="#二、密码配置" class="headerlink" title="二、密码配置"></a>二、密码配置</h3><h4 id="1、交换机"><a href="#1、交换机" class="headerlink" title="1、交换机"></a>1、交换机</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Switch#  //特权模式</span><br><span class="line">Switch(config)#  //全局静态模式</span><br><span class="line"></span><br><span class="line">Switch(config)#username admin password 123//进入CIL用户密码设置</span><br><span class="line">Switch(config)#line console 0    / li co 0</span><br><span class="line">Switch(config-line)#password cisco</span><br><span class="line">Switch(config-line)#login local</span><br><span class="line">Switch(config-line)#exit</span><br><span class="line">Switch(config)#line vty 0 4   //设置远程连接数</span><br><span class="line">Switch(config-line)#password cisco   //设置远程登陆密码</span><br><span class="line">Switch(config-line)#login local  //设置远程登陆用户名、密码检测</span><br><span class="line">Switch(config-line)#exit</span><br><span class="line">//Switch(config-line)#login     //设置远程登陆密码检测</span><br><span class="line"></span><br><span class="line">(Switch(config)#enable password class)</span><br><span class="line">Switch(config)#enable secret class//特权模式密码配置</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="三、动静态协议配置"><a href="#三、动静态协议配置" class="headerlink" title="三、动静态协议配置"></a>三、动静态协议配置</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">//静态路由配置</span><br><span class="line">Router(config)#ip route 目的地址  子网掩码  下一跳</span><br><span class="line"></span><br><span class="line">//RIP配置</span><br><span class="line">Router(config)#router rip</span><br><span class="line">Router(config-router)#version 2</span><br><span class="line">Router(config-router)#no auto-summary</span><br><span class="line">Router(config-router)#network 192.1.3.0  //(邻近网络号)</span><br><span class="line">Router(config-router)#network 192.1.2.0</span><br><span class="line">......</span><br><span class="line">Router(config-router)#exit</span><br><span class="line">Router(config)#ip route 目的地址  子网掩码  下一跳</span><br><span class="line">....</span><br><span class="line">Router#show ip route //查看路由表</span><br><span class="line">Router#show ip protocols //查看网络路由协议配置</span><br><span class="line"></span><br><span class="line">//OSPF配置</span><br><span class="line">Router(config)#router ospf 1</span><br><span class="line">//Router(config-router)#router-id 192.168.1.1</span><br><span class="line">Router(config-router)#network 192.1.1.0 0.0.0.255 area 1 //单区域配置(0.0.0.xxx 通配符)</span><br><span class="line">Router(config-router)#exit</span><br><span class="line">...</span><br><span class="line">Router#show ip ospf nei  //查看邻居关系</span><br></pre></td></tr></table></figure>
+
+<h3 id="四、单臂路由配置"><a href="#四、单臂路由配置" class="headerlink" title="四、单臂路由配置"></a>四、单臂路由配置</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//单臂路由配置</span><br><span class="line">Router(config)#int fa0/0</span><br><span class="line">Router(config-if)#no shut</span><br><span class="line">Router(config-if)#exit</span><br><span class="line"></span><br><span class="line">Router(config)#int fa0/0.1   //fa0/0 .  vlan-id</span><br><span class="line">Router(config-subif)#encap dot 1   //vlan-id</span><br><span class="line">Router(config-subif)#ip address ......</span><br><span class="line">Router(config-subif)#exit</span><br></pre></td></tr></table></figure>
+
+<h3 id="五、基础配置命令"><a href="#五、基础配置命令" class="headerlink" title="五、基础配置命令"></a>五、基础配置命令</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Router#show con se0/0/1   //查看 DCE 还是 DTE</span><br><span class="line">Router#Undebug ip routing  //禁止所有路由更新项</span><br><span class="line">Router#Undebug all//禁用所有调试，关闭Debug </span><br><span class="line"></span><br><span class="line">//路由器基础配置</span><br><span class="line">Router(config)#hostname Router1</span><br><span class="line">Router1(config)#int fa0/1   //端口配置</span><br><span class="line">Router1(config-if)#no shut</span><br><span class="line">Router1(config-if)#ip address 192.1.1.1 255.255.255.0</span><br><span class="line">Router1(config-if)#exit</span><br><span class="line"></span><br><span class="line">S1#show running-config//显示交换机运行配置</span><br><span class="line">S1#copy run start//保存运行配置</span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://JXuanYao.github.io">江玄爻</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://jxuanyao.github.io/xuanyao/a9bc7a91.html">https://jxuanyao.github.io/xuanyao/a9bc7a91.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://JXuanYao.github.io" target="_blank">玄  爻</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%B5%96%E6%80%BB%E7%AC%94%E8%AE%B0/">赖总笔记</a><a class="post-meta__tags" href="/tags/%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2/">路由交换</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/xuanyao/f6491cfb.html" title="网络编程"><img class="cover" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">网络编程</div></div></a></div><div class="next-post pull-right"><a href="/xuanyao/e0cd2bf7.html" title="sql语句对数据库的一写操作"><img class="cover" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">sql语句对数据库的一写操作</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/xuanyao/124cdf9.html" title="sql语句"><img class="cover" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-06-15</div><div class="title">sql语句</div></div></a></div><div><a href="/xuanyao/ad939a.html" title="web编程"><img class="cover" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-06-16</div><div class="title">web编程</div></div></a></div><div><a href="/xuanyao/3fb56f9d.html" title="离散数学"><img class="cover" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-06-16</div><div class="title">离散数学</div></div></a></div><div><a href="/xuanyao/14ea6df7.html" title="数据库"><img class="cover" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-06-16</div><div class="title">数据库</div></div></a></div><div><a href="/xuanyao/29ff53fc.html" title="网络服务器配置"><img class="cover" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-06-16</div><div class="title">网络服务器配置</div></div></a></div><div><a href="/xuanyao/77b593e1.html" title="网络系统集成课设"><img class="cover" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-06-16</div><div class="title">网络系统集成课设</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">江玄爻</div><div class="author-info__description">从玄从爻</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/JXuanYao" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:jiangwen45666@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">好久不见！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E7%AD%94%EF%BC%8820%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">简答（20）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%BA%A4%E6%8D%A2%E6%9C%BA%E3%80%81%E8%B7%AF%E7%94%B1%E5%99%A8"><span class="toc-number">1.1.</span> <span class="toc-text">一、交换机、路由器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%A4%E6%8D%A2%E6%9C%BA"><span class="toc-number">1.1.1.</span> <span class="toc-text">交换机</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B7%AF%E7%94%B1%E5%99%A8"><span class="toc-number">1.1.2.</span> <span class="toc-text">路由器</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1%E3%80%81%E8%B7%AF%E7%94%B1%E5%99%A8%E5%8A%9F%E8%83%BD"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">1、路由器功能</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2%E3%80%81%E8%B7%AF%E7%94%B1%E9%A1%B9"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">2、路由项</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%B9%BF%E6%92%AD%E5%9F%9F%E5%92%8C%E5%86%B2%E7%AA%81%E5%9F%9F"><span class="toc-number">1.2.</span> <span class="toc-text">二、广播域和冲突域</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E5%86%B2%E7%AA%81%E5%9F%9F"><span class="toc-number">1.2.1.</span> <span class="toc-text">1、冲突域</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E5%B9%BF%E6%92%AD%E5%9F%9F"><span class="toc-number">1.2.2.</span> <span class="toc-text">2、广播域</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81VLAN"><span class="toc-number">1.3.</span> <span class="toc-text">三、VLAN</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81RIP%E3%80%81OSPF"><span class="toc-number">1.4.</span> <span class="toc-text">四、RIP、OSPF</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#RIP"><span class="toc-number">1.4.1.</span> <span class="toc-text">RIP</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1%E3%80%81%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">1.4.1.1.</span> <span class="toc-text">1、工作原理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2%E3%80%81%E7%BC%BA%E9%99%B7"><span class="toc-number">1.4.1.2.</span> <span class="toc-text">2、缺陷</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#OSPF"><span class="toc-number">1.4.2.</span> <span class="toc-text">OSPF</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1%E3%80%81%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86-1"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">1、工作原理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2%E3%80%81%E4%BC%98%E7%82%B9"><span class="toc-number">1.4.2.2.</span> <span class="toc-text">2、优点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3%E3%80%81%E7%BC%BA%E7%82%B9"><span class="toc-number">1.4.2.3.</span> <span class="toc-text">3、缺点</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RIP%E5%92%8COSPF%E5%8C%BA%E5%88%AB"><span class="toc-number">1.4.3.</span> <span class="toc-text">RIP和OSPF区别</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%EF%BC%8830%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">计算（30）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81STP%E7%94%9F%E6%88%90%E6%A0%91"><span class="toc-number">2.1.</span> <span class="toc-text">一、STP生成树</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E5%AE%9A%E4%B9%89"><span class="toc-number">2.1.1.</span> <span class="toc-text">1、定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E8%AE%A1%E7%AE%97"><span class="toc-number">2.1.2.</span> <span class="toc-text">2、计算</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E7%AB%AF%E5%8F%A3%E7%8A%B6%E6%80%81"><span class="toc-number">2.2.</span> <span class="toc-text">3、端口状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86"><span class="toc-number">2.3.</span> <span class="toc-text">二、子网划分</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%BC%E5%90%88%EF%BC%8850%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">综合（50）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81VLAN%E5%88%92%E5%88%86"><span class="toc-number">3.1.</span> <span class="toc-text">一、VLAN划分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AF%86%E7%A0%81%E9%85%8D%E7%BD%AE"><span class="toc-number">3.2.</span> <span class="toc-text">二、密码配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E4%BA%A4%E6%8D%A2%E6%9C%BA"><span class="toc-number">3.2.1.</span> <span class="toc-text">1、交换机</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%8A%A8%E9%9D%99%E6%80%81%E5%8D%8F%E8%AE%AE%E9%85%8D%E7%BD%AE"><span class="toc-number">3.3.</span> <span class="toc-text">三、动静态协议配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE"><span class="toc-number">3.4.</span> <span class="toc-text">四、单臂路由配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%E5%91%BD%E4%BB%A4"><span class="toc-number">3.5.</span> <span class="toc-text">五、基础配置命令</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/xuanyao/4a17b156.html" title="Hello World"><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/K4BwHvtTes1MC9X.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/xuanyao/4a17b156.html" title="Hello World">Hello World</a><time datetime="2023-06-16T04:00:00.000Z" title="发表于 2023-06-16 12:00:00">2023-06-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/xuanyao/ad939a.html" title="web编程"><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="web编程"/></a><div class="content"><a class="title" href="/xuanyao/ad939a.html" title="web编程">web编程</a><time datetime="2023-06-16T04:00:00.000Z" title="发表于 2023-06-16 12:00:00">2023-06-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/xuanyao/3fb56f9d.html" title="离散数学"><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="离散数学"/></a><div class="content"><a class="title" href="/xuanyao/3fb56f9d.html" title="离散数学">离散数学</a><time datetime="2023-06-16T04:00:00.000Z" title="发表于 2023-06-16 12:00:00">2023-06-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/xuanyao/14ea6df7.html" title="数据库"><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据库"/></a><div class="content"><a class="title" href="/xuanyao/14ea6df7.html" title="数据库">数据库</a><time datetime="2023-06-16T04:00:00.000Z" title="发表于 2023-06-16 12:00:00">2023-06-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/xuanyao/29ff53fc.html" title="网络服务器配置"><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网络服务器配置"/></a><div class="content"><a class="title" href="/xuanyao/29ff53fc.html" title="网络服务器配置">网络服务器配置</a><time datetime="2023-06-16T04:00:00.000Z" title="发表于 2023-06-16 12:00:00">2023-06-16</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 江玄爻</div><div class="footer_custom_text">我相信我可以，但我一直在路上，所以我有无限的可能。</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script type="text/javascript" src="https://unpkg.zhimg.com/jquery@latest/dist/jquery.min.js"></script><script data-pjax type="text/javascript" src="/js/bywen.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="富强,民主,文明,和谐,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="true" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script></body></html>

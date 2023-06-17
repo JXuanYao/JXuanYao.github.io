@@ -1,0 +1,494 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>计算机组成原理 | 玄  爻</title><meta name="author" content="江玄爻"><meta name="copyright" content="江玄爻"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="计算机组成原理复习笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机组成原理">
+<meta property="og:url" content="https://jxuanyao.github.io/xuanyao/8d4b7ae1.html">
+<meta property="og:site_name" content="玄  爻">
+<meta property="og:description" content="计算机组成原理复习笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg">
+<meta property="article:published_time" content="2023-06-16T04:00:00.000Z">
+<meta property="article:modified_time" content="2023-06-17T10:56:59.744Z">
+<meta property="article:author" content="江玄爻">
+<meta property="article:tag" content="赖总笔记">
+<meta property="article:tag" content="计算机组成原理">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://jxuanyao.github.io/xuanyao/8d4b7ae1.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '计算机组成原理',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-17 18:56:59'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/bywen.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="wizard-scene"><div class="wizard-objects"><div class="wizard-square"></div><div class="wizard-circle"></div><div class="wizard-triangle"></div></div><div class="wizard"><div class="wizard-body"></div><div class="wizard-right-arm"><div class="wizard-right-hand"></div></div><div class="wizard-left-arm"><div class="wizard-left-hand"></div></div><div class="wizard-head"><div class="wizard-beard"></div><div class="wizard-face"><div class="wizard-adds"></div></div><div class="wizard-hat"><div class="wizard-hat-of-the-hat"></div><div class="wizard-four-point-star --first"></div><div class="wizard-four-point-star --second"></div><div class="wizard-four-point-star --third"></div></div></div></div></div></div><script async="async">var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> {preloader.endLoading()})
+document.getElementById('loading-box').addEventListener('click',()=> {preloader.endLoading()})
+setTimeout(function(){preloader.endLoading();}, 10000);</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="玄  爻"><img class="site-icon" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="/img/favicon.png"/><span class="site-name">玄  爻</span></a></span><div id="menus"></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="nav-right"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">计算机组成原理</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-06-16T04:00:00.000Z" title="发表于 2023-06-16 12:00:00">2023-06-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-17T10:56:59.744Z" title="更新于 2023-06-17 18:56:59">2023-06-17</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%B5%96%E6%80%BB%E7%AC%94%E8%AE%B0/">赖总笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="计算机组成原理"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="理论"><a href="#理论" class="headerlink" title="理论"></a>理论</h1><ol>
+<li><p><strong>电子数字计算机和电子模拟计算机</strong></p>
+<ul>
+<li><p><strong>电子数字：</strong> 用数字表示数量的大小，特点是按位运算，且不连续跳动计算。</p>
+</li>
+<li><p><strong>电子模拟：</strong> “模拟”就是相似的意思，如：电表用角度反映电量大小，特点数值由连续量来表示，运算过程也是连续的 。</p>
+</li>
+<li><p><strong>电子数字计算机与电子模拟计算机的主要区别：</strong> </p>
+<table>
+<thead>
+<tr>
+<th align="center">比较内容</th>
+<th align="center">电子数字计算机</th>
+<th align="center">电子模拟计算机</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">数据表示方式</td>
+<td align="center">数字0和1</td>
+<td align="center">电压</td>
+</tr>
+<tr>
+<td align="center">计算方式</td>
+<td align="center">数字计数</td>
+<td align="center">电压组合和测量值</td>
+</tr>
+<tr>
+<td align="center">控制方式</td>
+<td align="center">程序控制</td>
+<td align="center">盘上连线</td>
+</tr>
+<tr>
+<td align="center">精度</td>
+<td align="center">高</td>
+<td align="center">低</td>
+</tr>
+<tr>
+<td align="center">数据存储量</td>
+<td align="center">大</td>
+<td align="center">小</td>
+</tr>
+<tr>
+<td align="center">逻辑判断能力</td>
+<td align="center">强</td>
+<td align="center">无</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+<li><p><strong>专用计算机和通用计算机</strong> </p>
+<ul>
+<li><p>电子数字计算机可分为专用计算机和通用计算机。</p>
+<p><u>专用和通用是根据计算机的效率、速度、价格、运行的经济性和适应性来划分的。</u></p>
+</li>
+<li><p><strong>专用计算机：</strong> 最有效、最经济和最快速的计算机，但适应性差。</p>
+</li>
+<li><p><strong>通用计算机：</strong> 适应性强，但牺牲了效率、速度和经济性。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>计算机的性能指标</strong> </p>
+<ul>
+<li><p>吞吐量：一台计算机在某一时间间隔内能够处理的信息量。</p>
+</li>
+<li><p>响应时间：从输入有效到系统产生响应之间的时间度量，用时间单位度量。</p>
+</li>
+<li><p>存储器容量：存储器中所有存储单元的总数目，通常用KB、MB、GB、TB表示。</p>
+</li>
+<li><p>存储器带宽：单位时间内从存储器读出的二进制数信息量，一般用<u>字节数&#x2F;秒</u> 表示。</p>
+</li>
+</ul>
+</li>
+<li><p>外存储器：存储容量更大的磁盘存储器或光盘存储器。</p>
+<p>内存储器：半导体存储器</p>
+</li>
+<li><p><strong>指令流：</strong> 在取指周期中从内存中读出的信息流，它流向控制器。</p>
+<p><strong>数据流：</strong> 在执行周期中从内存中读出的信息流，它由内存流向运算器。</p>
+</li>
+<li><p><strong>存储器的技术指标</strong></p>
+<ul>
+<li><p><strong>存储容量：</strong> 一个存储器中可存储的信息比特数，用比特数（bit）或字节数（B）表示，也可用KB、MB、GB、TB等，$1KB&#x3D;2^{10}B,1MB&#x3D;2^{20}B$。</p>
+</li>
+<li><p><strong>存储器带宽（数据传送速率，频宽）：</strong> 单位时间存储器所存取的信息量，bit&#x2F;s、B&#x2F;s</p>
+</li>
+</ul>
+</li>
+<li><p><strong>主存与cache的地址映射</strong> </p>
+<ul>
+<li><p><strong>全相联映射方式：</strong> 将主存中的一个块的地址（块号）与块的内容一起存于cache的行中，其中块地址存于cache行的标记部分中。</p>
+<ul>
+<li><p>优点：可使主存的一个块直接复制到cache中的任意一行，非常灵活。</p>
+</li>
+<li><p>缺点：高速比较器电路难于设计和实现，因此只适合于小容量cache采用。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>直接映射方式：</strong>   一个主存块只能拷贝到cache的一个特定行位置上去。</p>
+<ul>
+<li><p>优点：硬件简单，成本低，地址变换速度快。</p>
+</li>
+<li><p>缺点：每个主存块只有一个固定位置的行位置可存放。</p>
+<p>若连续访问块号相距m整数倍的两个块，因两块映射到同一cache行时，就会发生冲突。发生冲突时就要将原先存入的行换出去，但很可能过一段时间又要换入。频繁置换会使cache效率下降。因此直接映射方式适合于需要大容量cache的场合，更多的行数可以减小冲突的机会。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>组相联映射方式：</strong> 主存和cache都分组，主存中的一个组内块数与cache中的分组数相同，<strong>组间采用直接映射，组内采用全相联映射。</strong> </p>
+<ul>
+<li>适度兼顾二者的优点，尽量避免二者的缺点，因而得到普遍采用。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>机器指令：</strong> 介于微指令与宏指令之间的指令。</p>
+<p><strong>系列计算机：</strong> 基本指令系统相同、基本体系结构相同的一系列计算机。</p>
+<p><strong>指令字长度：</strong> 一个指令中包含二进制代码的位数。</p>
+<p><strong>机器字长：</strong> 计算机能直接处理的二进制数据的位数，它决定了计算机的运行精度，通常与主存单元的位数一致。</p>
+</li>
+<li><p><strong>CPU中的主要寄存器</strong> </p>
+<ul>
+<li><p><strong>数据缓冲寄存器（DR）</strong>：用来暂时存放ALU的运算结果，或由数据存储器读出的一个数据字，或来自外部接口的一个数据字。</p>
+<p><strong>作用：</strong> </p>
+<ul>
+<li><p>作为ALU运算结果和通用寄存器之间信息传送中时间上的缓冲；</p>
+</li>
+<li><p>补偿CPU和内存、外围设备之间在操作速度上的差别。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>指令寄存器（IR）</strong>：用来保存当前正在执行的一条指令。</p>
+<p><code>当执行一条命令时，先把它从指令存储器读出，然后再传送至指令寄存器。</code></p>
+<p><code>操作码中的OP输出后到指令译码器，译码后发生信号到操作控制器。</code></p>
+</li>
+<li><p><strong>程序计数器（PC）</strong>：确定下一条指令地址，保证程序能够继续地执行下去，又称为指令计数器。 </p>
+<p><code>程序执行前，必须将它的起始地址，即程序的第一条指令所在的指存单元地址送入PC，当执行指令时，CPU自动修改PC内容，使其保持的总是要执行的下一条指令地址。</code></p>
+</li>
+<li><p><strong>数据地址寄存器（AR）</strong>：用来保存当前CPU所访问的数据存储器单元的地址。</p>
+<p><code>由于要对存储器阵列进行地址译码，所以必须使用地址寄存器来保持地址信息，直到一次读/写操作完成。</code></p>
+</li>
+<li><p><strong>通用寄存器</strong>：当算术逻辑单元（ALU）执行算术或逻辑运算时，为ALU提供一个工作区。</p>
+<p><code>模型中通用寄存器有4个（R0~R3），可达64个，甚至更多。</code></p>
+</li>
+<li><p><strong>程序状态字寄存器（PSWR）</strong>：保存由算术运算指令和逻辑运算指令运算或测试结果建立的各种条件代码。如：运算结果进位标志（C）、运算结果溢出标志（V）、运算结果为零标志（Z）、运算结果为负标志（N）等。</p>
+<p>保存中断和系统工作状态等信息，以便使CPU和系统能及时了解机器运行状态和程序运行状态。</p>
+<p><code>也被称为状态条件寄存器</code></p>
+</li>
+</ul>
+</li>
+<li><p><strong>指令周期</strong> ：取出一条指令并执行这条指令的时间。</p>
+</li>
+<li><p><strong>取值周期中CPU完成三件事</strong>：</p>
+<ul>
+<li><p>从指存取出指令；</p>
+</li>
+<li><p>对程序计数器PC加1，以便为取下一条指令做好准备；</p>
+</li>
+<li><p>对指令操作码进行译码或测试，以便进行什么操作。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>微命令和微操作</strong>：</p>
+<ul>
+<li><p><strong>微命令：</strong> 控制部件通过控制线向执行部件发出各种控制命令。</p>
+</li>
+<li><p><strong>微操作：</strong> 执行部件接受微命令后所进行的操作。</p>
+<ul>
+<li><p><strong>相容性的微操作：</strong> 在同时或同一个CPU周期内可以并行执行的微操作。</p>
+</li>
+<li><p><strong>相斥性的微操作：</strong> 不能在同时或不能在同一个CPU周期内并行执行的微操作。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>总线：</strong> 构成计算机系统的互联机构，是多个系统功能部件之间进行数据传送的公共通路。</p>
+<p><strong>总线带宽：</strong> 总线能达到的最高传输速率，<code>衡量总线性能的重要指标。</code></p>
+</li>
+<li><p><strong>集中式仲裁</strong></p>
+<p><code>BR:送往仲裁器的总线请求信号线</code></p>
+<p><code>BG:仲裁器送出的总线授权信号线</code> </p>
+<ul>
+<li><p><strong>链式查询方式的主要特点：</strong> 总线授权信号线BG串行地从一个I&#x2F;O接口传送到下一个I&#x2F;O接口。若BG到达的接口无总线请求，则继续往下查询；若有请求，BG信号便不再往下查询。这意味着该I&#x2F;O接口获得了总线控制权。</p>
+<p>离总线仲裁器越近的设备具有最高优先级，离总线仲裁器越远，优先级越低</p>
+<p><strong>优点：</strong> 只用很少的几根线就能按一定优先次序实现总线仲裁，且这种链式结构易扩充设备。</p>
+<p><strong>缺点：</strong> 对询问链的电路故障很敏感，查询链优先级固定，若出现优先级高的设备频繁请求，则优先级低的设备可能长期不能使用总线。</p>
+</li>
+<li><p><strong>计数器定时查询方式：</strong> 计数从0开始时，设备优先级与链式查询法相同，优先级固定。从中止点开始时，每个设备优先级相等。计数器的初始值可用程序设置，可更加方便的改变优先次序，以增加线数为代价提高灵活性。</p>
+</li>
+<li><p><strong>独立请求方式：</strong></p>
+<ul>
+<li><p>响应时间快（确定优先响应设备所花时间少）；</p>
+</li>
+<li><p>对优先次序的控制相当灵活（可预先固定优先次序，或通过程序改变优先次序，或屏蔽某个请求来不响应无效设备的请求）。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>CPU管理外围设备的方式</strong></p>
+<ul>
+<li><p><strong>无条件传送方式：</strong> 简单I&#x2F;O方式，CPU不必通过接口查询外设状态，直接执行I&#x2F;O指令进行数据传输。</p>
+</li>
+<li><p><strong>程序查询方式（串行）：</strong> 优点是CPU的操作和外围设备的操作同步，软硬件结构简单。</p>
+<p>缺点是在查询环节CPU耗时多。</p>
+<p>只适用于低速外设或CPU不繁忙的情况。</p>
+</li>
+<li><p><strong>程序中断方式（并行）：</strong> 并行，交换信息量少，节省CPU时间</p>
+<p>缺点：硬件结构相对复杂，软件复杂度更高，服务开销时间大。</p>
+<p>适用于随机出现的服务请求，且请求提出后能及时得到响应。</p>
+</li>
+<li><p><strong>直接内存访问方式（DMA）：</strong> </p>
+<p>优点：并行，数据传输速度高，交换数据以数据块为单位，传送速率只受内存访问时间的限制。</p>
+<p>缺点：需要更多硬件，实现简单数据传送，难以识别和处理复杂事态。</p>
+<p>适用于内存和高速外围设备之间大批数据交换的场合。</p>
+</li>
+<li><p><strong>通道和输入&#x2F;输出处理器：</strong> CPU负责处理，通道负责数据传输。以耗费更多硬件为代价，提高了CPU工作效率。</p>
+</li>
+<li><p>程序查询方式、程序中断方式适用于数据传输率较低的外围设。</p>
+<p>DMA、通道、IOP适用于数据传输率较高的设备。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>中断源：</strong> 引起中断的事件。</p>
+<p><strong>中断向量：</strong> 中断源对应服务程序的入口地址。</p>
+</li>
+<li><p><strong>通道</strong> </p>
+<ul>
+<li><p><strong>选择通道</strong>：可连接多设备，但不能同时工作，在某一段时间内通道只能选择一个设备进行工作。当这个设备的通道程序全部执行完成后，才能执行其他设备的通道程序。</p>
+<p>主要用于连接高速外围设备，如：磁盘、磁带，信息以数据块方式高速传输。</p>
+<p>由于这类设备辅助操作时间长，通道等待时间长，故通道利用率不高。</p>
+</li>
+<li><p><strong>多路通道：</strong> 同一时间能处理多个I&#x2F;O设备的数据传输。 </p>
+<ul>
+<li><p><strong>数组多路通道：</strong> 当某设备进行数据传送时，通道只为该设备服务，当设备在执行控制性动作时，通道与该设备连接断开，挂起该设备通道程序，为其他设备服务。通道效率充分发挥。</p>
+<p>物理上连接多设备，在一段时间内交替执行多个设备的通道程序（逻辑上连接多设备），这些设备为高速设备。 </p>
+</li>
+<li><p><strong>字节多路通道：</strong> 主要用于连接大量低速设备。利用传送数据的空闲时间为其他设备服务。</p>
+</li>
+<li><p><strong>共同之处：</strong> 都是多路通道，在一段时间内能交替执行多个设备的通道程序，使这些设备同时工作。</p>
+</li>
+<li><p><strong>不同之处：</strong> （1）数组多路允许多设备同时工作，但只允许一个设备进行传输型操作，其他设备进行控制型操作。字节多路允许多设备同时工作，且允许同时进行传输型操作。</p>
+<p>（2）数组多路通道与设备间数据传送的基本单位是数据块，而字节多路通道与设备间的数据传送基本单位是字节。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>流水线中的主要问题</strong> ：</p>
+<ul>
+<li><p><strong>资源相关：</strong> 多条指令进入流水线后在同一机器时钟周期内争用一个功能部件所发生的冲突。</p>
+<p><strong>解决方法：</strong></p>
+<ul>
+<li><p>让一条指令停顿一拍后再启动；</p>
+</li>
+<li><p>增设一个存储器，将指令和数据分别放在两个存储器中。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>数据相关：</strong> 前指令执行完毕后，才能执行后指令，这两条指令数据相关。</p>
+<p>多条指令的重叠处理，当后继指令所需操作数，刚好是前一条指令的运算结果时，便发生“先读后写”的数据相关冲突。</p>
+<p><strong>解决方法：</strong> </p>
+<ul>
+<li><strong>定向传送技术</strong>：流水CPU的运算器中设置若干运算结果缓存寄存器，暂时保存运算结果，以便后继指令使用</li>
+</ul>
+</li>
+<li><p><strong>控制相关：</strong> 由转移指令引起，当执行转移指令时，依据转移条件的产生结果，可能为顺序取下一条指令；也可能转移到新的目标地址取指令，从而使流水线发生断流。</p>
+<p><strong>解决方法：</strong> </p>
+<ul>
+<li><p><strong>延迟转移法：</strong> 编译程序重排指令序列。先执行再转移，即：发生转移时，让转移指令后已进入流水线的少数几条指令继续完成。</p>
+</li>
+<li><p><strong>转移预测法：</strong> 硬件方法实现，依据指令过去行为预测将来行为。通过使用转移取和顺序取两路指令预取队列器以及目标指令cache，可将转移预测提前到取指阶段进行，以获得良好的效果。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>浮点数加、减法运算过程：</strong> </p>
+<ul>
+<li><p>0操作数检查</p>
+</li>
+<li><p>比较阶码大小并完成对阶</p>
+</li>
+<li><p>位数进行加或减运算</p>
+</li>
+<li><p>结果规格化并进行舍入处理</p>
+</li>
+</ul>
+</li>
+<li><p><strong>寻址方式</strong></p>
+<p> <img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="E:\Note\image\2023-02-17-15-09-42-image.png"></p>
+</li>
+</ol>
+<h1 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h1><p><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="E:\Note\image\IMG_20230218_162727_edit_150935691543114.jpg" alt="IMG_20230218_162727_edit_150935691543114.jpg"></p>
+<p><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="E:\Note\image\IMG_20230218_162740_edit_150952097059778.jpg" alt="IMG_20230218_162740_edit_150952097059778.jpg"></p>
+<p><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="E:\Note\image\IMG_20230218_162748_edit_150961824709777.jpg" alt="IMG_20230218_162748_edit_150961824709777.jpg"></p>
+<p><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="E:\Note\image\IMG_20230218_162757_edit_150975003709254.jpg" alt="IMG_20230218_162757_edit_150975003709254.jpg"></p>
+<p><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="E:\Note\image\IMG_20230218_162810_edit_150987802701960.jpg" alt="IMG_20230218_162810_edit_150987802701960.jpg"></p>
+<p><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="E:\Note\image\IMG_20230218_162818_edit_150998936939458.jpg" alt="IMG_20230218_162818_edit_150998936939458.jpg"></p>
+<p><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="E:\Note\image\IMG_20230216_231310.jpg" alt="IMG_20230216_231310.jpg"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://JXuanYao.github.io">江玄爻</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://jxuanyao.github.io/xuanyao/8d4b7ae1.html">https://jxuanyao.github.io/xuanyao/8d4b7ae1.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://JXuanYao.github.io" target="_blank">玄  爻</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%B5%96%E6%80%BB%E7%AC%94%E8%AE%B0/">赖总笔记</a><a class="post-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/xuanyao/77b593e1.html" title="网络系统集成课设"><img class="cover" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">网络系统集成课设</div></div></a></div><div class="next-post pull-right"><a href="/xuanyao/f6491cfb.html" title="网络编程"><img class="cover" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">网络编程</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/xuanyao/124cdf9.html" title="sql语句"><img class="cover" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-06-15</div><div class="title">sql语句</div></div></a></div><div><a href="/xuanyao/ad939a.html" title="web编程"><img class="cover" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-06-16</div><div class="title">web编程</div></div></a></div><div><a href="/xuanyao/3fb56f9d.html" title="离散数学"><img class="cover" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-06-16</div><div class="title">离散数学</div></div></a></div><div><a href="/xuanyao/14ea6df7.html" title="数据库"><img class="cover" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-06-16</div><div class="title">数据库</div></div></a></div><div><a href="/xuanyao/29ff53fc.html" title="网络服务器配置"><img class="cover" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-06-16</div><div class="title">网络服务器配置</div></div></a></div><div><a href="/xuanyao/77b593e1.html" title="网络系统集成课设"><img class="cover" src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-06-16</div><div class="title">网络系统集成课设</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">江玄爻</div><div class="author-info__description">从玄从爻</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/JXuanYao" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:jiangwen45666@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">好久不见！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%90%86%E8%AE%BA"><span class="toc-number">1.</span> <span class="toc-text">理论</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97"><span class="toc-number">2.</span> <span class="toc-text">计算</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/xuanyao/4a17b156.html" title="Hello World"><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/K4BwHvtTes1MC9X.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/xuanyao/4a17b156.html" title="Hello World">Hello World</a><time datetime="2023-06-16T04:00:00.000Z" title="发表于 2023-06-16 12:00:00">2023-06-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/xuanyao/ad939a.html" title="web编程"><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="web编程"/></a><div class="content"><a class="title" href="/xuanyao/ad939a.html" title="web编程">web编程</a><time datetime="2023-06-16T04:00:00.000Z" title="发表于 2023-06-16 12:00:00">2023-06-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/xuanyao/3fb56f9d.html" title="离散数学"><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="离散数学"/></a><div class="content"><a class="title" href="/xuanyao/3fb56f9d.html" title="离散数学">离散数学</a><time datetime="2023-06-16T04:00:00.000Z" title="发表于 2023-06-16 12:00:00">2023-06-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/xuanyao/14ea6df7.html" title="数据库"><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据库"/></a><div class="content"><a class="title" href="/xuanyao/14ea6df7.html" title="数据库">数据库</a><time datetime="2023-06-16T04:00:00.000Z" title="发表于 2023-06-16 12:00:00">2023-06-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/xuanyao/29ff53fc.html" title="网络服务器配置"><img src="https://s2.loli.net/2023/06/17/omcrgJ7hSLeRP2p.gif" data-original="https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网络服务器配置"/></a><div class="content"><a class="title" href="/xuanyao/29ff53fc.html" title="网络服务器配置">网络服务器配置</a><time datetime="2023-06-16T04:00:00.000Z" title="发表于 2023-06-16 12:00:00">2023-06-16</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://s2.loli.net/2023/06/16/4a1b83dUvnBZE5u.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 江玄爻</div><div class="footer_custom_text">我相信我可以，但我一直在路上，所以我有无限的可能。</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script type="text/javascript" src="https://unpkg.zhimg.com/jquery@latest/dist/jquery.min.js"></script><script data-pjax type="text/javascript" src="/js/bywen.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="富强,民主,文明,和谐,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="true" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script></body></html>
