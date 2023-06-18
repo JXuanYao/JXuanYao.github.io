@@ -1,395 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>sql语句</title>
-    <url>/xuanyao/124cdf9.html</url>
-    <content><![CDATA[<h1 id="SQL语句"><a href="#SQL语句" class="headerlink" title="SQL语句"></a>SQL语句</h1><h2 id="一、数据库"><a href="#一、数据库" class="headerlink" title="一、数据库"></a>一、数据库</h2><h3 id="1、创建数据库（CREATE）"><a href="#1、创建数据库（CREATE）" class="headerlink" title="1、创建数据库（CREATE）"></a>1、创建数据库（CREATE）</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*语法格式*/</span></span><br><span class="line"><span class="keyword">CREATE</span> DATABASE 数据库名称</span><br><span class="line"><span class="keyword">ON</span></span><br><span class="line">(</span><br><span class="line">    NAME<span class="operator">=</span>数据文件逻辑名称,</span><br><span class="line">    FILENAME<span class="operator">=</span><span class="string">&#x27;PATH&#x27;</span>,</span><br><span class="line">    SIZE<span class="operator">=</span>数据文件初始大小,</span><br><span class="line">    MAXSIZE<span class="operator">=</span>数据文件最大容量,</span><br><span class="line">    FILEGROWTH<span class="operator">=</span>数据文件自动增长容量<span class="comment">/*UNLIMITED:无限制增长*/</span></span><br><span class="line">)</span><br><span class="line">LOG <span class="keyword">ON</span></span><br><span class="line">(</span><br><span class="line">    NAME<span class="operator">=</span>日志逻辑名称,</span><br><span class="line">    FILENAME<span class="operator">=</span>PATH,</span><br><span class="line">    SIZE<span class="operator">=</span>日志文件初始大小,</span><br><span class="line">    MAXSIZE<span class="operator">=</span>日志文件最大容量,</span><br><span class="line">    FILEGROWTH<span class="operator">=</span>日志自动增长容量</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">/*例*/</span></span><br><span class="line"><span class="keyword">CREATE</span> DATABASE T</span><br><span class="line"><span class="keyword">ON</span></span><br><span class="line">(</span><br><span class="line">    NAME<span class="operator">=</span>T,</span><br><span class="line">    FILENAME<span class="operator">=</span><span class="string">&#x27;E:\Database\TData.mdf&#x27;</span>,</span><br><span class="line">    SIZE<span class="operator">=</span><span class="number">10</span>,</span><br><span class="line">    MAXSIZE<span class="operator">=</span><span class="number">500</span>,</span><br><span class="line">    FILEGROWTH<span class="operator">=</span><span class="number">10</span></span><br><span class="line">)</span><br><span class="line">LOG <span class="keyword">ON</span></span><br><span class="line">(</span><br><span class="line">    NAME<span class="operator">=</span>T_Log,</span><br><span class="line">    FILENAME<span class="operator">=</span><span class="string">&#x27;E:\Database\TData.ldf&#x27;</span>,</span><br><span class="line">    SIZE<span class="operator">=</span><span class="number">5</span>,</span><br><span class="line">    MAXSIZE<span class="operator">=</span><span class="number">500</span>,</span><br><span class="line">    FILEGROWTH<span class="operator">=</span><span class="number">5</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+    <title>Java复习</title>
+    <url>/xuanyao/f7d3a65a.html</url>
+    <content><![CDATA[<h1 id="JAVA复习"><a href="#JAVA复习" class="headerlink" title="JAVA复习"></a>JAVA复习</h1><p>考试中并不需要导入相应的包，只需写出相应代码即可！！！</p>
+<h3 id="1-对数组的一些操作，重点在二维数值的定义和遍历"><a href="#1-对数组的一些操作，重点在二维数值的定义和遍历" class="headerlink" title="1. 对数组的一些操作，重点在二维数值的定义和遍历"></a>1. 对数组的一些操作，重点在二维数值的定义和遍历</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> class 数组 &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span> [] a=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">5</span>];</span><br><span class="line">        <span class="type">int</span> [] b=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;</span><br><span class="line">        <span class="type">int</span> [][] c=<span class="keyword">new</span> <span class="title class_">int</span>[][] &#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;,&#123;<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;&#125;;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">2</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; <span class="number">3</span>; j++) &#123;</span><br><span class="line">                System.out.println(c[i][j]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="2、修改数据库（ALTER）"><a href="#2、修改数据库（ALTER）" class="headerlink" title="2、修改数据库（ALTER）"></a>2、修改数据库（ALTER）</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*语法格式*/</span></span><br><span class="line"><span class="keyword">ALTER</span> DATABASE 数据库名称</span><br><span class="line"><span class="keyword">ADD</span> FILE(            <span class="comment">/*向数据库中添加数据文件*/</span></span><br><span class="line">    NAME<span class="operator">=</span>文件逻辑名称, <span class="comment">/*必选*/</span></span><br><span class="line">    [NEWNAME<span class="operator">=</span>新文件逻辑名称,]<span class="comment">/*任选*/</span></span><br><span class="line">    [SIZE<span class="operator">=</span>初始文件大小,]</span><br><span class="line">    [MAXSIZE<span class="operator">=</span>文件最大容量,]</span><br><span class="line">    [FILEGROWTH<span class="operator">=</span>文件自动增长容量]</span><br><span class="line">)</span><br><span class="line">[,...n]<span class="comment">/*可添加多个*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">ADD</span> LOG FILE(       <span class="comment">/*向数据库中添加日志文件*/</span></span><br><span class="line">    NAME<span class="operator">=</span>文件逻辑名称,</span><br><span class="line">    [NEWNAME<span class="operator">=</span>新文件逻辑名称,]</span><br><span class="line">    [SIZE<span class="operator">=</span>初始文件大小,]</span><br><span class="line">    [MAXSIZE<span class="operator">=</span>文件最大容量,]</span><br><span class="line">    [FILEGROWTH<span class="operator">=</span>文件自动增长容量]</span><br><span class="line">)</span><br><span class="line">[,...n]<span class="comment">/*可添加多个*/</span></span><br><span class="line"></span><br><span class="line">REMOVE FILE 文件逻辑名称<span class="comment">/*从数据库中删除逻辑文件，并删除物理文件；</span></span><br><span class="line"><span class="comment">                       若文件不为空，则无法删除*/</span></span><br><span class="line">MODIFY FILE(        <span class="comment">/*指定要修改的文件*/</span></span><br><span class="line">    NAME<span class="operator">=</span>文件逻辑名称,</span><br><span class="line">    [NEWNAME<span class="operator">=</span>新文件逻辑名称,]</span><br><span class="line">    [SIZE<span class="operator">=</span>初始文件大小,]</span><br><span class="line">    [MAXSIZE<span class="operator">=</span>文件最大容量,]</span><br><span class="line">    [FILEGROWTH<span class="operator">=</span>文件自动增长容量]</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">/*关于文件组的修改*/</span></span><br><span class="line"><span class="keyword">ADD</span> FILEGROUP 文件组名</span><br><span class="line">REMOVE FILEGROUP 文件组名</span><br><span class="line">MODIFY FILEGROUP 文件组名&#123;        <span class="comment">/*属性*/</span></span><br><span class="line">    READ_ONLY <span class="operator">|</span> READ_WRITE,   <span class="comment">/*只读 / 读写*/</span></span><br><span class="line">    <span class="operator">|</span> <span class="keyword">DEFAULT</span>,                <span class="comment">/*默认文件组*/</span></span><br><span class="line">    <span class="operator">|</span> NAME <span class="operator">=</span> 新文件组名&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-类与对象的考察，重点在对象的有参、无参、get、set、toString方法以及子类继承父类时使用的super方法"><a href="#2-类与对象的考察，重点在对象的有参、无参、get、set、toString方法以及子类继承父类时使用的super方法" class="headerlink" title="2. 类与对象的考察，重点在对象的有参、无参、get、set、toString方法以及子类继承父类时使用的super方法"></a>2. 类与对象的考察，重点在对象的有参、无参、get、set、toString方法以及子类继承父类时使用的super方法</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> class 类与对象 &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Student s=<span class="keyword">new</span> <span class="title class_">Student</span>(<span class="number">1</span>,<span class="string">&quot;buhjubn&quot;</span>,<span class="number">3</span>);</span><br><span class="line">        System.out.println(s);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Person</span><span class="params">()</span> &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Person</span><span class="params">(<span class="type">int</span> id, String name)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.id = id;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getId</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> id;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setId</span><span class="params">(<span class="type">int</span> id)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.id = id;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setName</span><span class="params">(String name)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;id=&quot;</span> + id + <span class="string">&quot;, name=&quot;</span> + name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Student</span> <span class="keyword">extends</span> <span class="title class_">Person</span>  &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> number;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Student</span><span class="params">()</span> &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Student</span><span class="params">(<span class="type">int</span> id, String name, <span class="type">int</span> number)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(id, name);</span><br><span class="line">        <span class="built_in">this</span>.number = number;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Student&#123;&quot;</span> + <span class="string">&quot;number=&quot;</span> + number +<span class="string">&quot;,&quot;</span>+<span class="built_in">super</span>.toString() +<span class="string">&#x27;&#125;&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="3、删除数据库（DROP）"><a href="#3、删除数据库（DROP）" class="headerlink" title="3、删除数据库（DROP）"></a>3、删除数据库（DROP）</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*语法格式*/</span></span><br><span class="line"><span class="keyword">DROP</span> DATABASE 数据库名称[,...n]<span class="comment">/*可一次删除多个*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*例*/</span></span><br><span class="line"><span class="keyword">DROP</span> DATABASE T</span><br></pre></td></tr></table></figure>
+<h3 id="3-排序问题，重点考察自定义排序，即实现Comparable接口"><a href="#3-排序问题，重点考察自定义排序，即实现Comparable接口" class="headerlink" title="3. 排序问题，重点考察自定义排序，即实现Comparable接口"></a>3. 排序问题，重点考察自定义排序，即实现Comparable接口</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> class 排序问题 &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner in=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        List&lt;Teacher&gt; list=<span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">8</span>; i++) &#123;</span><br><span class="line">            list.add(<span class="keyword">new</span> <span class="title class_">Teacher</span>(in.nextInt(),in.nextInt()));</span><br><span class="line">        &#125;</span><br><span class="line">        list.sort(Teacher::compareTo);</span><br><span class="line">        <span class="comment">//19 80 20 80 20 87 20 90 18 99 21 97 22 93 19 78</span></span><br><span class="line">        <span class="keyword">for</span>(Teacher t:list)&#123;</span><br><span class="line">            System.out.println(t);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Teacher</span> <span class="keyword">implements</span> <span class="title class_">Comparable</span>&lt;Teacher&gt;&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> wage;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getAge</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setAge</span><span class="params">(<span class="type">int</span> age)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getWage</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> wage;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setWage</span><span class="params">(<span class="type">int</span> wage)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.wage = wage;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Teacher</span><span class="params">()</span> &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Teacher</span><span class="params">(<span class="type">int</span> age, <span class="type">int</span> wage)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.age = age;</span><br><span class="line">        <span class="built_in">this</span>.wage = wage;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;年龄：&quot;</span>+age+<span class="string">&quot; 工资：&quot;</span>+wage;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">compareTo</span><span class="params">(Teacher o)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">this</span>.age == o.age)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">this</span>.wage-o.wage;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">this</span>.age-o.age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h2 id="二、数据表"><a href="#二、数据表" class="headerlink" title="二、数据表"></a>二、数据表</h2><h3 id="1、创建表（CREATE）"><a href="#1、创建表（CREATE）" class="headerlink" title="1、创建表（CREATE）"></a>1、创建表（CREATE）</h3><h4 id="1-基本格式"><a href="#1-基本格式" class="headerlink" title="(1)    基本格式"></a>(1)    基本格式</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> S</span><br><span class="line">(</span><br><span class="line">    <span class="comment">/*name 类型 约束*/</span></span><br><span class="line">    SNO <span class="type">VARCHAR</span>(<span class="number">6</span>),</span><br><span class="line">    SN NVARCHAR(<span class="number">10</span>),</span><br><span class="line">    Sex <span class="type">NCHAR</span>(<span class="number">1</span>) <span class="keyword">DEFAULT</span> <span class="string">&#x27;男&#x27;</span>,</span><br><span class="line">    Age <span class="type">INT</span>,</span><br><span class="line">    Dept NVARCHAR(<span class="number">20</span>),</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h4 id="4-多态，根据关系图构建类与抽象方法和接口之间的继承与实现"><a href="#4-多态，根据关系图构建类与抽象方法和接口之间的继承与实现" class="headerlink" title="4. 多态，根据关系图构建类与抽象方法和接口之间的继承与实现"></a>4. 多态，根据关系图构建类与抽象方法和接口之间的继承与实现</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//代码就算了，简简单单的</span></span><br><span class="line"><span class="comment">//就那几个关键词</span></span><br><span class="line"><span class="comment">//abstract \ implements \ extends \ </span></span><br></pre></td></tr></table></figure>
 
-<h4 id="2-约束"><a href="#2-约束" class="headerlink" title="(2)    约束"></a>(2)    约束</h4><p>    <mark><strong>语法格式：[CONSTRAINT &lt;约束名&gt;]  &lt;约束类型&gt;</strong></mark></p>
-<h5 id="a-NULL-x2F-NOT-NULL-约束"><a href="#a-NULL-x2F-NOT-NULL-约束" class="headerlink" title="a. NULL &#x2F; NOT NULL 约束"></a>a. NULL &#x2F; NOT NULL 约束</h5><p>        NULL 不是0，也不是空白，指不确定、没有数据，只用于定义列约束</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> S</span><br><span class="line">(</span><br><span class="line">    SNO <span class="type">VARCHAR</span>(<span class="number">6</span>) <span class="keyword">CONSTRAINT</span> S_CON <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    CNO <span class="type">VARCHAR</span>(<span class="number">6</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>          <span class="comment">/*省略约束名称*/</span> </span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<h5 id="b-UNIQUE-唯一约束"><a href="#b-UNIQUE-唯一约束" class="headerlink" title="b.  UNIQUE (唯一约束)"></a>b.  UNIQUE (唯一约束)</h5><p>        <strong>UNIQUE</strong> 约束用于指明某一列或多个列组合上取值必须唯一，被约束的列称为<strong>唯一键</strong> </p>
-<p>        <strong>考虑因素：</strong></p>
-<p>         UNIQUE约束字段允许为NULL</p>
-<p>         一个表中允许存在多个空值</p>
-<p>         可以把UNIQUE约束在多个字段上</p>
-<p>          UNIQUE约束用于强制在指定字段上创建一个UNIQUE索引，缺省为非聚集索引</p>
-<p>            </p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> T</span><br><span class="line">(</span><br><span class="line">    SN NVARCHAR(<span class="number">10</span>) <span class="keyword">CONSTRAINT</span> SN_UNIQ <span class="keyword">UNIQUE</span>,</span><br><span class="line">    CNO NVARCHAR(<span class="number">10</span>) <span class="keyword">UNIQUE</span>  <span class="comment">/*省略约束名称*/</span></span><br><span class="line">    <span class="keyword">CONSTRAINT</span> S_C_UNIQ <span class="keyword">UNIQUE</span>(SN,CNO)  <span class="comment">/*同时约束多列*/</span></span><br><span class="line">)           </span><br></pre></td></tr></table></figure>
-
-<p>    </p>
-<h5 id="c-PRIMARY-KEY-主键约束"><a href="#c-PRIMARY-KEY-主键约束" class="headerlink" title="c. PRIMARY KEY (主键约束)"></a>c. PRIMARY KEY (主键约束)</h5><p>       <strong>PRIMARY KEY</strong> 约束用于定义基本表的主键，起唯一标识作用，<strong>不能为NULL，也不能重复</strong> ，以此保证实体完整性</p>
-<p>        <strong>PRIMARY KEY 与 UNIQUE 区别：</strong></p>
-<p>         -  一个基本表中只能有一个PRIMARY KEY ,但可以有多个UNIQUE</p>
-<p>         - 被<strong>PRIMARY KEY</strong>约束的列或列组合都<strong>不能为NULL</strong>，UNIQUE允许为NULL</p>
-<p>         - <strong>不能为同一列或列组，同时定义PRIMARY KEY 和 UNIQUE约束</strong></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> S</span><br><span class="line">(</span><br><span class="line">    SNO <span class="type">VARCHAR</span>(<span class="number">6</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">CONSTRAINT</span> S_Prim <span class="keyword">PRIMARY</span> KEY,</span><br><span class="line">    S  <span class="type">CHAR</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    C  <span class="type">CHAR</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span></span><br><span class="line">    <span class="keyword">CONSTRAINT</span> SC_Prim <span class="keyword">PRIMARY</span> KEY(S,C)<span class="comment">/*约束多列,S,N不允许为NULL*/</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<h5 id="d-FOREIGN-KEY-外键约束"><a href="#d-FOREIGN-KEY-外键约束" class="headerlink" title="d. FOREIGN KEY (外键约束)"></a>d. FOREIGN KEY (外键约束)</h5><p>       <strong>FOREIGN KEY</strong> 约束指定某一列或几列作为外部键。</p>
-<p>        包含外部键的表为从表，包含外部键引用的主键或唯一键为主表；从表外部键上的取值是主表中某一个主键或唯一键的值，或为NULL，以保证两表间的参照完整性。</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">[<span class="keyword">CONSTRAINT</span> 约束名] <span class="keyword">FOREIGN</span> KEY <span class="keyword">REFERENCES</span> 主表名（列名）</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> SC</span><br><span class="line">(</span><br><span class="line">    SNO <span class="type">VARCHAR</span>(<span class="number">6</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">CONSTRAINT</span> S_Froe <span class="keyword">FOREIGN</span> <span class="keyword">REFERENCES</span> S(SNO),</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<h5 id="e-CHECK-约束"><a href="#e-CHECK-约束" class="headerlink" title="e. CHECK 约束"></a>e. CHECK 约束</h5><p>       <strong>CHECK</strong> 约束用来检查字段值所允许的范围，以此来保证域的完整性，既可用于表约束，也可用于列约束。</p>
-<p>       <strong>考虑因素：</strong></p>
-<ol>
-<li><p>一个表中可以定义多个CHECK约束</p>
-</li>
-<li><p>每个字段只能定义一个CHECK约束</p>
-</li>
-<li><p>在多个字段上定义的CHECK约束为表约束</p>
-</li>
-<li><p>当执行INSERT、UPDATE语句时，CHECK约束将验证数据</p>
-</li>
-</ol>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">[<span class="keyword">CONSTRAINT</span> 约束名] <span class="keyword">CHECK</span>(条件)</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> SC</span><br><span class="line">(</span><br><span class="line">    Score <span class="type">NUMERIC</span>(<span class="number">4</span>,<span class="number">1</span>) <span class="keyword">CONSTRAINT</span> S_CHK <span class="keyword">CHECK</span>(Score<span class="operator">&gt;=</span><span class="number">0</span> <span class="keyword">AND</span> Score <span class="operator">&lt;=</span><span class="number">100</span>)</span><br><span class="line">    email <span class="type">VARCHAR</span>(<span class="number">30</span>) <span class="keyword">CONSTRAINT</span> E_CHK <span class="keyword">CHECK</span>(email <span class="keyword">LIKE</span> <span class="string">&#x27;%@%&#x27;</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<h3 id="2、修改表（ALTER）"><a href="#2、修改表（ALTER）" class="headerlink" title="2、修改表（ALTER）"></a>2、修改表（ALTER）</h3><h4 id="1-ADD-方式"><a href="#1-ADD-方式" class="headerlink" title="(1)    ADD 方式"></a>(1)    ADD 方式</h4><p>      <strong>ADD</strong> 用于增加新列和完整性约束</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名</span><br><span class="line"><span class="keyword">ADD</span></span><br><span class="line">定义列 <span class="operator">|</span> 完整性约束</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> SC</span><br><span class="line"><span class="keyword">ADD</span></span><br><span class="line">CL <span class="type">VARCHAR</span>(<span class="number">6</span>),<span class="comment">/*定义列*/</span></span><br><span class="line"><span class="keyword">CONSTRAINT</span> S_CHK <span class="keyword">CHECK</span>(Score<span class="operator">&lt;=</span><span class="number">0</span> <span class="keyword">AND</span> Score<span class="operator">&gt;=</span><span class="number">100</span>) <span class="comment">/*完整性约束*/</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="2-ALTER-方式"><a href="#2-ALTER-方式" class="headerlink" title="(2)    ALTER 方式"></a>(2)    ALTER 方式</h4><p>      <strong>ALTER</strong> 用于修改某些列</p>
-<p>      <strong>限制：</strong></p>
-<ul>
-<li><p>不能改变列名</p>
-</li>
-<li><p>不能将含有NULL值的列修改为NOT NULL约束</p>
-</li>
-<li><p>若列中已有数据，则不能减少该列的宽度，也不能改变其数据类型 <strong>(当数据长度小于宽度时，<mark>NVARCHAR除外</mark>)</strong> </p>
-</li>
-<li><p>只能修改NULL&#x2F;NOT NULL约束，<mark><u>其他类型约束在修改前必修先删除约束，然后在重新添加修改过的约束定义</u> </mark></p>
-</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">COLUMN</span></span><br><span class="line">列名 数据类型 [<span class="keyword">NULL</span> <span class="operator">|</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> SC</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">COLUMN</span></span><br><span class="line">SN NVARCHAR(<span class="number">20</span>)</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-DROP-方式"><a href="#3-DROP-方式" class="headerlink" title="(3)    DROP 方式"></a>(3)    DROP 方式</h4><p>      <strong>DROP</strong> 只用于删除完整性约束定义</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">CONSTRAINT</span> 约束名</span><br></pre></td></tr></table></figure>
-
-<h3 id="3、删除表（DROP）"><a href="#3、删除表（DROP）" class="headerlink" title="3、删除表（DROP）"></a>3、删除表（DROP）</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> 表名</span><br></pre></td></tr></table></figure>
-
-<h3 id="4、查询表（SELECT）"><a href="#4、查询表（SELECT）" class="headerlink" title="4、查询表（SELECT）"></a>4、查询表（SELECT）</h3><h4 id="1-单表查询"><a href="#1-单表查询" class="headerlink" title="(1)    单表查询"></a>(1)    单表查询</h4><h5 id="a-无条件查询"><a href="#a-无条件查询" class="headerlink" title="a.    无条件查询"></a>a.    无条件查询</h5><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> 列名,[....]  <span class="keyword">FROM</span> 表名</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> 表名<span class="comment">/* 查询表中全部数据 */</span> </span><br></pre></td></tr></table></figure>
-
-<h5 id="b-条件查询"><a href="#b-条件查询" class="headerlink" title="b.    条件查询"></a>b.    条件查询</h5><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> 列名,[...] <span class="keyword">FROM</span> 表名 <span class="keyword">WHERE</span> 条件</span><br></pre></td></tr></table></figure>
-
-<p><strong>常用运算符</strong></p>
-<table>
-<thead>
-<tr>
-<th align="center">运算符</th>
-<th align="center">含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">&#x3D;、&gt;、&lt;、&gt;&#x3D;、&lt;&#x3D;、!&#x3D;、&lt;&gt;(不等于)</td>
-<td align="center">比较大小</td>
-</tr>
-<tr>
-<td align="center">AND、OR、NOT</td>
-<td align="center">多重条件</td>
-</tr>
-<tr>
-<td align="center">BETWEEN AND</td>
-<td align="center">确定范围</td>
-</tr>
-<tr>
-<td align="center">IN</td>
-<td align="center">确定集合</td>
-</tr>
-<tr>
-<td align="center">LIKE</td>
-<td align="center">字符匹配</td>
-</tr>
-<tr>
-<td align="center">IS NULL</td>
-<td align="center">空值</td>
-</tr>
-</tbody></table>
-<h6 id="1）比较大小"><a href="#1）比较大小" class="headerlink" title="1）比较大小"></a>1）比较大小</h6><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> SNO,Score <span class="keyword">FROM</span> SC <span class="keyword">WHERE</span> Score<span class="operator">&gt;</span><span class="number">85</span></span><br></pre></td></tr></table></figure>
-
-<h6 id="2）多重条件查询"><a href="#2）多重条件查询" class="headerlink" title="2）多重条件查询"></a>2）多重条件查询</h6><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> SNO,CNO,Score</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> (CNO <span class="operator">=</span> <span class="string">&#x27;&#x27;</span>C1 <span class="keyword">OR</span> CNO <span class="operator">=</span> <span class="string">&#x27;C2&#x27;</span>) <span class="keyword">AND</span> (Score <span class="operator">&gt;=</span> <span class="number">85</span>)</span><br></pre></td></tr></table></figure>
-
-<h6 id="3）确定范围"><a href="#3）确定范围" class="headerlink" title="3）确定范围"></a>3）确定范围</h6><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> TNO,CNO,SAL</span><br><span class="line"><span class="keyword">FROM</span> T</span><br><span class="line"><span class="keyword">WHERE</span> SAL <span class="keyword">BETWEEN</span> <span class="number">1000</span> <span class="keyword">AND</span> <span class="number">2000</span></span><br><span class="line">(SAL <span class="operator">&gt;=</span> <span class="number">1000</span> <span class="keyword">AND</span> SAL <span class="operator">&lt;=</span> <span class="number">2000</span>)</span><br></pre></td></tr></table></figure>
-
-<h6 id="4）确定集合"><a href="#4）确定集合" class="headerlink" title="4）确定集合"></a>4）确定集合</h6><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> SNO,CNO,Score</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> CNO <span class="keyword">IN</span> (<span class="string">&#x27;C1&#x27;</span>,<span class="string">&#x27;C2&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> SNO,CNO,Score</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> CNO <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="string">&#x27;C1&#x27;</span>,<span class="string">&#x27;C2&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<h6 id="5）部分匹配查询"><a href="#5）部分匹配查询" class="headerlink" title="5）部分匹配查询"></a>5）部分匹配查询</h6><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">属性名 <span class="keyword">LIKE</span> 字符串常量</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="center">通配符</th>
-<th align="center">功能</th>
-<th align="center">实例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">%</td>
-<td align="center">代表0或多个字符</td>
-<td align="center">‘a%’,’a’后可接任意字符</td>
-</tr>
-<tr>
-<td align="center">_(下划线)</td>
-<td align="center">代表一个字符</td>
-<td align="center">‘a_b’ ,a、b之间可有一个字符</td>
-</tr>
-<tr>
-<td align="center">[]</td>
-<td align="center">表示某一范围的字符</td>
-<td align="center">[0-9],0~9之间的字符</td>
-</tr>
-<tr>
-<td align="center">[^]</td>
-<td align="center">表示不在某一范围内的字符</td>
-<td align="center">[^0-9]，不在0~9之间的字符</td>
-</tr>
-</tbody></table>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">查询姓张的老师</span><br><span class="line"><span class="keyword">SELECT</span> TNO,TN</span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line"><span class="keyword">WHERE</span> TN <span class="keyword">LIKE</span> <span class="string">&#x27;张%&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<h6 id="6）空值查询"><a href="#6）空值查询" class="headerlink" title="6）空值查询"></a>6）空值查询</h6><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> SNO,CNO</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> Score <span class="keyword">IS</span> <span class="keyword">NULL</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="c-库函数及统计汇总查询"><a href="#c-库函数及统计汇总查询" class="headerlink" title="c.    库函数及统计汇总查询"></a>c.    库函数及统计汇总查询</h5><p><strong>常用库函数及其功能</strong></p>
-<table>
-<thead>
-<tr>
-<th align="center">函数名称</th>
-<th align="center">功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">AVG</td>
-<td align="center">按列计算平均值</td>
-</tr>
-<tr>
-<td align="center">SUM</td>
-<td align="center">按列计算总和</td>
-</tr>
-<tr>
-<td align="center">MAX</td>
-<td align="center">求一列中的最大值</td>
-</tr>
-<tr>
-<td align="center">MIN</td>
-<td align="center">求一列中的最小值</td>
-</tr>
-<tr>
-<td align="center">COUNT</td>
-<td align="center">按列值统计个数</td>
-</tr>
-</tbody></table>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(SNO) <span class="keyword">AS</span> TOTAL <span class="keyword">FROM</span> S</span><br><span class="line"><span class="keyword">WHERE</span> DEPT <span class="operator">=</span> <span class="string">&#x27;计算机&#x27;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">FROM</span> S</span><br><span class="line"><span class="keyword">WHERE</span> DEPT <span class="operator">=</span> <span class="string">&#x27;计算机&#x27;</span></span><br><span class="line"><span class="comment">/* COUNT(*) 用于统计元组个数，不消除重复行，不允许使用DISTINCT</span></span><br><span class="line"><span class="comment">   DISTINCT 用于返回唯一不同的值（取消查询某列重复的值）*/</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="d-分组查询"><a href="#d-分组查询" class="headerlink" title="d.    分组查询"></a>d.    分组查询</h5><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> TNO,<span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">AS</span> TOTAL</span><br><span class="line"><span class="keyword">FROM</span> TC</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> TNO <span class="comment">/*按TNO 进行分组，具有相同TNO的为一组*/</span></span><br><span class="line"><span class="keyword">HAVING</span> TOTAL<span class="operator">&gt;=</span><span class="number">2</span> <span class="comment">/*去掉不满足条件的元组*/</span></span><br></pre></td></tr></table></figure>
-
-<p>在使用WHERE、GROUP BY、HAVING 时，<strong>顺序：WHERE、GROUP BY、HAVING</strong> </p>
-<p><mark>WHERE与HAVING子句</mark>的根本区别在于作用对象不同，<strong>WHERE作用于</strong>基本表或视图；<strong>HAVING作用于</strong>组，<strong>必须用在GROUP BY 子句之后</strong>，但GROUP BY 子句可以没有HAVING子句。  </p>
-<h5 id="e-查询结果排序"><a href="#e-查询结果排序" class="headerlink" title="e.    查询结果排序"></a>e.    查询结果排序</h5><p><strong>ORDER BY</strong> 子句用于查询结果排序，必须用于其他子句之后，<strong>DESC  降序、ASC 升序，缺省时为升序</strong> </p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">...</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> 属性名 <span class="keyword">DESC</span> <span class="operator">|</span> <span class="keyword">ASC</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> SNO,Score</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> CNO <span class="operator">=</span> <span class="string">&#x27;C1&#x27;</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> Score <span class="keyword">DESC</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="2-多表连接查询"><a href="#2-多表连接查询" class="headerlink" title="(2)    多表连接查询"></a>(2)    多表连接查询</h4><h5 id="a-查询结构"><a href="#a-查询结构" class="headerlink" title="a.    查询结构"></a>a.    查询结构</h5><ul>
-<li>表之间满足一定条件时进行连接：<strong>FROM</strong> 子句指明连接表名，<strong>WHERE</strong> 子句指明连接的列名及其连接条件</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> 列名 [<span class="keyword">AS</span> 别名],[...]</span><br><span class="line"><span class="keyword">FROM</span> 表名<span class="number">1</span>,表名<span class="number">2.</span>..</span><br><span class="line"><span class="keyword">WHERE</span> 检索条件 (eg:T.TNO<span class="operator">=</span>C.TNO [<span class="keyword">AND</span> ...])</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>利用关键字<strong>JOIN</strong> 进行连接</p>
-<ul>
-<li><p>**INNER JOIN (内连接)**：显示符合条件的记录，此为默认值。</p>
-</li>
-<li><p><strong>LEFT (OUTER) JOIN (左(外)连接)</strong> ：用于显示符合条件的数据行以及左边表中不符合条件的数据行。此时右边数据行会以NULL来显示。</p>
-</li>
-<li><p><strong>RIFHT (OUTER) JOIN (右(外)连接)</strong> ：用于显示符合条件的数据行以及右边表中不符合条件的数据行。此时左边数据行会以NULL来显示。</p>
-</li>
-<li><p><strong>FULL (OUTER) JOIN</strong> :显示符合条件的数据行以及左边表和右边表中不符合条件的数据行。此时缺乏数据的数据行会以NULL来显示。</p>
-</li>
-<li><p><strong>CROSS JOIN</strong> :将一个表中的每一个记录和另一个表的每一个记录匹配成新的数据行。</p>
-</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ... </span><br><span class="line"><span class="keyword">FROM</span> 表名<span class="number">1</span></span><br><span class="line">[<span class="keyword">INNER</span> <span class="operator">|</span><span class="keyword">LEFT</span> <span class="keyword">OUTER</span><span class="operator">|</span><span class="keyword">RIGHT</span> <span class="keyword">OUTER</span><span class="operator">|</span><span class="keyword">FULL</span> <span class="keyword">OUTER</span> <span class="operator">|</span><span class="keyword">CROSS</span>] <span class="keyword">JOIN</span> 表名<span class="number">2</span></span><br><span class="line"><span class="keyword">ON</span> 条件</span><br></pre></td></tr></table></figure>
-
-<h5 id="b-内连接查询"><a href="#b-内连接查询" class="headerlink" title="b.    内连接查询"></a>b.    内连接查询</h5><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">方法一：</span><br><span class="line"><span class="keyword">SELECT</span> T.TNO, TN, CNO</span><br><span class="line"><span class="keyword">FROM</span> T,TC</span><br><span class="line"><span class="keyword">WHERE</span> T.TNO<span class="operator">=</span>TC.TNO <span class="comment">/*连接条件 TNO:连接字段,加前缀避免二义性(同名属性必加) </span></span><br><span class="line"><span class="comment">                    运算符：= &gt; &lt; &gt;= &lt;= !=*/</span></span><br><span class="line"><span class="keyword">AND</span> TN<span class="operator">=</span><span class="string">&#x27;刘伟&#x27;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">方法二：</span><br><span class="line"><span class="keyword">SELECT</span> T.TNO,TN,CNO</span><br><span class="line"><span class="keyword">FROM</span> T <span class="keyword">INNER</span> <span class="keyword">JOIN</span> TC</span><br><span class="line"><span class="keyword">ON</span> T.TNO<span class="operator">=</span>TC.TNO</span><br><span class="line"><span class="keyword">WHERE</span> TN<span class="operator">=</span><span class="string">&#x27;刘伟&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*上述方法，将T中TNO与TC中TNO相等的行连接，同时选取TN=‘刘伟’的行，</span></span><br><span class="line"><span class="comment">不显示不满足连接条件的元组*/</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="c-外连接查询"><a href="#c-外连接查询" class="headerlink" title="c.    外连接查询"></a>c.    外连接查询</h5><p>        外部连接中有主从表之分，以主表的每行数据去匹配从表的数据列。符合连接的数据将直接返回到结果集中；不符合连接条件的列，将填上NULL后返回结果集中（bit类型不允许有NULL，填0）</p>
-<ul>
-<li><p><strong>左外部连接</strong> ：主表在左</p>
-</li>
-<li><p><strong>右外部连接</strong> ：主表在右</p>
-</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> S.S#,S.SN,CN,GR</span><br><span class="line"><span class="keyword">FROM</span> S <span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> SC</span><br><span class="line"><span class="keyword">ON</span> S.S#<span class="operator">=</span>SC.S#</span><br><span class="line"><span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> C</span><br><span class="line"><span class="keyword">ON</span> SC.C#<span class="operator">=</span>C.C#</span><br></pre></td></tr></table></figure>
-
-<h5 id="d-交叉查询"><a href="#d-交叉查询" class="headerlink" title="d.    交叉查询"></a>d.    交叉查询</h5><p>        <strong>交叉查询（CROSS JOIN）</strong> ：对表无要求，<strong>查询结果集合的行数是两个表行数的乘积，列数的两个表列数的和。</strong></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span>  <span class="keyword">FROM</span> S <span class="keyword">CROSS</span> <span class="keyword">JOIN</span> C</span><br></pre></td></tr></table></figure>
-
-<h5 id="e-自连接查询"><a href="#e-自连接查询" class="headerlink" title="e.    自连接查询"></a>e.    自连接查询</h5><p>        当一个表与其自身进行连接操作时称自连接。</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> X.TN,X.Sal, Y.Sal</span><br><span class="line"><span class="keyword">FROM</span> T <span class="keyword">AS</span> X,T <span class="keyword">AS</span> Y</span><br><span class="line"><span class="keyword">WHERE</span> X.Sal<span class="operator">&gt;</span>Y.Sal <span class="keyword">AND</span> Y.TN<span class="operator">=</span><span class="string">&#x27;刘伟&#x27;</span><span class="comment">/*查询所有比刘伟工资高的教师部分信息*/</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="3-子查询（嵌套查询）"><a href="#3-子查询（嵌套查询）" class="headerlink" title="(3)    子查询（嵌套查询）"></a>(3)    子查询（嵌套查询）</h4><p>    <strong>子查询(嵌套查询)：WHERE 中包含一个SELECT-FROM-WHERE的查询块,包含子查询语句的称为父查询或外部查询</strong></p>
-<p>    <strong>复杂查询：</strong> 将一系列简单查询嵌套，可增强查询能力。</p>
-<p>    <strong>子查询嵌套层数最多255次，由里向外处理</strong></p>
-<h5 id="a-普通子查询"><a href="#a-普通子查询" class="headerlink" title="a.    普通子查询"></a>a.    普通子查询</h5><p>        先执行子查询，子查询结果作为父查询的条件的值，子查询只执行一次。</p>
-<ul>
-<li>返回一个值</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*可使用表运算符连接父查询和子查询：=、&gt;、&lt;、&gt;=、&lt;=、!=*/</span></span><br><span class="line"><span class="keyword">SELECT</span> TNO,TN</span><br><span class="line"><span class="keyword">FROM</span> T</span><br><span class="line"><span class="keyword">WHERE</span> Prof <span class="operator">=</span> (<span class="keyword">SELECT</span> Prof <span class="keyword">FROM</span> <span class="keyword">WHERE</span> TN<span class="operator">=</span><span class="string">&#x27;刘伟&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>返回一组值</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*不能直接使用比较运算符，可以在子查询与运算符之间插入  IN 、ALL 或 ANY*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*ALL：所有*/</span></span><br><span class="line"><span class="keyword">SELECT</span> TN,Sal <span class="keyword">FROM</span> T</span><br><span class="line"><span class="keyword">WHERE</span> Sal <span class="operator">&gt;</span> <span class="keyword">ALL</span> (<span class="keyword">SELECT</span> Sal <span class="keyword">FROM</span> T <span class="keyword">WHERE</span> Dept<span class="operator">=</span><span class="string">&#x27;计算机&#x27;</span>) </span><br><span class="line"><span class="keyword">AND</span> (Dept <span class="operator">&lt;&gt;</span> <span class="string">&#x27;计算机&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">/*ANY：任意*/</span></span><br><span class="line"><span class="keyword">SELECT</span> TN <span class="keyword">FROM</span> T</span><br><span class="line"><span class="keyword">WHERE</span> TNO <span class="operator">=</span> <span class="keyword">ANY</span> (<span class="keyword">SELECT</span> TNO <span class="keyword">FROM</span> TC <span class="keyword">WHERE</span> CNO<span class="operator">=</span><span class="string">&#x27;C5&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">/*IN:等价于‘= ANY’*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> TN <span class="keyword">FROM</span> T</span><br><span class="line"><span class="keyword">WHERE</span> TNO <span class="keyword">IN</span> (<span class="keyword">SELECT</span> TNO <span class="keyword">FROM</span> TC <span class="keyword">WHERE</span> CNO<span class="operator">=</span><span class="string">&#x27;C5&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<h5 id="b-相关子查询"><a href="#b-相关子查询" class="headerlink" title="b.    相关子查询"></a>b.    相关子查询</h5><p>        <strong>相关子查询：</strong> 子查询的查询条件使用父查询表中的属性值。</p>
-<p><strong>查询过程：</strong> </p>
-<ol>
-<li><p> 选取父查询表中一行记录</p>
-</li>
-<li><p>子查询利用该记录相 关属性值进行查询</p>
-</li>
-<li><p>子查询返回结果，父查询判断是否满足条件</p>
-</li>
-<li><p>满足，放入结果集合</p>
-</li>
-<li><p>重复过程，直至处理完父查询表中每一行数据</p>
-</li>
-</ol>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> TN <span class="keyword">FROM</span> T</span><br><span class="line"><span class="keyword">WHERE</span> <span class="string">&#x27;C5&#x27;</span> <span class="operator">&lt;&gt;</span> <span class="keyword">ALL</span> (<span class="keyword">SELECT</span> CNO <span class="keyword">FROM</span> TC <span class="keyword">WHERE</span> TNO <span class="operator">=</span>T.TNO)</span><br><span class="line"><span class="comment">/*&lt;&gt;ALL:不等于子查询结果中的任何一个值*/</span></span><br></pre></td></tr></table></figure>
-
-<p><strong><mark>EXISTS</mark> 进行相关子查询</strong> ：EXISTS 时表示存在的量词，判断查询子句是否有记录，带有EXISTS的子查询不返回合任何实际数据，只返回逻辑 ‘真’ 和 ‘假’。子查询结果集合非空时，<strong>外层WHERE语句</strong> 返回真。</p>
-<p><strong>NOT EXISTS与此相反</strong> </p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> TN <span class="keyword">FROM</span> T</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> TC <span class="keyword">WHERE</span> TNO<span class="operator">=</span>T.TNO <span class="keyword">AND</span> CNO<span class="operator">=</span><span class="string">&#x27;C5&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<p>   </p>
-<h4 id="5-集合运算查询"><a href="#5-集合运算查询" class="headerlink" title="(5)    集合运算查询"></a>(5)    集合运算查询</h4><p>            合并查询是使用<strong>UNION</strong> 将来自不同查询的数据组合起来，形成一个具有综合信息的查询结果。</p>
-<p>            <strong>UNION</strong> 会自动剔除重复数据行，<strong>合并查询所用表结构要相同，即：各子查询中的数据数目和对应数据类型必须相同。</strong></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*分别查询S1和S5 的学号和总分，合并成一个结构集合*/</span></span><br><span class="line"><span class="keyword">SELECT</span> SNO,<span class="built_in">SUM</span>(SCORE) <span class="keyword">AS</span> TOTALS <span class="keyword">FROM</span> SC <span class="keyword">WHERE</span> SNO<span class="operator">=</span><span class="string">&#x27;S1&#x27;</span></span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> SNO</span><br><span class="line"><span class="keyword">UNION</span></span><br><span class="line"><span class="keyword">SELECT</span> SNO,<span class="built_in">SUM</span>(SCORE) <span class="keyword">AS</span> TOTALS <span class="keyword">FROM</span> SC <span class="keyword">WHERE</span> SNO<span class="operator">=</span><span class="string">&#x27;S5&#x27;</span></span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> SNO</span><br></pre></td></tr></table></figure>
-
-<h4 id="6-将查询结果储存到表中"><a href="#6-将查询结果储存到表中" class="headerlink" title="(6)    将查询结果储存到表中"></a>(6)    将查询结果储存到表中</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ... <span class="keyword">INTO</span> 表名（或 #表名：临时表）</span><br><span class="line"><span class="comment">/*临时表存储在内存中，不在数据库中，所有存在时间非常短*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> SNO , <span class="built_in">SUM</span>(SCORE)</span><br><span class="line"><span class="keyword">INTO</span> M<span class="comment">/*新数据表 #M：临时表*/</span></span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> SNO</span><br></pre></td></tr></table></figure>
-
-<h3 id="5、添加表中数据"><a href="#5、添加表中数据" class="headerlink" title="5、添加表中数据"></a>5、添加表中数据</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> 表名 [(列名<span class="number">1</span>,...)] <span class="keyword">VALUES</span> (值)[,(值<span class="number">2</span>),(值<span class="number">3</span>)...]</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">INTO:指定添加列名顺序</span></span><br><span class="line"><span class="comment">注意：</span></span><br><span class="line"><span class="comment">1、字符数据用单引号</span></span><br><span class="line"><span class="comment">2、未指定列名时，新添加数据必须含有所有列的值</span></span><br><span class="line"><span class="comment">3、值的排列顺序要和属性列的排列顺序一直</span></span><br><span class="line"><span class="comment">4、INTO子句中未出现的列，新添加记录将其置为NULL,NOT NULL约束的列必须插入值</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> S (S#,SN,,SEX,AGE) <span class="keyword">VALUES</span>(<span class="string">&#x27;S1&#x27;</span>,<span class="string">&#x27;XXX&#x27;</span>,<span class="string">&#x27;男&#x27;</span>,<span class="number">20</span>)<span class="comment">/*添加部分属性列的值*/</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> S <span class="keyword">VALUES</span>(<span class="string">&#x27;S1&#x27;</span>,<span class="string">&#x27;XXX&#x27;</span>,<span class="string">&#x27;男&#x27;</span>,<span class="number">20</span>,<span class="string">&#x27;xxxxxxxxxxx&#x27;</span>)<span class="comment">/*添加表中所有属性列值*/</span> </span><br></pre></td></tr></table></figure>
-
-<h3 id="6、修改表中数据"><a href="#6、修改表中数据" class="headerlink" title="6、修改表中数据"></a>6、修改表中数据</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> 表名</span><br><span class="line"><span class="keyword">SET</span> 列名 <span class="operator">=</span> 表达式,[列名<span class="operator">=</span>表达式]</span><br><span class="line">[<span class="keyword">WHERE</span> 条件]</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">SET:给出要修改的列及其修改的值</span></span><br><span class="line"><span class="comment">WHERE:指定修改记录需要满足的体哦阿健，省略则修改表中所有记录</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">UPDATE</span> T</span><br><span class="line"><span class="keyword">SET</span> DEPT<span class="operator">=</span><span class="string">&#x27;信息&#x27;</span>,AGE<span class="operator">=</span>AGE<span class="operator">+</span><span class="number">1</span></span><br><span class="line"><span class="keyword">WHERE</span> TN<span class="operator">=</span><span class="string">&#x27;张三&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="7、删除数据"><a href="#7、删除数据" class="headerlink" title="7、删除数据"></a>7、删除数据</h3><p><strong>删除一行或多行记录</strong> </p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> 表名 [<span class="keyword">WHERE</span> 条件]</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*删除一行*/</span></span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> T <span class="keyword">WHERE</span> TN<span class="operator">=</span><span class="string">&#x27;张三&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*利用子查询选择删除的行*/</span></span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> TC</span><br><span class="line"><span class="keyword">WHERE</span> TNO <span class="operator">=</span> (<span class="keyword">SELECT</span> TNO <span class="keyword">FROM</span> T <span class="keyword">WHERE</span> TN<span class="operator">=</span><span class="string">&#x27;张三&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="三、视图"><a href="#三、视图" class="headerlink" title="三、视图"></a>三、视图</h2><h3 id="1、概述"><a href="#1、概述" class="headerlink" title="1、概述"></a>1、概述</h3><p>        视图是一个<strong>虚拟表</strong> ，内容由查询定义。包含一系列带有名称的列和行数据。<strong>视图在数据库中不是以数据值存储集形式存在</strong>（除索引视图外）。数据来自定义视图的查询所引用的基本表，并且在引用视图时动态生成。</p>
-<p>        视图的作用类似于筛选，定义视图的筛选可以来自于当前或其他数据库的一个或多个表，或视图。</p>
-<p>        视图通常用来集中、简化和自定义每个用户对数据库的不同认识。</p>
-<p>        视图可用作安全机制：允许用户通过视图访问数据，不授予用户之间访问视图关联的基础表权限。</p>
-<p>        视图可用于提供线后兼容接口来模拟曾经存在但在其架构已经更改的基础表。</p>
-<h3 id="2、创建视图"><a href="#2、创建视图" class="headerlink" title="2、创建视图"></a>2、创建视图</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span> 视图名 [(列名 [,...])]</span><br><span class="line"><span class="keyword">AS</span> <span class="keyword">select</span>语句</span><br><span class="line">[<span class="keyword">WITH</span> <span class="keyword">CHECK</span> OPTION]</span><br><span class="line"><span class="operator">&lt;</span>view_attribute<span class="operator">&gt;</span>::<span class="operator">=</span>&#123;</span><br><span class="line">    [ENCRYPTION]</span><br><span class="line">    [SCHEMABINDING]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>列名：需要列名的情况</p>
-<ul>
-<li><p>列是从算数表达式、函数或常量派生；</p>
-</li>
-<li><p>两个或更多的列可能具有相同名称（一般由于联接原因导致）；</p>
-</li>
-<li><p>更改列名：视图某个列的指定名称不同于其派生来源列名称</p>
-</li>
-</ul>
-</li>
-<li><p>select语句：定义视图的SELECT 语句。可使用多个表或视图</p>
-</li>
-<li><p>CHECK OPTION:设置针对视图的所有数据修改语句必须符合select语句中规定的条件</p>
-</li>
-<li><p>ENCRYPTION：视图是加密的，使用后，无法修改视图，故创建视图时保存脚本，否则再也无法修改</p>
-</li>
-<li><p>SCHEMABINDING:和底层引用的表进行定义绑定。加上该选项，则视图引用的表不能随意更改架构（如数据类型）。修改：先DORP或ALTER 在底层表之上绑定的视图。常用于定义索引视图。</p>
-</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span> T_V</span><br><span class="line"><span class="keyword">AS</span> <span class="keyword">SELECT</span> TNO,TN,PROF <span class="keyword">FROM</span> <span class="keyword">WHERE</span> DEPT<span class="operator">=</span><span class="string">&#x27;XXX&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3、修改视图"><a href="#3、修改视图" class="headerlink" title="3、修改视图"></a>3、修改视图</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">VIEW</span> 视图名 [(视图列表)] <span class="keyword">AS</span> 子查询</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">VIEW</span> S_C (SN,CN,SCORE)</span><br><span class="line"><span class="keyword">AS</span> <span class="keyword">SELECT</span> SN,CN,SCORE <span class="keyword">FROM</span> S,C,SC <span class="keyword">WHERE</span> S.SNO<span class="operator">=</span>SC.SNO <span class="keyword">AND</span> SC.CNO<span class="operator">=</span>C.CNO</span><br></pre></td></tr></table></figure>
-
-<h3 id="4、删除视图"><a href="#4、删除视图" class="headerlink" title="4、删除视图"></a>4、删除视图</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">VIEW</span> 视图名</span><br></pre></td></tr></table></figure>
-
-<h3 id="5、查询视图"><a href="#5、查询视图" class="headerlink" title="5、查询视图"></a>5、查询视图</h3><p>       <strong>对视图的查询操作与对基本表的一致</strong> </p>
-<h3 id="6、更新视图"><a href="#6、更新视图" class="headerlink" title="6、更新视图"></a>6、更新视图</h3><p>        <strong>视图是一张虚表，所以对视图的更新，最终转换成对基本表的更新。语法格式与基本表操作一样：添加、修改、删除。</strong> </p>
-<h2 id="四、索引"><a href="#四、索引" class="headerlink" title="四、索引"></a>四、索引</h2><h3 id="1、概述-1"><a href="#1、概述-1" class="headerlink" title="1、概述"></a>1、概述</h3><p>        索引是一种可以加快检索的<strong>数据库结构</strong> ，包含从表或视图的一列或多列生成的键,以及映射带指定数据存储位置的指针。</p>
-<p>        索引可以显著提高数据库查询和应用程序的性能。相当于书中的目录。</p>
-<p>        创建后由DBMS自动管理维护，DBMS自动更新索引。</p>
-<p>        基本表有无索引使用方法一直。</p>
-<p>        要避免在一个表中创建大量索引，否则影响插入、删除、更新数据的性能，增加索引调整的成本，简单系统响应速度。</p>
-<p><strong>索引分类：</strong></p>
-<ul>
-<li>聚集索引</li>
-</ul>
-<p>        物理存储顺序与索引键的逻辑顺序相同。</p>
-<blockquote>
-<p>一个主键自增的表就是聚集索引，id&#x3D;1（逻辑顺序）在第一条，id&#x3D;2在第二条，依次直到最后都为顺序排列,则查找第1000条只要在第一条地址（物理顺序）基础上加1000就是第1000条的地址，只需一次就能查询出来。</p>
-</blockquote>
-<p>       由于真正的物理存储只有一个，故 一个表只能有一个聚集索引</p>
-<p>        创建或修改聚集索引肯会非常耗时，因需要根据索引键的逻辑值重新调整为了存储顺序</p>
-<p>        创建PRIMARY KEY约束时，若不存在聚集索引且位置的唯一非聚集索引，则自动对PRIMARY KEY涉及的列创建唯一聚集索引。在添加UNIQUE约束时，默认将创建唯一非聚集索引。如果不存在该表的聚集索引，则可指定唯一聚集索引。</p>
-<p><strong>使用情况：</strong> </p>
-<p>        (1)包含有限数量的唯一值的列，如包含100个唯一状态吗的列</p>
-<p>        (2)使用BETWEEN 、&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;这样的运算符返回某个范围值的查询</p>
-<p>        (3)返回大型结果集的查询</p>
-<ul>
-<li>非聚集索引</li>
-</ul>
-<p>        物理存储顺序与逻辑存储顺序不一致。</p>
-<blockquote>
-<p>在一个表中有列num，其中数据无序（id&#x3D;1,num&#x3D;50;id&#x3D;2,num&#x3D;23;…）此时找到num&#x3D;100的人就要一条条遍历，n条就需要遍历n次，时间复杂度O(n),及其消耗性能。</p>
-<p>为num添加非聚集索引后，会给num排序（内部使用结构B+树），排序后只需查询此目录，即可快速查找所需数据，不需要遍历</p>
-</blockquote>
-<p>        不重复数据越多，索引效率越高</p>
-<p>        每个表可有多个非聚集索引，最多249个，不包括XML索引</p>
-<p>        非聚集索引可以提升查询速度，也会降低插入和更新速度。在更新包含非聚集索引的数据时DMBS必须同步更新索引。需要频繁更新数据的表，不应该建立太多非聚集索引</p>
-<p>        </p>
-<ul>
-<li>唯一索引</li>
-</ul>
-<p>        唯一索引能够保证索引键中不博阿寒重复的值，使表中每一行在某种方式上具有唯一性。</p>
-<p>        聚集索引和非聚集索引都可以时唯一的。</p>
-<p>        创建PRIMARY KEY 和UNIQUE约束时，自动创建为唯一索引，UNIQUE自动生成的唯一索引和手工创建的唯一索引本质上无任何区别，二者验证数据方式相同，查询优化器不会区分自动还是手动。</p>
-<p>        若目的是实现数据完整性，则应为列创建UNIQUE或PRIMARY KEY 约束，这样能使索引目标更明确。</p>
-<ul>
-<li>视图索引</li>
-</ul>
-<p>        标准视图的结果不是永久地储存在数据库中。</p>
-<p>        可通过对大量进行复杂处理的视图创建唯一聚集索引来提示性能。</p>
-<p>        视图索引对应的视图称为索引视图</p>
-<p>        对视图创建唯一索引后，结果直接储存在数据库中，类似于带有聚集索引的基本表。</p>
-<p>     </p>
-<ul>
-<li>全文索引</li>
-</ul>
-<p>        全文搜索技术也称为倒排文档技术</p>
-<p>        原理：先定义一个词库，然后统计文章中每个词条出现的频率和位置，即给文章创建目录，这样在查找某个词时能快速找到相应位置</p>
-<p>        一个表只能有一个全文索引。</p>
-<p>        创建条件：具有一个唯一且NOT NULL的列</p>
-<ul>
-<li>XML索引</li>
-</ul>
-<p>        XML索引对列中xml实列的所有标记、值和路径进行索引，从而提高查询性能。</p>
-<p>        使用情况：</p>
-<p>            对xml列进行查询在工作中很常见，若xml频繁修改，索引维护的开销将很高；</p>
-<p>            xml列的值相对较大，而检索部分相对较小，即避免在运行时分析所有数据，实现高效查询处理。</p>
-<h3 id="2、创建索引"><a href="#2、创建索引" class="headerlink" title="2、创建索引"></a>2、创建索引</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> [<span class="keyword">UNIQUE</span>] [CLUSTERED <span class="operator">|</span> NONCLUSTERED]</span><br><span class="line">INDEX index_name</span><br><span class="line"><span class="keyword">ON</span> table_or_view (<span class="keyword">column</span> [<span class="keyword">ASC</span> <span class="operator">|</span> <span class="keyword">DESC</span>][,...])</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">UNIQUE:创建唯一索引</span></span><br><span class="line"><span class="comment">CLUSTERED:创建聚集索引</span></span><br><span class="line"><span class="comment">NONCLUSTERED:创建非聚集索引</span></span><br><span class="line"><span class="comment">*/</span> </span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">UNIQUE</span> CLUSTERED INDEX course_index</span><br><span class="line"><span class="keyword">ON</span> course(cno <span class="keyword">DESC</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="3、修改索引"><a href="#3、修改索引" class="headerlink" title="3、修改索引"></a>3、修改索引</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> INDEX index_name </span><br><span class="line"><span class="keyword">ON</span> table_or_view</span><br><span class="line">&#123;</span><br><span class="line">    REBUILD </span><br><span class="line">    [<span class="keyword">PARTITION</span> <span class="operator">=</span> <span class="keyword">ALL</span>] [<span class="keyword">WITH</span> <span class="operator">&lt;</span>rebulid_index_option<span class="operator">&gt;</span> [,...n]]</span><br><span class="line">     <span class="operator">|</span>[<span class="keyword">PARTITION</span> <span class="operator">=</span> partition_number][<span class="keyword">WITH</span> (<span class="operator">&lt;</span>single_partition_rebulid_index_option<span class="operator">&gt;</span> [,...n])]</span><br><span class="line"><span class="operator">|</span> DISABLE </span><br><span class="line"><span class="operator">|</span> REORGANIZE [<span class="keyword">PARTITION</span> <span class="operator">=</span> partition_number] [<span class="keyword">WITH</span> (LOB_COMPACTION) <span class="operator">=</span> &#123;<span class="keyword">ON</span> <span class="operator">|</span> OFF&#125;] </span><br><span class="line"><span class="operator">|</span> <span class="keyword">SET</span> (<span class="operator">&lt;</span>set_index_option<span class="operator">&gt;</span> [,...n])</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">REBUILD:删除索引并重新生成索引</span></span><br><span class="line"><span class="comment">PARTITION:指定只重新生成或重新组织索引的一个分区</span></span><br><span class="line"><span class="comment">DISABLE:将索引标记为禁用，从而不能由数据库引擎使用</span></span><br><span class="line"><span class="comment">REORGANIZE:重新组织索引，不能为已禁用索引指定REORGANIZE</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="4、删除索引"><a href="#4、删除索引" class="headerlink" title="4、删除索引"></a>4、删除索引</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DROP</span> INDEX table_or_view.index_name</span><br><span class="line"><span class="keyword">DROP</span> INDEX index_name <span class="keyword">ON</span> table_or_view</span><br></pre></td></tr></table></figure>
-
-<h3 id="5、查看索引"><a href="#5、查看索引" class="headerlink" title="5、查看索引"></a>5、查看索引</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*存储过程查看*/</span></span><br><span class="line"><span class="keyword">EXEC</span> Sp_helpindex [<span class="variable">@object</span><span class="operator">=</span>] <span class="string">&#x27;table_name&#x27;</span></span><br><span class="line"><span class="comment">/*[@object=] &#x27;table_name&#x27;:指定当前数据库中的表名*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">EXEC</span> Sp_helpindex SC</span><br><span class="line"></span><br><span class="line"><span class="comment">/*更改索引名称*/</span></span><br><span class="line"><span class="keyword">EXEC</span> Sp_rename <span class="string">&#x27;表名.索引名&#x27;</span> <span class="string">&#x27;新索引名&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="5-基于UI界面的考察，包含文件操作及异常处理的一些方法"><a href="#5-基于UI界面的考察，包含文件操作及异常处理的一些方法" class="headerlink" title="5. 基于UI界面的考察，包含文件操作及异常处理的一些方法"></a>5. 基于UI界面的考察，包含文件操作及异常处理的一些方法</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main1</span> <span class="keyword">extends</span> <span class="title class_">Application</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">start</span><span class="params">(Stage stage)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">        GridPane pane=<span class="keyword">new</span> <span class="title class_">GridPane</span>();</span><br><span class="line">        TextField tf1=<span class="keyword">new</span> <span class="title class_">TextField</span>();</span><br><span class="line">        TextField tf2=<span class="keyword">new</span> <span class="title class_">TextField</span>();</span><br><span class="line">        TextField tf3=<span class="keyword">new</span> <span class="title class_">TextField</span>();</span><br><span class="line">        pane.add(<span class="keyword">new</span> <span class="title class_">Label</span>(<span class="string">&quot;书号：&quot;</span>),<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">        pane.add(<span class="keyword">new</span> <span class="title class_">Label</span>(<span class="string">&quot;书名：&quot;</span>),<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">        pane.add(<span class="keyword">new</span> <span class="title class_">Label</span>(<span class="string">&quot;出版社：&quot;</span>),<span class="number">0</span>,<span class="number">2</span>);</span><br><span class="line">        pane.add(tf1,<span class="number">1</span>,<span class="number">0</span>);</span><br><span class="line">        pane.add(tf2,<span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line">        pane.add(tf3,<span class="number">1</span>,<span class="number">2</span>);</span><br><span class="line">        Button bt=<span class="keyword">new</span> <span class="title class_">Button</span>(<span class="string">&quot;保存&quot;</span>);</span><br><span class="line">        pane.add(bt,<span class="number">1</span>,<span class="number">3</span>);</span><br><span class="line">        bt.setOnAction(e-&gt;&#123;</span><br><span class="line">            <span class="comment">//文件读写</span></span><br><span class="line">            FileWriter fw=<span class="literal">null</span>;</span><br><span class="line">            PrintWriter pw=<span class="literal">null</span>;<span class="comment">//格式化写</span></span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                fw=<span class="keyword">new</span> <span class="title class_">FileWriter</span>(<span class="string">&quot;C:\\books.txt&quot;</span>,<span class="literal">true</span>);<span class="comment">//true追加写入</span></span><br><span class="line">                pw=<span class="keyword">new</span> <span class="title class_">PrintWriter</span>(fw);</span><br><span class="line">                pw.printf(<span class="string">&quot;\n%s %s %s\n&quot;</span>, tf1.getText(),tf2.getText(),tf3.getText());</span><br><span class="line"></span><br><span class="line">            &#125;<span class="keyword">catch</span>(IOException ie) &#123;</span><br><span class="line">                ie.printStackTrace();</span><br><span class="line">            &#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    fw.close();</span><br><span class="line">                    pw.close();</span><br><span class="line">                &#125;<span class="keyword">catch</span>(IOException ie) &#123;</span><br><span class="line">                    ie.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        <span class="type">Scene</span> <span class="variable">scene</span> <span class="operator">=</span><span class="keyword">new</span> <span class="title class_">Scene</span>(pane);</span><br><span class="line">        stage.setScene(scene);</span><br><span class="line">        stage.show();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>赖总笔记</category>
+        <category>Java</category>
       </categories>
       <tags>
-        <tag>赖总笔记</tag>
-        <tag>sql</tag>
+        <tag>Java</tag>
+        <tag>考试</tag>
       </tags>
   </entry>
   <entry>
@@ -729,369 +359,6 @@
       <tags>
         <tag>赖总笔记</tag>
         <tag>web</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>sql语句对数据库的一写操作</title>
-    <url>/xuanyao/e0cd2bf7.html</url>
-    <content><![CDATA[<h1 id="SQL语句复习"><a href="#SQL语句复习" class="headerlink" title="SQL语句复习"></a>SQL语句复习</h1><h2 id="1-创建数据库"><a href="#1-创建数据库" class="headerlink" title="1.创建数据库"></a>1.创建数据库</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> database 数据库名称</span><br><span class="line"><span class="keyword">on</span></span><br><span class="line">(</span><br><span class="line">    name<span class="operator">=</span>数据文件逻辑名称,</span><br><span class="line">    filename<span class="operator">=</span><span class="string">&#x27;路径+数据文件名&#x27;</span>,</span><br><span class="line">    size<span class="operator">=</span>数据文件初始大小,</span><br><span class="line">    maxsize<span class="operator">=</span>数据文件最大容量,</span><br><span class="line">    filegrowth<span class="operator">=</span>数据文件自动增长容量</span><br><span class="line">)</span><br><span class="line">log <span class="keyword">on</span></span><br><span class="line">(</span><br><span class="line">    name<span class="operator">=</span>日志文件逻辑名称,</span><br><span class="line">    filename<span class="operator">=</span><span class="string">&#x27;路径+日志文件名&#x27;</span>,</span><br><span class="line">    size<span class="operator">=</span>日志文件初始大小,</span><br><span class="line">    maxsize<span class="operator">=</span> 日志文件最大容量,</span><br><span class="line">    filegrowth<span class="operator">=</span>日志文件自动增长容量</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<p><strong>（1）</strong> <em><strong>name:</strong></em>  数据文件名称一般为  (<em>name</em>)  _Data ，日志文件名称一般为（<em>name</em>）_Log 。</p>
-<p><strong>（2）</strong>  <em><strong>filename：</strong></em> 数据文件名后缀为 .mdf ，日志文件名后缀为 .ldf 。</p>
-<p><strong>（3）</strong> <em><strong>maxsize:</strong></em>  设置为 unlimited 时，表示文件最大大小无限制。</p>
-<p><strong>（4）</strong> <em><strong>filegrowth:</strong></em>  可以设置为具体值（—M）或者百分比（—%），设置为 unlimited 时，表示文件无限制增长。</p>
-<p><strong>（5）</strong>  某些属性不设置时，创建数据库时会按默认值创建，例如，如果只用 <em>“ create database 数据库名称 ”</em>  创建数据库时，DBMS会按照默认的 “逻辑名称” ”文件组“ ”初始大小“ ”自动增长“ 和 “路径” 等属性创建数据库。</p>
-<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p>        创建一个名为“SM”的数据库，初始大小为10MB，最大为50MB，数据库自动增长，增长方式按10%；日志文件初始大小为2MB，最大大小不受限制，按1MB增长。</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> database SM</span><br><span class="line"><span class="keyword">ON</span></span><br><span class="line">(</span><br><span class="line">name<span class="operator">=</span>SM_Data,</span><br><span class="line">filename<span class="operator">=</span><span class="string">&#x27;D:\SM.mdf&#x27;</span>,</span><br><span class="line">size<span class="operator">=</span><span class="number">10</span>,</span><br><span class="line">maxsize<span class="operator">=</span><span class="number">50</span>,</span><br><span class="line">filegrowth<span class="operator">=</span><span class="number">10</span><span class="operator">%</span></span><br><span class="line">)</span><br><span class="line">LOG <span class="keyword">ON</span></span><br><span class="line">(</span><br><span class="line">name<span class="operator">=</span>SM_Log,</span><br><span class="line">filename<span class="operator">=</span><span class="string">&#x27;D:\SM.ldf&#x27;</span>,</span><br><span class="line">size<span class="operator">=</span><span class="number">2</span>,</span><br><span class="line">maxsize<span class="operator">=</span>unlimited,</span><br><span class="line">filegrowth<span class="operator">=</span><span class="number">1</span>MB</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-在数据库中创建表"><a href="#2-在数据库中创建表" class="headerlink" title="2.在数据库中创建表"></a>2.在数据库中创建表</h2><h3 id="创建数据表"><a href="#创建数据表" class="headerlink" title="创建数据表"></a>创建数据表</h3><p><strong>sql语句如下</strong></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> 表名</span><br><span class="line">(</span><br><span class="line">    列名 数据类型和字段长度,</span><br><span class="line">    ......</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<p><strong>常用数据类型及长度范围：</strong> </p>
-<p>: <em><strong>char:</strong></em> 定长的非Unicode字符，char(n)</p>
-<p>: <em><strong>nchar：</strong></em> 定长的Unicode字符，nchar(n)</p>
-<p>: <em><strong>varchar:</strong></em> 非定长的非Unicode字符，varchar(n)</p>
-<p>: <em><strong>nvarchar:</strong></em> 非定长的Unicode字符，nvarchar(n)</p>
-<p>: <em><strong>numeric：</strong></em> 精确数值型，numeric(精确长度，小数位)</p>
-<p>: <em><strong>decimal：</strong></em> 精确数值型，decimal(精确长度，小数位)</p>
-<h3 id="定义数据表的约束"><a href="#定义数据表的约束" class="headerlink" title="定义数据表的约束"></a>定义数据表的约束</h3><p>约束是自动强制数据完整性的方式，约束定义了列中允许的取值。</p>
-<p>基本语法格式为:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">列名 数据类型 约束名 约束类型</span><br></pre></td></tr></table></figure>
-
-<p><strong>约束名：</strong> 约束不指定名称时，系统会给定一个名称。</p>
-<p><strong>约束类型：</strong> 在定义完整性约束是必须指定完整性约束的类型，以下介绍五种完整性类型的完整性约束。</p>
-<h4 id="（1）NULL-x2F-NOT-NULL-约束"><a href="#（1）NULL-x2F-NOT-NULL-约束" class="headerlink" title="（1）NULL &#x2F; NOT NULL 约束"></a>（1）NULL &#x2F; NOT NULL 约束</h4><p>当某一字段的值一定要输入值才有意义的时候，则可设置为NOT NULL。当字段允许出现空值时，可设置为 NULL。其语法如下：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">constraint</span> <span class="operator">&lt;</span>约束名<span class="operator">&gt;</span> [<span class="keyword">NULL</span> <span class="operator">|</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>]</span><br></pre></td></tr></table></figure>
-
-<p><strong>例如</strong></p>
-<p>建立一个S表，对SNo字段进行 NOT NULL 约束</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> S</span><br><span class="line">(</span><br><span class="line">    SNo <span class="type">varchar</span>(<span class="number">6</span>) <span class="keyword">constraint</span> S_CONS <span class="keyword">NOT</span> <span class="keyword">NULL</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<h4 id="（2）唯一约束（UNIQUE约束）"><a href="#（2）唯一约束（UNIQUE约束）" class="headerlink" title="（2）唯一约束（UNIQUE约束）"></a>（2）唯一约束（UNIQUE约束）</h4><p>唯一约束用于指明基本表在某一列或多个列的组合上的取值必须唯一。唯一键允许为空，但为保证其唯一性，最多只可以出现一个NULL值。其语法如下：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">constraint</span> <span class="operator">&lt;</span>约束名<span class="operator">&gt;</span> <span class="keyword">unique</span></span><br></pre></td></tr></table></figure>
-
-<p>在建立唯一约束时，需考虑以下几个因素：</p>
-<ul>
-<li><p>使用唯一约束的字段允许为NULL值</p>
-</li>
-<li><p>一个表可以有多个唯一约束</p>
-</li>
-<li><p>可以把唯一约束定义在多个字段上</p>
-</li>
-</ul>
-<p><strong>例如</strong></p>
-<p>建立一个S表，定义SN为唯一键</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> S</span><br><span class="line">(</span><br><span class="line">   SN <span class="type">char</span>(<span class="number">8</span>) <span class="keyword">constraint</span> S_UNIQ <span class="keyword">unique</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<h4 id="（3）主键约束（PRIMARY-KEY-约束）"><a href="#（3）主键约束（PRIMARY-KEY-约束）" class="headerlink" title="（3）主键约束（PRIMARY KEY 约束）"></a>（3）主键约束（PRIMARY KEY 约束）</h4><p>主键约束用于定义基本表的主键，起唯一标识作用，其值不能为NULL，也不能重复，以此来保证实体的完整性。其语法如下：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">constraint</span> <span class="operator">&lt;</span>约束名<span class="operator">&gt;</span> <span class="keyword">primary</span> key</span><br></pre></td></tr></table></figure>
-
-<p>在建立主键约束时，需考虑以下几个因素：</p>
-<ul>
-<li><p>一个表只能定义一个主键约束</p>
-</li>
-<li><p>使用主键约束的字段不允许出现NULL值</p>
-</li>
-<li><p>不能对同一个字段既定义唯一约束又定义主键约束</p>
-</li>
-</ul>
-<p><strong>例如</strong></p>
-<p>建立一个S表，定义SNo为S的主键</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> S</span><br><span class="line">(</span><br><span class="line">    SNo <span class="type">char</span>(<span class="number">8</span>) <span class="keyword">constraint</span> S_Prim <span class="keyword">primary</span> key</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<h4 id="（4）外键约束（FOREIGN-KEY-约束）"><a href="#（4）外键约束（FOREIGN-KEY-约束）" class="headerlink" title="（4）外键约束（FOREIGN KEY 约束）"></a>（4）外键约束（FOREIGN KEY 约束）</h4><p>外键约束指定某一列或几列作为外部键。包含外部键的表称为从表，包含外部键所引用的主键或唯一键的表称为主表。其语法如下：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">constraint</span> <span class="operator">&lt;</span>约束名<span class="operator">&gt;</span> <span class="keyword">foreign</span> key <span class="keyword">references</span> <span class="operator">&lt;</span>主表名(列名)<span class="operator">&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>例如</strong></p>
-<p>建立一个SC表，定义SNo为SC的外部键</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> SC</span><br><span class="line">(</span><br><span class="line">    SNo <span class="type">char</span>(<span class="number">8</span>) <span class="keyword">constraint</span> S_Fore <span class="keyword">foreign</span> key <span class="keyword">references</span> S(SNo)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<h4 id="（5）CHECK-约束"><a href="#（5）CHECK-约束" class="headerlink" title="（5）CHECK 约束"></a>（5）CHECK 约束</h4><p>check约束用来检查字段值所允许的范围。其语法如下：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">constraint</span> <span class="operator">&lt;</span>约束名<span class="operator">&gt;</span> <span class="keyword">check</span> <span class="operator">&lt;</span>条件<span class="operator">&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>在建立CHECK约束时，需考虑以下几个因素：</p>
-<ul>
-<li><p>一个表中可以定义多个CHECK约束</p>
-</li>
-<li><p>每个字段只能定义一个CHECK约束</p>
-</li>
-</ul>
-<p><strong>例如</strong></p>
-<p>建立一个S表，定义Score的取值范围为0~100之间，Sex取值为男或女</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> S</span><br><span class="line">(</span><br><span class="line">    Score <span class="type">numeric</span>(<span class="number">4.1</span>) <span class="keyword">constraint</span> Score_SHK <span class="keyword">check</span>(Score <span class="operator">&gt;=</span> <span class="number">0</span> <span class="keyword">and</span> Score <span class="operator">&lt;=</span> <span class="number">100</span>),</span><br><span class="line">    Sex <span class="type">char</span>(<span class="number">2</span>) <span class="keyword">constraint</span> Sex_SHK <span class="keyword">check</span>((Sex<span class="operator">=</span><span class="string">&#x27;男&#x27;</span>) <span class="keyword">or</span> (Sex<span class="operator">=</span><span class="string">&#x27;女&#x27;</span>))</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-对数据表的修改"><a href="#3-对数据表的修改" class="headerlink" title="3.对数据表的修改"></a>3.对数据表的修改</h2><h3 id="用SQL命令修改数据表"><a href="#用SQL命令修改数据表" class="headerlink" title="用SQL命令修改数据表"></a>用SQL命令修改数据表</h3><p>SQL 使用 <em><strong>ALTER TABLE</strong></em>  命令来完成这一功能，有一下三种修改方式</p>
-<h4 id="（1）ADD-方式"><a href="#（1）ADD-方式" class="headerlink" title="（1）ADD 方式"></a>（1）ADD 方式</h4><p>ADD方式用于增加新列和完整性约束，其语法格式为：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> <span class="operator">&lt;</span>表名<span class="operator">&gt;</span> <span class="keyword">add</span> <span class="operator">&lt;</span>列定义<span class="operator">&gt;</span> <span class="operator">|</span> <span class="operator">&lt;</span>完整性约束定义<span class="operator">&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>例如</strong></p>
-<p>在S表中增加 email 列，且要求输入的 email 必须包括”@”</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> S <span class="keyword">add</span> email <span class="type">varchar</span>(<span class="number">20</span>) <span class="keyword">constraint</span> S_Chk <span class="keyword">check</span>(email <span class="keyword">like</span> <span class="string">&#x27;%@%&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<h4 id="（2）ALTER-方式"><a href="#（2）ALTER-方式" class="headerlink" title="（2）ALTER 方式"></a>（2）ALTER 方式</h4><p>ALTER 方式用于修改某些列，其语法格式为</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> <span class="operator">&lt;</span>表名<span class="operator">&gt;</span> <span class="keyword">alter</span> <span class="keyword">column</span> <span class="operator">&lt;</span>列名<span class="operator">&gt;</span> <span class="operator">&lt;</span>数据列名<span class="operator">&gt;</span> [<span class="keyword">null</span> <span class="operator">|</span><span class="keyword">not</span> <span class="keyword">null</span>]</span><br></pre></td></tr></table></figure>
-
-<p><strong>注意：</strong></p>
-<ul>
-<li><p>不能改变列名</p>
-</li>
-<li><p>不能将含有空值的列的定义修改为 NOT NULL 约束</p>
-</li>
-<li><p>若列中已有数据，则不能减少该列的宽度，也不能改变其数据类型</p>
-</li>
-<li><p>只能修改 null &#x2F; not null 约束，其他类型的约束在修改之前必须先将约束删除，然后再重新添加修改过的约束定义</p>
-</li>
-</ul>
-<p><strong>例如</strong></p>
-<p>把 S 表的 SN 列加宽到12个字符并不允许空值</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> S <span class="keyword">alter</span> <span class="keyword">column</span> SN <span class="type">char</span>(<span class="number">12</span>) <span class="keyword">not</span> <span class="keyword">null</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="（3）DROP方式"><a href="#（3）DROP方式" class="headerlink" title="（3）DROP方式"></a>（3）DROP方式</h4><p>DROP方式只用于删除完整性约束定义或删除表，其语法格式为：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> <span class="operator">&lt;</span>表名<span class="operator">&gt;</span> <span class="keyword">drop</span> <span class="keyword">constraint</span> <span class="operator">&lt;</span>约束名<span class="operator">&gt;</span>    <span class="operator">/</span><span class="operator">/</span>删除约束</span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> <span class="operator">&lt;</span>表名<span class="operator">&gt;</span>    <span class="operator">/</span><span class="operator">/</span>删除表</span><br></pre></td></tr></table></figure>
-
-<p><strong>例如</strong></p>
-<p>删除S表中的主键</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> S <span class="keyword">drop</span> <span class="keyword">constraint</span> S_Prim</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-对表的简单查询"><a href="#4-对表的简单查询" class="headerlink" title="4.对表的简单查询"></a>4.对表的简单查询</h2><h3 id="SQL命令对表进行查询"><a href="#SQL命令对表进行查询" class="headerlink" title="SQL命令对表进行查询"></a>SQL命令对表进行查询</h3><h4 id="（1）-无条件查询"><a href="#（1）-无条件查询" class="headerlink" title="（1） 无条件查询"></a>（1） 无条件查询</h4><p>无条件查询指只包含 <em><strong>SELECT…FROM</strong></em> 的查询，这种查询最简单，例如：</p>
-<p>在S表中查询所有学生的学号SNo，姓名SN</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo , SN <span class="keyword">from</span> S</span><br></pre></td></tr></table></figure>
-
-<h4 id="（2）条件查询"><a href="#（2）条件查询" class="headerlink" title="（2）条件查询"></a>（2）条件查询</h4><p>当在表中查询满足某些条件的行时，则需要使用 <em><strong>WHERE</strong></em> 子句指定查询条件。<em><strong>WHERE</strong></em> 一般由以下三部分组成：</p>
-<ul>
-<li><p>列名</p>
-</li>
-<li><p>比较运算符</p>
-</li>
-<li><p>列名、常数</p>
-</li>
-</ul>
-<p><strong>常用比较运算符如下</strong></p>
-<table>
-<thead>
-<tr>
-<th align="center">运算符</th>
-<th align="center">含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">&#x3D; 、&gt; 、&lt; 、&gt;&#x3D; 、&lt;&#x3D; 、!&#x3D; 、&lt;&gt;</td>
-<td align="center">比较大小</td>
-</tr>
-<tr>
-<td align="center">AND 、OR 、NOT</td>
-<td align="center">多重条件</td>
-</tr>
-<tr>
-<td align="center">IN</td>
-<td align="center">确定集合</td>
-</tr>
-<tr>
-<td align="center">BETWEEN AND</td>
-<td align="center">确定范围</td>
-</tr>
-<tr>
-<td align="center">LIKE</td>
-<td align="center">字符匹配</td>
-</tr>
-<tr>
-<td align="center">IS NULL</td>
-<td align="center">空值</td>
-</tr>
-</tbody></table>
-<ul>
-<li><strong>比较大小</strong></li>
-</ul>
-<p><strong>例</strong>  查询分数不低于85分的学生的学号与姓名</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo , SN <span class="keyword">from</span> S <span class="keyword">where</span> Score <span class="operator">&gt;=</span> <span class="number">85</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>多重条件</strong></li>
-</ul>
-<p>当 where 子句需要指定一个以上的查询条件时，需要使用逻辑运算符 and 、or 、not 将其连接成复合的逻辑表达式。期<strong>优先级</strong> 由高到低为： <em><strong>not、and、or</strong></em>  ，用户可使用括号改变优先级。</p>
-<p><strong>例</strong> 查询分数不低于85分的女学生的学号与姓名</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo , SN <span class="keyword">from</span> S <span class="keyword">where</span> (Sex <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span>) <span class="keyword">and</span> (Score <span class="operator">&gt;=</span> <span class="number">85</span>)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>确定集合</strong></li>
-</ul>
-<p>利用 <strong>in</strong>  可以查询属性值属于指定集合的元组；利用 <strong>not in</strong> 可以查询指定集合外的元组</p>
-<p><strong>例</strong> 查询选了选修课程号为 C1 或 C2的学生的学号与姓名</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo , SN <span class="keyword">from</span> S <span class="keyword">where</span> CNo <span class="keyword">in</span> (<span class="string">&#x27;C1&#x27;</span> , <span class="string">&#x27;C2&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>确定范围</strong></li>
-</ul>
-<p><strong>例</strong> 查询分数在60分~85分的学生的学号与姓名</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo , SN <span class="keyword">from</span> S <span class="keyword">where</span> Score <span class="keyword">between</span> <span class="number">60</span> <span class="keyword">and</span> <span class="number">85</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>字符匹配</strong></li>
-</ul>
-<p>利用 <strong>like</strong> 进行 <strong>模糊查询</strong> ，一般格式为：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="operator">&lt;</span>属性名<span class="operator">&gt;</span> <span class="keyword">like</span> <span class="operator">&lt;</span>字符串常量<span class="operator">&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>属性名必须为字符型，字符串常量中的字符可以包含通配符，利用这些通配符，可以进行模糊查询，字符串中的通配符及功能如下表：</p>
-<table>
-<thead>
-<tr>
-<th align="center">通配符</th>
-<th align="center">功能</th>
-<th align="center">实例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">%</td>
-<td align="center">代表0个或多个字符</td>
-<td align="center">‘ab%’，ab后可接任意字符串</td>
-</tr>
-<tr>
-<td align="center">_</td>
-<td align="center">代表一个字符</td>
-<td align="center">‘a_b’，a与b之间有一个字符</td>
-</tr>
-<tr>
-<td align="center">[]</td>
-<td align="center">表示在某一范围的字符</td>
-<td align="center">[0-9]，0~9之间的字符</td>
-</tr>
-<tr>
-<td align="center">[^ ]</td>
-<td align="center">表示不在某一范围的字符</td>
-<td align="center">[^0-9]，不在0~9之间的字符</td>
-</tr>
-</tbody></table>
-<p><strong>例</strong> 查询姓张的同学的学号与姓名</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo , SN <span class="keyword">from</span> S <span class="keyword">where</span> SN <span class="keyword">like</span> <span class="string">&#x27;张%&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>空值查询</strong></li>
-</ul>
-<p>某个字段没有值称为具有空值（ NULL）。通常没有为一个列输入值时，该列的值就是空值，空值不同于0和空格，它不占任何储存空间。</p>
-<p><strong>例</strong> 查询没有考试成绩的学生的学号与姓名</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo , SN <span class="keyword">from</span> S <span class="keyword">where</span> Score <span class="keyword">is</span> <span class="keyword">null</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>注意空值条件为 ” is null “ 不能写为“ &#x3D; null “</strong> </p>
-<h4 id="（3）统计汇总查询"><a href="#（3）统计汇总查询" class="headerlink" title="（3）统计汇总查询"></a>（3）统计汇总查询</h4><p>SQL提供了许多库函数，增强了基本检索能力。常用的库函数如下：</p>
-<table>
-<thead>
-<tr>
-<th align="center">函数名称</th>
-<th align="center">功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">avg</td>
-<td align="center">按列计算平均值</td>
-</tr>
-<tr>
-<td align="center">sum</td>
-<td align="center">按列计算值的总和</td>
-</tr>
-<tr>
-<td align="center">max</td>
-<td align="center">求一列的最大值</td>
-</tr>
-<tr>
-<td align="center">min</td>
-<td align="center">求一列的最小值</td>
-</tr>
-<tr>
-<td align="center">count</td>
-<td align="center">按列值统计个数</td>
-</tr>
-</tbody></table>
-<ul>
-<li><strong>例1</strong></li>
-</ul>
-<p>求选 C1 课程的学生考试成绩的总分，平均分，最高分，最低分</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="built_in">sum</span>(Score) <span class="keyword">as</span> TotalScore, <span class="built_in">avg</span>(Score) <span class="keyword">as</span> AvgScore, <span class="built_in">max</span>(Score) <span class="keyword">as</span> MaxScore, <span class="built_in">min</span>(Score) <span class="keyword">as</span> MinScore</span><br><span class="line">form SC</span><br><span class="line"><span class="keyword">where</span> (CNo <span class="operator">=</span> <span class="string">&#x27;C1&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<p><strong>注意函数 sum 与 avg 只能对数值型字段进行计算</strong></p>
-<ul>
-<li><strong>例2</strong></li>
-</ul>
-<p>求计算机系学生的总数</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(SNo) <span class="keyword">from</span> S <span class="keyword">where</span> Dept<span class="operator">=</span> <span class="string">&#x27;计算机&#x27;</span></span><br><span class="line">或</span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> S <span class="keyword">where</span> Dept<span class="operator">=</span> <span class="string">&#x27;计算机&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>count(*)用来统计元组的个数，不消除重复行</strong></p>
-<ul>
-<li><strong>例3</strong></li>
-</ul>
-<p>求学校中共有多少个系</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="keyword">distinct</span> Dept) <span class="keyword">from</span> S</span><br></pre></td></tr></table></figure>
-
-<p><strong>加入关键字</strong> <em><strong>distinct</strong></em> <strong>后表示消去重复行</strong></p>
-<h4 id="（4）分组查询"><a href="#（4）分组查询" class="headerlink" title="（4）分组查询"></a>（4）分组查询</h4><p><strong>group by</strong> 子句可以将查询结果按属性列或属性列组合在行的方向上进行分组，每组在属性列或属性列组合上具有相同的值。若在分组后按照一定的条件进行筛选，则需要使用<strong>having</strong> 子句。</p>
-<ul>
-<li><strong>例</strong></li>
-</ul>
-<p>查询选修两门及以上的课程的学生的学号和选课门数</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo，<span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> SC <span class="keyword">group</span> <span class="keyword">by</span> SNo <span class="keyword">having</span>(<span class="built_in">count</span>(<span class="operator">*</span>) <span class="operator">&gt;=</span><span class="number">2</span>)</span><br></pre></td></tr></table></figure>
-
-<p><strong>注</strong>  当一个查询中同时使用 <strong>where</strong> 子句，<strong>group by</strong> 子句，<strong>having</strong> 子句时，其顺序是 <strong>where，group by，having 。</strong> </p>
-<h4 id="（5）对查询结果排序"><a href="#（5）对查询结果排序" class="headerlink" title="（5）对查询结果排序"></a>（5）对查询结果排序</h4><p>当要对查询结果进行排序时，使用 <strong>order by</strong> 子句，<strong>order by</strong> 子句必须出现在其他子句之后。排序方式可以指定，<strong>desc</strong> 为降序，<strong>asc</strong> 为升序，缺省时为升序。</p>
-<ul>
-<li><strong>例</strong></li>
-</ul>
-<p>查询选修C1课程的学生的学号和成绩，并按成绩降序排列</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo，Score <span class="keyword">from</span> SC <span class="keyword">where</span> (CNo <span class="operator">=</span> <span class="string">&#x27;C1&#x27;</span>) <span class="keyword">order</span> <span class="keyword">by</span> score <span class="keyword">desc</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="5-对表的复杂查询"><a href="#5-对表的复杂查询" class="headerlink" title="5.对表的复杂查询"></a>5.对表的复杂查询</h2><h3 id="（1）连接查询"><a href="#（1）连接查询" class="headerlink" title="（1）连接查询"></a>（1）连接查询</h3><p>数据库中的各个表中存放着不同的数据，用户往往需要用多个表中的数据来组合、提炼出所需要的信息。如果一个查询需要对多个表进行操作，就称为<strong>连接查询</strong> 。</p>
-<p><strong>例</strong> </p>
-<p>对student(sno,clno,sname,ssex,sage)，course(cno,cname)，sc(sno,cno,score)三张表进行操作</p>
-<ul>
-<li>查询体育课成绩不及格的男生名单</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> sname <span class="keyword">from</span> sc,student ,course <span class="keyword">where</span> sc.cno<span class="operator">=</span>course.cno <span class="keyword">and</span> student.sno<span class="operator">=</span>sc.sno <span class="keyword">and</span> ssex<span class="operator">=</span><span class="string">&#x27;男&#x27;</span><span class="keyword">and</span> score<span class="operator">&lt;</span><span class="number">60</span> <span class="keyword">and</span> cname<span class="operator">=</span><span class="string">&#x27;体育&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>查询有多少名学生的物理课成绩不及格</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(sno) <span class="keyword">from</span> sc,course  <span class="keyword">where</span> sc.cno<span class="operator">=</span>course.cno <span class="keyword">and</span> cname<span class="operator">=</span><span class="string">&#x27;物理&#x27;</span> <span class="keyword">and</span> score<span class="operator">&lt;</span><span class="number">60</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>当两个表中的列名相同时，引用列名要加上表名前缀，说明所指列属于哪个表，避免二义性。如果列名唯一则不需要加前缀。</strong></p>
-<h3 id="（2）子查询"><a href="#（2）子查询" class="headerlink" title="（2）子查询"></a>（2）子查询</h3><p>在 where 子句中包含另一个查询块，该查询块称为 <strong>子查询</strong> 或 <strong>嵌套查询</strong> ，包含子查询的语句称为父查询或外部查询。</p>
-<ul>
-<li><p>当子查询的返回值只有一个时，可以使用比较运算符( &#x3D;、&gt;、&lt;、&gt;&#x3D;、&lt;&#x3D;、!&#x3D;)将父查询和子查询连接起来。</p>
-</li>
-<li><p>如果子查询的返回值不止一个，而是一个集合时，则不能直接使用比较运算符，可以在比较运算符和子查询之间插入 <strong>ANY</strong> 或 <strong>ALL</strong> 。</p>
-</li>
-</ul>
-<p>: ANY 含义为任何一个</p>
-<p>: IN 可以代替 “&#x3D;ANY”</p>
-<p>: ALL 的含义是全部</p>
-<p>: &lt;&gt;ALL 的含义为不等于子查询结果中的任何一个值</p>
-<p>: NOT IN 可以替代“ &lt;&gt;ALL ”</p>
-<p>: EXISTS 的含义是存在的量词，其子查询不返回任何实际数据，它只返回逻辑值“真”或“假”</p>
-<p><strong>例</strong></p>
-<ol>
-<li>将 A 班全体学生的成绩置 0</li>
-</ol>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">update</span> sc <span class="keyword">set</span> score<span class="operator">=</span><span class="number">0</span> <span class="keyword">where</span> sno <span class="keyword">in</span>(<span class="keyword">select</span> sno <span class="keyword">from</span> student <span class="keyword">where</span> clno<span class="operator">=</span><span class="string">&#x27;A&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>删除 B 班全体学生的选课记录</li>
-</ol>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> sc <span class="keyword">where</span> sno <span class="keyword">in</span>(<span class="keyword">select</span> sno <span class="keyword">from</span> student <span class="keyword">where</span> clno<span class="operator">=</span><span class="string">&#x27;B&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>使用 exists关键字查询所有选修了 C1 号课程的学生的姓名</li>
-</ol>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">selec sname <span class="keyword">from</span> student <span class="keyword">where</span> <span class="keyword">exists</span> (<span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> sc <span class="keyword">where</span> cno<span class="operator">=</span><span class="string">&#x27;C1&#x27;</span><span class="keyword">and</span> sc.sno<span class="operator">=</span>student.sno)</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li> 查询其他班中比A班所有学生年龄都小的学生，并按年龄的降序输出</li>
-</ol>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> student <span class="keyword">where</span> sage <span class="operator">&lt;</span> <span class="keyword">all</span>(<span class="keyword">select</span> sage <span class="keyword">from</span> student <span class="keyword">where</span> clno<span class="operator">=</span><span class="string">&#x27;04001&#x27;</span>)</span><br><span class="line"><span class="keyword">and</span> clno<span class="operator">&lt;&gt;</span><span class="string">&#x27;04001&#x27;</span> </span><br><span class="line"><span class="keyword">order</span> <span class="keyword">by</span> sage <span class="keyword">desc</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="6-数据表中数据的操纵"><a href="#6-数据表中数据的操纵" class="headerlink" title="6.数据表中数据的操纵"></a>6.数据表中数据的操纵</h2>]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>sql</tag>
-        <tag>学习</tag>
       </tags>
   </entry>
   <entry>
@@ -3029,6 +2296,761 @@
       <tags>
         <tag>赖总笔记</tag>
         <tag>计算机组成原理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>sql语句</title>
+    <url>/xuanyao/124cdf9.html</url>
+    <content><![CDATA[<h1 id="SQL语句"><a href="#SQL语句" class="headerlink" title="SQL语句"></a>SQL语句</h1><h2 id="一、数据库"><a href="#一、数据库" class="headerlink" title="一、数据库"></a>一、数据库</h2><h3 id="1、创建数据库（CREATE）"><a href="#1、创建数据库（CREATE）" class="headerlink" title="1、创建数据库（CREATE）"></a>1、创建数据库（CREATE）</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*语法格式*/</span></span><br><span class="line"><span class="keyword">CREATE</span> DATABASE 数据库名称</span><br><span class="line"><span class="keyword">ON</span></span><br><span class="line">(</span><br><span class="line">    NAME<span class="operator">=</span>数据文件逻辑名称,</span><br><span class="line">    FILENAME<span class="operator">=</span><span class="string">&#x27;PATH&#x27;</span>,</span><br><span class="line">    SIZE<span class="operator">=</span>数据文件初始大小,</span><br><span class="line">    MAXSIZE<span class="operator">=</span>数据文件最大容量,</span><br><span class="line">    FILEGROWTH<span class="operator">=</span>数据文件自动增长容量<span class="comment">/*UNLIMITED:无限制增长*/</span></span><br><span class="line">)</span><br><span class="line">LOG <span class="keyword">ON</span></span><br><span class="line">(</span><br><span class="line">    NAME<span class="operator">=</span>日志逻辑名称,</span><br><span class="line">    FILENAME<span class="operator">=</span>PATH,</span><br><span class="line">    SIZE<span class="operator">=</span>日志文件初始大小,</span><br><span class="line">    MAXSIZE<span class="operator">=</span>日志文件最大容量,</span><br><span class="line">    FILEGROWTH<span class="operator">=</span>日志自动增长容量</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">/*例*/</span></span><br><span class="line"><span class="keyword">CREATE</span> DATABASE T</span><br><span class="line"><span class="keyword">ON</span></span><br><span class="line">(</span><br><span class="line">    NAME<span class="operator">=</span>T,</span><br><span class="line">    FILENAME<span class="operator">=</span><span class="string">&#x27;E:\Database\TData.mdf&#x27;</span>,</span><br><span class="line">    SIZE<span class="operator">=</span><span class="number">10</span>,</span><br><span class="line">    MAXSIZE<span class="operator">=</span><span class="number">500</span>,</span><br><span class="line">    FILEGROWTH<span class="operator">=</span><span class="number">10</span></span><br><span class="line">)</span><br><span class="line">LOG <span class="keyword">ON</span></span><br><span class="line">(</span><br><span class="line">    NAME<span class="operator">=</span>T_Log,</span><br><span class="line">    FILENAME<span class="operator">=</span><span class="string">&#x27;E:\Database\TData.ldf&#x27;</span>,</span><br><span class="line">    SIZE<span class="operator">=</span><span class="number">5</span>,</span><br><span class="line">    MAXSIZE<span class="operator">=</span><span class="number">500</span>,</span><br><span class="line">    FILEGROWTH<span class="operator">=</span><span class="number">5</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、修改数据库（ALTER）"><a href="#2、修改数据库（ALTER）" class="headerlink" title="2、修改数据库（ALTER）"></a>2、修改数据库（ALTER）</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*语法格式*/</span></span><br><span class="line"><span class="keyword">ALTER</span> DATABASE 数据库名称</span><br><span class="line"><span class="keyword">ADD</span> FILE(            <span class="comment">/*向数据库中添加数据文件*/</span></span><br><span class="line">    NAME<span class="operator">=</span>文件逻辑名称, <span class="comment">/*必选*/</span></span><br><span class="line">    [NEWNAME<span class="operator">=</span>新文件逻辑名称,]<span class="comment">/*任选*/</span></span><br><span class="line">    [SIZE<span class="operator">=</span>初始文件大小,]</span><br><span class="line">    [MAXSIZE<span class="operator">=</span>文件最大容量,]</span><br><span class="line">    [FILEGROWTH<span class="operator">=</span>文件自动增长容量]</span><br><span class="line">)</span><br><span class="line">[,...n]<span class="comment">/*可添加多个*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">ADD</span> LOG FILE(       <span class="comment">/*向数据库中添加日志文件*/</span></span><br><span class="line">    NAME<span class="operator">=</span>文件逻辑名称,</span><br><span class="line">    [NEWNAME<span class="operator">=</span>新文件逻辑名称,]</span><br><span class="line">    [SIZE<span class="operator">=</span>初始文件大小,]</span><br><span class="line">    [MAXSIZE<span class="operator">=</span>文件最大容量,]</span><br><span class="line">    [FILEGROWTH<span class="operator">=</span>文件自动增长容量]</span><br><span class="line">)</span><br><span class="line">[,...n]<span class="comment">/*可添加多个*/</span></span><br><span class="line"></span><br><span class="line">REMOVE FILE 文件逻辑名称<span class="comment">/*从数据库中删除逻辑文件，并删除物理文件；</span></span><br><span class="line"><span class="comment">                       若文件不为空，则无法删除*/</span></span><br><span class="line">MODIFY FILE(        <span class="comment">/*指定要修改的文件*/</span></span><br><span class="line">    NAME<span class="operator">=</span>文件逻辑名称,</span><br><span class="line">    [NEWNAME<span class="operator">=</span>新文件逻辑名称,]</span><br><span class="line">    [SIZE<span class="operator">=</span>初始文件大小,]</span><br><span class="line">    [MAXSIZE<span class="operator">=</span>文件最大容量,]</span><br><span class="line">    [FILEGROWTH<span class="operator">=</span>文件自动增长容量]</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">/*关于文件组的修改*/</span></span><br><span class="line"><span class="keyword">ADD</span> FILEGROUP 文件组名</span><br><span class="line">REMOVE FILEGROUP 文件组名</span><br><span class="line">MODIFY FILEGROUP 文件组名&#123;        <span class="comment">/*属性*/</span></span><br><span class="line">    READ_ONLY <span class="operator">|</span> READ_WRITE,   <span class="comment">/*只读 / 读写*/</span></span><br><span class="line">    <span class="operator">|</span> <span class="keyword">DEFAULT</span>,                <span class="comment">/*默认文件组*/</span></span><br><span class="line">    <span class="operator">|</span> NAME <span class="operator">=</span> 新文件组名&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、删除数据库（DROP）"><a href="#3、删除数据库（DROP）" class="headerlink" title="3、删除数据库（DROP）"></a>3、删除数据库（DROP）</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*语法格式*/</span></span><br><span class="line"><span class="keyword">DROP</span> DATABASE 数据库名称[,...n]<span class="comment">/*可一次删除多个*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*例*/</span></span><br><span class="line"><span class="keyword">DROP</span> DATABASE T</span><br></pre></td></tr></table></figure>
+
+<h2 id="二、数据表"><a href="#二、数据表" class="headerlink" title="二、数据表"></a>二、数据表</h2><h3 id="1、创建表（CREATE）"><a href="#1、创建表（CREATE）" class="headerlink" title="1、创建表（CREATE）"></a>1、创建表（CREATE）</h3><h4 id="1-基本格式"><a href="#1-基本格式" class="headerlink" title="(1)    基本格式"></a>(1)    基本格式</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> S</span><br><span class="line">(</span><br><span class="line">    <span class="comment">/*name 类型 约束*/</span></span><br><span class="line">    SNO <span class="type">VARCHAR</span>(<span class="number">6</span>),</span><br><span class="line">    SN NVARCHAR(<span class="number">10</span>),</span><br><span class="line">    Sex <span class="type">NCHAR</span>(<span class="number">1</span>) <span class="keyword">DEFAULT</span> <span class="string">&#x27;男&#x27;</span>,</span><br><span class="line">    Age <span class="type">INT</span>,</span><br><span class="line">    Dept NVARCHAR(<span class="number">20</span>),</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-约束"><a href="#2-约束" class="headerlink" title="(2)    约束"></a>(2)    约束</h4><p>    <mark><strong>语法格式：[CONSTRAINT &lt;约束名&gt;]  &lt;约束类型&gt;</strong></mark></p>
+<h5 id="a-NULL-x2F-NOT-NULL-约束"><a href="#a-NULL-x2F-NOT-NULL-约束" class="headerlink" title="a. NULL &#x2F; NOT NULL 约束"></a>a. NULL &#x2F; NOT NULL 约束</h5><p>        NULL 不是0，也不是空白，指不确定、没有数据，只用于定义列约束</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> S</span><br><span class="line">(</span><br><span class="line">    SNO <span class="type">VARCHAR</span>(<span class="number">6</span>) <span class="keyword">CONSTRAINT</span> S_CON <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    CNO <span class="type">VARCHAR</span>(<span class="number">6</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>          <span class="comment">/*省略约束名称*/</span> </span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h5 id="b-UNIQUE-唯一约束"><a href="#b-UNIQUE-唯一约束" class="headerlink" title="b.  UNIQUE (唯一约束)"></a>b.  UNIQUE (唯一约束)</h5><p>        <strong>UNIQUE</strong> 约束用于指明某一列或多个列组合上取值必须唯一，被约束的列称为<strong>唯一键</strong> </p>
+<p>        <strong>考虑因素：</strong></p>
+<p>         UNIQUE约束字段允许为NULL</p>
+<p>         一个表中允许存在多个空值</p>
+<p>         可以把UNIQUE约束在多个字段上</p>
+<p>          UNIQUE约束用于强制在指定字段上创建一个UNIQUE索引，缺省为非聚集索引</p>
+<p>            </p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> T</span><br><span class="line">(</span><br><span class="line">    SN NVARCHAR(<span class="number">10</span>) <span class="keyword">CONSTRAINT</span> SN_UNIQ <span class="keyword">UNIQUE</span>,</span><br><span class="line">    CNO NVARCHAR(<span class="number">10</span>) <span class="keyword">UNIQUE</span>  <span class="comment">/*省略约束名称*/</span></span><br><span class="line">    <span class="keyword">CONSTRAINT</span> S_C_UNIQ <span class="keyword">UNIQUE</span>(SN,CNO)  <span class="comment">/*同时约束多列*/</span></span><br><span class="line">)           </span><br></pre></td></tr></table></figure>
+
+<p>    </p>
+<h5 id="c-PRIMARY-KEY-主键约束"><a href="#c-PRIMARY-KEY-主键约束" class="headerlink" title="c. PRIMARY KEY (主键约束)"></a>c. PRIMARY KEY (主键约束)</h5><p>       <strong>PRIMARY KEY</strong> 约束用于定义基本表的主键，起唯一标识作用，<strong>不能为NULL，也不能重复</strong> ，以此保证实体完整性</p>
+<p>        <strong>PRIMARY KEY 与 UNIQUE 区别：</strong></p>
+<p>         -  一个基本表中只能有一个PRIMARY KEY ,但可以有多个UNIQUE</p>
+<p>         - 被<strong>PRIMARY KEY</strong>约束的列或列组合都<strong>不能为NULL</strong>，UNIQUE允许为NULL</p>
+<p>         - <strong>不能为同一列或列组，同时定义PRIMARY KEY 和 UNIQUE约束</strong></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> S</span><br><span class="line">(</span><br><span class="line">    SNO <span class="type">VARCHAR</span>(<span class="number">6</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">CONSTRAINT</span> S_Prim <span class="keyword">PRIMARY</span> KEY,</span><br><span class="line">    S  <span class="type">CHAR</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    C  <span class="type">CHAR</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span></span><br><span class="line">    <span class="keyword">CONSTRAINT</span> SC_Prim <span class="keyword">PRIMARY</span> KEY(S,C)<span class="comment">/*约束多列,S,N不允许为NULL*/</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h5 id="d-FOREIGN-KEY-外键约束"><a href="#d-FOREIGN-KEY-外键约束" class="headerlink" title="d. FOREIGN KEY (外键约束)"></a>d. FOREIGN KEY (外键约束)</h5><p>       <strong>FOREIGN KEY</strong> 约束指定某一列或几列作为外部键。</p>
+<p>        包含外部键的表为从表，包含外部键引用的主键或唯一键为主表；从表外部键上的取值是主表中某一个主键或唯一键的值，或为NULL，以保证两表间的参照完整性。</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">[<span class="keyword">CONSTRAINT</span> 约束名] <span class="keyword">FOREIGN</span> KEY <span class="keyword">REFERENCES</span> 主表名（列名）</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> SC</span><br><span class="line">(</span><br><span class="line">    SNO <span class="type">VARCHAR</span>(<span class="number">6</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">CONSTRAINT</span> S_Froe <span class="keyword">FOREIGN</span> <span class="keyword">REFERENCES</span> S(SNO),</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h5 id="e-CHECK-约束"><a href="#e-CHECK-约束" class="headerlink" title="e. CHECK 约束"></a>e. CHECK 约束</h5><p>       <strong>CHECK</strong> 约束用来检查字段值所允许的范围，以此来保证域的完整性，既可用于表约束，也可用于列约束。</p>
+<p>       <strong>考虑因素：</strong></p>
+<ol>
+<li><p>一个表中可以定义多个CHECK约束</p>
+</li>
+<li><p>每个字段只能定义一个CHECK约束</p>
+</li>
+<li><p>在多个字段上定义的CHECK约束为表约束</p>
+</li>
+<li><p>当执行INSERT、UPDATE语句时，CHECK约束将验证数据</p>
+</li>
+</ol>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">[<span class="keyword">CONSTRAINT</span> 约束名] <span class="keyword">CHECK</span>(条件)</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> SC</span><br><span class="line">(</span><br><span class="line">    Score <span class="type">NUMERIC</span>(<span class="number">4</span>,<span class="number">1</span>) <span class="keyword">CONSTRAINT</span> S_CHK <span class="keyword">CHECK</span>(Score<span class="operator">&gt;=</span><span class="number">0</span> <span class="keyword">AND</span> Score <span class="operator">&lt;=</span><span class="number">100</span>)</span><br><span class="line">    email <span class="type">VARCHAR</span>(<span class="number">30</span>) <span class="keyword">CONSTRAINT</span> E_CHK <span class="keyword">CHECK</span>(email <span class="keyword">LIKE</span> <span class="string">&#x27;%@%&#x27;</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、修改表（ALTER）"><a href="#2、修改表（ALTER）" class="headerlink" title="2、修改表（ALTER）"></a>2、修改表（ALTER）</h3><h4 id="1-ADD-方式"><a href="#1-ADD-方式" class="headerlink" title="(1)    ADD 方式"></a>(1)    ADD 方式</h4><p>      <strong>ADD</strong> 用于增加新列和完整性约束</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名</span><br><span class="line"><span class="keyword">ADD</span></span><br><span class="line">定义列 <span class="operator">|</span> 完整性约束</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> SC</span><br><span class="line"><span class="keyword">ADD</span></span><br><span class="line">CL <span class="type">VARCHAR</span>(<span class="number">6</span>),<span class="comment">/*定义列*/</span></span><br><span class="line"><span class="keyword">CONSTRAINT</span> S_CHK <span class="keyword">CHECK</span>(Score<span class="operator">&lt;=</span><span class="number">0</span> <span class="keyword">AND</span> Score<span class="operator">&gt;=</span><span class="number">100</span>) <span class="comment">/*完整性约束*/</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-ALTER-方式"><a href="#2-ALTER-方式" class="headerlink" title="(2)    ALTER 方式"></a>(2)    ALTER 方式</h4><p>      <strong>ALTER</strong> 用于修改某些列</p>
+<p>      <strong>限制：</strong></p>
+<ul>
+<li><p>不能改变列名</p>
+</li>
+<li><p>不能将含有NULL值的列修改为NOT NULL约束</p>
+</li>
+<li><p>若列中已有数据，则不能减少该列的宽度，也不能改变其数据类型 <strong>(当数据长度小于宽度时，<mark>NVARCHAR除外</mark>)</strong> </p>
+</li>
+<li><p>只能修改NULL&#x2F;NOT NULL约束，<mark><u>其他类型约束在修改前必修先删除约束，然后在重新添加修改过的约束定义</u> </mark></p>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">COLUMN</span></span><br><span class="line">列名 数据类型 [<span class="keyword">NULL</span> <span class="operator">|</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> SC</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">COLUMN</span></span><br><span class="line">SN NVARCHAR(<span class="number">20</span>)</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-DROP-方式"><a href="#3-DROP-方式" class="headerlink" title="(3)    DROP 方式"></a>(3)    DROP 方式</h4><p>      <strong>DROP</strong> 只用于删除完整性约束定义</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">CONSTRAINT</span> 约束名</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、删除表（DROP）"><a href="#3、删除表（DROP）" class="headerlink" title="3、删除表（DROP）"></a>3、删除表（DROP）</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> 表名</span><br></pre></td></tr></table></figure>
+
+<h3 id="4、查询表（SELECT）"><a href="#4、查询表（SELECT）" class="headerlink" title="4、查询表（SELECT）"></a>4、查询表（SELECT）</h3><h4 id="1-单表查询"><a href="#1-单表查询" class="headerlink" title="(1)    单表查询"></a>(1)    单表查询</h4><h5 id="a-无条件查询"><a href="#a-无条件查询" class="headerlink" title="a.    无条件查询"></a>a.    无条件查询</h5><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> 列名,[....]  <span class="keyword">FROM</span> 表名</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> 表名<span class="comment">/* 查询表中全部数据 */</span> </span><br></pre></td></tr></table></figure>
+
+<h5 id="b-条件查询"><a href="#b-条件查询" class="headerlink" title="b.    条件查询"></a>b.    条件查询</h5><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> 列名,[...] <span class="keyword">FROM</span> 表名 <span class="keyword">WHERE</span> 条件</span><br></pre></td></tr></table></figure>
+
+<p><strong>常用运算符</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">&#x3D;、&gt;、&lt;、&gt;&#x3D;、&lt;&#x3D;、!&#x3D;、&lt;&gt;(不等于)</td>
+<td align="center">比较大小</td>
+</tr>
+<tr>
+<td align="center">AND、OR、NOT</td>
+<td align="center">多重条件</td>
+</tr>
+<tr>
+<td align="center">BETWEEN AND</td>
+<td align="center">确定范围</td>
+</tr>
+<tr>
+<td align="center">IN</td>
+<td align="center">确定集合</td>
+</tr>
+<tr>
+<td align="center">LIKE</td>
+<td align="center">字符匹配</td>
+</tr>
+<tr>
+<td align="center">IS NULL</td>
+<td align="center">空值</td>
+</tr>
+</tbody></table>
+<h6 id="1）比较大小"><a href="#1）比较大小" class="headerlink" title="1）比较大小"></a>1）比较大小</h6><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> SNO,Score <span class="keyword">FROM</span> SC <span class="keyword">WHERE</span> Score<span class="operator">&gt;</span><span class="number">85</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="2）多重条件查询"><a href="#2）多重条件查询" class="headerlink" title="2）多重条件查询"></a>2）多重条件查询</h6><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> SNO,CNO,Score</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> (CNO <span class="operator">=</span> <span class="string">&#x27;&#x27;</span>C1 <span class="keyword">OR</span> CNO <span class="operator">=</span> <span class="string">&#x27;C2&#x27;</span>) <span class="keyword">AND</span> (Score <span class="operator">&gt;=</span> <span class="number">85</span>)</span><br></pre></td></tr></table></figure>
+
+<h6 id="3）确定范围"><a href="#3）确定范围" class="headerlink" title="3）确定范围"></a>3）确定范围</h6><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> TNO,CNO,SAL</span><br><span class="line"><span class="keyword">FROM</span> T</span><br><span class="line"><span class="keyword">WHERE</span> SAL <span class="keyword">BETWEEN</span> <span class="number">1000</span> <span class="keyword">AND</span> <span class="number">2000</span></span><br><span class="line">(SAL <span class="operator">&gt;=</span> <span class="number">1000</span> <span class="keyword">AND</span> SAL <span class="operator">&lt;=</span> <span class="number">2000</span>)</span><br></pre></td></tr></table></figure>
+
+<h6 id="4）确定集合"><a href="#4）确定集合" class="headerlink" title="4）确定集合"></a>4）确定集合</h6><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> SNO,CNO,Score</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> CNO <span class="keyword">IN</span> (<span class="string">&#x27;C1&#x27;</span>,<span class="string">&#x27;C2&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> SNO,CNO,Score</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> CNO <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="string">&#x27;C1&#x27;</span>,<span class="string">&#x27;C2&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h6 id="5）部分匹配查询"><a href="#5）部分匹配查询" class="headerlink" title="5）部分匹配查询"></a>5）部分匹配查询</h6><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">属性名 <span class="keyword">LIKE</span> 字符串常量</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">通配符</th>
+<th align="center">功能</th>
+<th align="center">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">%</td>
+<td align="center">代表0或多个字符</td>
+<td align="center">‘a%’,’a’后可接任意字符</td>
+</tr>
+<tr>
+<td align="center">_(下划线)</td>
+<td align="center">代表一个字符</td>
+<td align="center">‘a_b’ ,a、b之间可有一个字符</td>
+</tr>
+<tr>
+<td align="center">[]</td>
+<td align="center">表示某一范围的字符</td>
+<td align="center">[0-9],0~9之间的字符</td>
+</tr>
+<tr>
+<td align="center">[^]</td>
+<td align="center">表示不在某一范围内的字符</td>
+<td align="center">[^0-9]，不在0~9之间的字符</td>
+</tr>
+</tbody></table>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">查询姓张的老师</span><br><span class="line"><span class="keyword">SELECT</span> TNO,TN</span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line"><span class="keyword">WHERE</span> TN <span class="keyword">LIKE</span> <span class="string">&#x27;张%&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="6）空值查询"><a href="#6）空值查询" class="headerlink" title="6）空值查询"></a>6）空值查询</h6><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> SNO,CNO</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> Score <span class="keyword">IS</span> <span class="keyword">NULL</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="c-库函数及统计汇总查询"><a href="#c-库函数及统计汇总查询" class="headerlink" title="c.    库函数及统计汇总查询"></a>c.    库函数及统计汇总查询</h5><p><strong>常用库函数及其功能</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">函数名称</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">AVG</td>
+<td align="center">按列计算平均值</td>
+</tr>
+<tr>
+<td align="center">SUM</td>
+<td align="center">按列计算总和</td>
+</tr>
+<tr>
+<td align="center">MAX</td>
+<td align="center">求一列中的最大值</td>
+</tr>
+<tr>
+<td align="center">MIN</td>
+<td align="center">求一列中的最小值</td>
+</tr>
+<tr>
+<td align="center">COUNT</td>
+<td align="center">按列值统计个数</td>
+</tr>
+</tbody></table>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(SNO) <span class="keyword">AS</span> TOTAL <span class="keyword">FROM</span> S</span><br><span class="line"><span class="keyword">WHERE</span> DEPT <span class="operator">=</span> <span class="string">&#x27;计算机&#x27;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">FROM</span> S</span><br><span class="line"><span class="keyword">WHERE</span> DEPT <span class="operator">=</span> <span class="string">&#x27;计算机&#x27;</span></span><br><span class="line"><span class="comment">/* COUNT(*) 用于统计元组个数，不消除重复行，不允许使用DISTINCT</span></span><br><span class="line"><span class="comment">   DISTINCT 用于返回唯一不同的值（取消查询某列重复的值）*/</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="d-分组查询"><a href="#d-分组查询" class="headerlink" title="d.    分组查询"></a>d.    分组查询</h5><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> TNO,<span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">AS</span> TOTAL</span><br><span class="line"><span class="keyword">FROM</span> TC</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> TNO <span class="comment">/*按TNO 进行分组，具有相同TNO的为一组*/</span></span><br><span class="line"><span class="keyword">HAVING</span> TOTAL<span class="operator">&gt;=</span><span class="number">2</span> <span class="comment">/*去掉不满足条件的元组*/</span></span><br></pre></td></tr></table></figure>
+
+<p>在使用WHERE、GROUP BY、HAVING 时，<strong>顺序：WHERE、GROUP BY、HAVING</strong> </p>
+<p><mark>WHERE与HAVING子句</mark>的根本区别在于作用对象不同，<strong>WHERE作用于</strong>基本表或视图；<strong>HAVING作用于</strong>组，<strong>必须用在GROUP BY 子句之后</strong>，但GROUP BY 子句可以没有HAVING子句。  </p>
+<h5 id="e-查询结果排序"><a href="#e-查询结果排序" class="headerlink" title="e.    查询结果排序"></a>e.    查询结果排序</h5><p><strong>ORDER BY</strong> 子句用于查询结果排序，必须用于其他子句之后，<strong>DESC  降序、ASC 升序，缺省时为升序</strong> </p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">...</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> 属性名 <span class="keyword">DESC</span> <span class="operator">|</span> <span class="keyword">ASC</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> SNO,Score</span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">WHERE</span> CNO <span class="operator">=</span> <span class="string">&#x27;C1&#x27;</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> Score <span class="keyword">DESC</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-多表连接查询"><a href="#2-多表连接查询" class="headerlink" title="(2)    多表连接查询"></a>(2)    多表连接查询</h4><h5 id="a-查询结构"><a href="#a-查询结构" class="headerlink" title="a.    查询结构"></a>a.    查询结构</h5><ul>
+<li>表之间满足一定条件时进行连接：<strong>FROM</strong> 子句指明连接表名，<strong>WHERE</strong> 子句指明连接的列名及其连接条件</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> 列名 [<span class="keyword">AS</span> 别名],[...]</span><br><span class="line"><span class="keyword">FROM</span> 表名<span class="number">1</span>,表名<span class="number">2.</span>..</span><br><span class="line"><span class="keyword">WHERE</span> 检索条件 (eg:T.TNO<span class="operator">=</span>C.TNO [<span class="keyword">AND</span> ...])</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>利用关键字<strong>JOIN</strong> 进行连接</p>
+<ul>
+<li><p>**INNER JOIN (内连接)**：显示符合条件的记录，此为默认值。</p>
+</li>
+<li><p><strong>LEFT (OUTER) JOIN (左(外)连接)</strong> ：用于显示符合条件的数据行以及左边表中不符合条件的数据行。此时右边数据行会以NULL来显示。</p>
+</li>
+<li><p><strong>RIFHT (OUTER) JOIN (右(外)连接)</strong> ：用于显示符合条件的数据行以及右边表中不符合条件的数据行。此时左边数据行会以NULL来显示。</p>
+</li>
+<li><p><strong>FULL (OUTER) JOIN</strong> :显示符合条件的数据行以及左边表和右边表中不符合条件的数据行。此时缺乏数据的数据行会以NULL来显示。</p>
+</li>
+<li><p><strong>CROSS JOIN</strong> :将一个表中的每一个记录和另一个表的每一个记录匹配成新的数据行。</p>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ... </span><br><span class="line"><span class="keyword">FROM</span> 表名<span class="number">1</span></span><br><span class="line">[<span class="keyword">INNER</span> <span class="operator">|</span><span class="keyword">LEFT</span> <span class="keyword">OUTER</span><span class="operator">|</span><span class="keyword">RIGHT</span> <span class="keyword">OUTER</span><span class="operator">|</span><span class="keyword">FULL</span> <span class="keyword">OUTER</span> <span class="operator">|</span><span class="keyword">CROSS</span>] <span class="keyword">JOIN</span> 表名<span class="number">2</span></span><br><span class="line"><span class="keyword">ON</span> 条件</span><br></pre></td></tr></table></figure>
+
+<h5 id="b-内连接查询"><a href="#b-内连接查询" class="headerlink" title="b.    内连接查询"></a>b.    内连接查询</h5><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">方法一：</span><br><span class="line"><span class="keyword">SELECT</span> T.TNO, TN, CNO</span><br><span class="line"><span class="keyword">FROM</span> T,TC</span><br><span class="line"><span class="keyword">WHERE</span> T.TNO<span class="operator">=</span>TC.TNO <span class="comment">/*连接条件 TNO:连接字段,加前缀避免二义性(同名属性必加) </span></span><br><span class="line"><span class="comment">                    运算符：= &gt; &lt; &gt;= &lt;= !=*/</span></span><br><span class="line"><span class="keyword">AND</span> TN<span class="operator">=</span><span class="string">&#x27;刘伟&#x27;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">方法二：</span><br><span class="line"><span class="keyword">SELECT</span> T.TNO,TN,CNO</span><br><span class="line"><span class="keyword">FROM</span> T <span class="keyword">INNER</span> <span class="keyword">JOIN</span> TC</span><br><span class="line"><span class="keyword">ON</span> T.TNO<span class="operator">=</span>TC.TNO</span><br><span class="line"><span class="keyword">WHERE</span> TN<span class="operator">=</span><span class="string">&#x27;刘伟&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*上述方法，将T中TNO与TC中TNO相等的行连接，同时选取TN=‘刘伟’的行，</span></span><br><span class="line"><span class="comment">不显示不满足连接条件的元组*/</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="c-外连接查询"><a href="#c-外连接查询" class="headerlink" title="c.    外连接查询"></a>c.    外连接查询</h5><p>        外部连接中有主从表之分，以主表的每行数据去匹配从表的数据列。符合连接的数据将直接返回到结果集中；不符合连接条件的列，将填上NULL后返回结果集中（bit类型不允许有NULL，填0）</p>
+<ul>
+<li><p><strong>左外部连接</strong> ：主表在左</p>
+</li>
+<li><p><strong>右外部连接</strong> ：主表在右</p>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> S.S#,S.SN,CN,GR</span><br><span class="line"><span class="keyword">FROM</span> S <span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> SC</span><br><span class="line"><span class="keyword">ON</span> S.S#<span class="operator">=</span>SC.S#</span><br><span class="line"><span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> C</span><br><span class="line"><span class="keyword">ON</span> SC.C#<span class="operator">=</span>C.C#</span><br></pre></td></tr></table></figure>
+
+<h5 id="d-交叉查询"><a href="#d-交叉查询" class="headerlink" title="d.    交叉查询"></a>d.    交叉查询</h5><p>        <strong>交叉查询（CROSS JOIN）</strong> ：对表无要求，<strong>查询结果集合的行数是两个表行数的乘积，列数的两个表列数的和。</strong></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span>  <span class="keyword">FROM</span> S <span class="keyword">CROSS</span> <span class="keyword">JOIN</span> C</span><br></pre></td></tr></table></figure>
+
+<h5 id="e-自连接查询"><a href="#e-自连接查询" class="headerlink" title="e.    自连接查询"></a>e.    自连接查询</h5><p>        当一个表与其自身进行连接操作时称自连接。</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> X.TN,X.Sal, Y.Sal</span><br><span class="line"><span class="keyword">FROM</span> T <span class="keyword">AS</span> X,T <span class="keyword">AS</span> Y</span><br><span class="line"><span class="keyword">WHERE</span> X.Sal<span class="operator">&gt;</span>Y.Sal <span class="keyword">AND</span> Y.TN<span class="operator">=</span><span class="string">&#x27;刘伟&#x27;</span><span class="comment">/*查询所有比刘伟工资高的教师部分信息*/</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-子查询（嵌套查询）"><a href="#3-子查询（嵌套查询）" class="headerlink" title="(3)    子查询（嵌套查询）"></a>(3)    子查询（嵌套查询）</h4><p>    <strong>子查询(嵌套查询)：WHERE 中包含一个SELECT-FROM-WHERE的查询块,包含子查询语句的称为父查询或外部查询</strong></p>
+<p>    <strong>复杂查询：</strong> 将一系列简单查询嵌套，可增强查询能力。</p>
+<p>    <strong>子查询嵌套层数最多255次，由里向外处理</strong></p>
+<h5 id="a-普通子查询"><a href="#a-普通子查询" class="headerlink" title="a.    普通子查询"></a>a.    普通子查询</h5><p>        先执行子查询，子查询结果作为父查询的条件的值，子查询只执行一次。</p>
+<ul>
+<li>返回一个值</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*可使用表运算符连接父查询和子查询：=、&gt;、&lt;、&gt;=、&lt;=、!=*/</span></span><br><span class="line"><span class="keyword">SELECT</span> TNO,TN</span><br><span class="line"><span class="keyword">FROM</span> T</span><br><span class="line"><span class="keyword">WHERE</span> Prof <span class="operator">=</span> (<span class="keyword">SELECT</span> Prof <span class="keyword">FROM</span> <span class="keyword">WHERE</span> TN<span class="operator">=</span><span class="string">&#x27;刘伟&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>返回一组值</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*不能直接使用比较运算符，可以在子查询与运算符之间插入  IN 、ALL 或 ANY*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*ALL：所有*/</span></span><br><span class="line"><span class="keyword">SELECT</span> TN,Sal <span class="keyword">FROM</span> T</span><br><span class="line"><span class="keyword">WHERE</span> Sal <span class="operator">&gt;</span> <span class="keyword">ALL</span> (<span class="keyword">SELECT</span> Sal <span class="keyword">FROM</span> T <span class="keyword">WHERE</span> Dept<span class="operator">=</span><span class="string">&#x27;计算机&#x27;</span>) </span><br><span class="line"><span class="keyword">AND</span> (Dept <span class="operator">&lt;&gt;</span> <span class="string">&#x27;计算机&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">/*ANY：任意*/</span></span><br><span class="line"><span class="keyword">SELECT</span> TN <span class="keyword">FROM</span> T</span><br><span class="line"><span class="keyword">WHERE</span> TNO <span class="operator">=</span> <span class="keyword">ANY</span> (<span class="keyword">SELECT</span> TNO <span class="keyword">FROM</span> TC <span class="keyword">WHERE</span> CNO<span class="operator">=</span><span class="string">&#x27;C5&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">/*IN:等价于‘= ANY’*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> TN <span class="keyword">FROM</span> T</span><br><span class="line"><span class="keyword">WHERE</span> TNO <span class="keyword">IN</span> (<span class="keyword">SELECT</span> TNO <span class="keyword">FROM</span> TC <span class="keyword">WHERE</span> CNO<span class="operator">=</span><span class="string">&#x27;C5&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h5 id="b-相关子查询"><a href="#b-相关子查询" class="headerlink" title="b.    相关子查询"></a>b.    相关子查询</h5><p>        <strong>相关子查询：</strong> 子查询的查询条件使用父查询表中的属性值。</p>
+<p><strong>查询过程：</strong> </p>
+<ol>
+<li><p> 选取父查询表中一行记录</p>
+</li>
+<li><p>子查询利用该记录相 关属性值进行查询</p>
+</li>
+<li><p>子查询返回结果，父查询判断是否满足条件</p>
+</li>
+<li><p>满足，放入结果集合</p>
+</li>
+<li><p>重复过程，直至处理完父查询表中每一行数据</p>
+</li>
+</ol>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> TN <span class="keyword">FROM</span> T</span><br><span class="line"><span class="keyword">WHERE</span> <span class="string">&#x27;C5&#x27;</span> <span class="operator">&lt;&gt;</span> <span class="keyword">ALL</span> (<span class="keyword">SELECT</span> CNO <span class="keyword">FROM</span> TC <span class="keyword">WHERE</span> TNO <span class="operator">=</span>T.TNO)</span><br><span class="line"><span class="comment">/*&lt;&gt;ALL:不等于子查询结果中的任何一个值*/</span></span><br></pre></td></tr></table></figure>
+
+<p><strong><mark>EXISTS</mark> 进行相关子查询</strong> ：EXISTS 时表示存在的量词，判断查询子句是否有记录，带有EXISTS的子查询不返回合任何实际数据，只返回逻辑 ‘真’ 和 ‘假’。子查询结果集合非空时，<strong>外层WHERE语句</strong> 返回真。</p>
+<p><strong>NOT EXISTS与此相反</strong> </p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> TN <span class="keyword">FROM</span> T</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> TC <span class="keyword">WHERE</span> TNO<span class="operator">=</span>T.TNO <span class="keyword">AND</span> CNO<span class="operator">=</span><span class="string">&#x27;C5&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>   </p>
+<h4 id="5-集合运算查询"><a href="#5-集合运算查询" class="headerlink" title="(5)    集合运算查询"></a>(5)    集合运算查询</h4><p>            合并查询是使用<strong>UNION</strong> 将来自不同查询的数据组合起来，形成一个具有综合信息的查询结果。</p>
+<p>            <strong>UNION</strong> 会自动剔除重复数据行，<strong>合并查询所用表结构要相同，即：各子查询中的数据数目和对应数据类型必须相同。</strong></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*分别查询S1和S5 的学号和总分，合并成一个结构集合*/</span></span><br><span class="line"><span class="keyword">SELECT</span> SNO,<span class="built_in">SUM</span>(SCORE) <span class="keyword">AS</span> TOTALS <span class="keyword">FROM</span> SC <span class="keyword">WHERE</span> SNO<span class="operator">=</span><span class="string">&#x27;S1&#x27;</span></span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> SNO</span><br><span class="line"><span class="keyword">UNION</span></span><br><span class="line"><span class="keyword">SELECT</span> SNO,<span class="built_in">SUM</span>(SCORE) <span class="keyword">AS</span> TOTALS <span class="keyword">FROM</span> SC <span class="keyword">WHERE</span> SNO<span class="operator">=</span><span class="string">&#x27;S5&#x27;</span></span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> SNO</span><br></pre></td></tr></table></figure>
+
+<h4 id="6-将查询结果储存到表中"><a href="#6-将查询结果储存到表中" class="headerlink" title="(6)    将查询结果储存到表中"></a>(6)    将查询结果储存到表中</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ... <span class="keyword">INTO</span> 表名（或 #表名：临时表）</span><br><span class="line"><span class="comment">/*临时表存储在内存中，不在数据库中，所有存在时间非常短*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> SNO , <span class="built_in">SUM</span>(SCORE)</span><br><span class="line"><span class="keyword">INTO</span> M<span class="comment">/*新数据表 #M：临时表*/</span></span><br><span class="line"><span class="keyword">FROM</span> SC</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> SNO</span><br></pre></td></tr></table></figure>
+
+<h3 id="5、添加表中数据"><a href="#5、添加表中数据" class="headerlink" title="5、添加表中数据"></a>5、添加表中数据</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> 表名 [(列名<span class="number">1</span>,...)] <span class="keyword">VALUES</span> (值)[,(值<span class="number">2</span>),(值<span class="number">3</span>)...]</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">INTO:指定添加列名顺序</span></span><br><span class="line"><span class="comment">注意：</span></span><br><span class="line"><span class="comment">1、字符数据用单引号</span></span><br><span class="line"><span class="comment">2、未指定列名时，新添加数据必须含有所有列的值</span></span><br><span class="line"><span class="comment">3、值的排列顺序要和属性列的排列顺序一直</span></span><br><span class="line"><span class="comment">4、INTO子句中未出现的列，新添加记录将其置为NULL,NOT NULL约束的列必须插入值</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> S (S#,SN,,SEX,AGE) <span class="keyword">VALUES</span>(<span class="string">&#x27;S1&#x27;</span>,<span class="string">&#x27;XXX&#x27;</span>,<span class="string">&#x27;男&#x27;</span>,<span class="number">20</span>)<span class="comment">/*添加部分属性列的值*/</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> S <span class="keyword">VALUES</span>(<span class="string">&#x27;S1&#x27;</span>,<span class="string">&#x27;XXX&#x27;</span>,<span class="string">&#x27;男&#x27;</span>,<span class="number">20</span>,<span class="string">&#x27;xxxxxxxxxxx&#x27;</span>)<span class="comment">/*添加表中所有属性列值*/</span> </span><br></pre></td></tr></table></figure>
+
+<h3 id="6、修改表中数据"><a href="#6、修改表中数据" class="headerlink" title="6、修改表中数据"></a>6、修改表中数据</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> 表名</span><br><span class="line"><span class="keyword">SET</span> 列名 <span class="operator">=</span> 表达式,[列名<span class="operator">=</span>表达式]</span><br><span class="line">[<span class="keyword">WHERE</span> 条件]</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">SET:给出要修改的列及其修改的值</span></span><br><span class="line"><span class="comment">WHERE:指定修改记录需要满足的体哦阿健，省略则修改表中所有记录</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">UPDATE</span> T</span><br><span class="line"><span class="keyword">SET</span> DEPT<span class="operator">=</span><span class="string">&#x27;信息&#x27;</span>,AGE<span class="operator">=</span>AGE<span class="operator">+</span><span class="number">1</span></span><br><span class="line"><span class="keyword">WHERE</span> TN<span class="operator">=</span><span class="string">&#x27;张三&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="7、删除数据"><a href="#7、删除数据" class="headerlink" title="7、删除数据"></a>7、删除数据</h3><p><strong>删除一行或多行记录</strong> </p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> 表名 [<span class="keyword">WHERE</span> 条件]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*删除一行*/</span></span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> T <span class="keyword">WHERE</span> TN<span class="operator">=</span><span class="string">&#x27;张三&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*利用子查询选择删除的行*/</span></span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> TC</span><br><span class="line"><span class="keyword">WHERE</span> TNO <span class="operator">=</span> (<span class="keyword">SELECT</span> TNO <span class="keyword">FROM</span> T <span class="keyword">WHERE</span> TN<span class="operator">=</span><span class="string">&#x27;张三&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、视图"><a href="#三、视图" class="headerlink" title="三、视图"></a>三、视图</h2><h3 id="1、概述"><a href="#1、概述" class="headerlink" title="1、概述"></a>1、概述</h3><p>        视图是一个<strong>虚拟表</strong> ，内容由查询定义。包含一系列带有名称的列和行数据。<strong>视图在数据库中不是以数据值存储集形式存在</strong>（除索引视图外）。数据来自定义视图的查询所引用的基本表，并且在引用视图时动态生成。</p>
+<p>        视图的作用类似于筛选，定义视图的筛选可以来自于当前或其他数据库的一个或多个表，或视图。</p>
+<p>        视图通常用来集中、简化和自定义每个用户对数据库的不同认识。</p>
+<p>        视图可用作安全机制：允许用户通过视图访问数据，不授予用户之间访问视图关联的基础表权限。</p>
+<p>        视图可用于提供线后兼容接口来模拟曾经存在但在其架构已经更改的基础表。</p>
+<h3 id="2、创建视图"><a href="#2、创建视图" class="headerlink" title="2、创建视图"></a>2、创建视图</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span> 视图名 [(列名 [,...])]</span><br><span class="line"><span class="keyword">AS</span> <span class="keyword">select</span>语句</span><br><span class="line">[<span class="keyword">WITH</span> <span class="keyword">CHECK</span> OPTION]</span><br><span class="line"><span class="operator">&lt;</span>view_attribute<span class="operator">&gt;</span>::<span class="operator">=</span>&#123;</span><br><span class="line">    [ENCRYPTION]</span><br><span class="line">    [SCHEMABINDING]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>列名：需要列名的情况</p>
+<ul>
+<li><p>列是从算数表达式、函数或常量派生；</p>
+</li>
+<li><p>两个或更多的列可能具有相同名称（一般由于联接原因导致）；</p>
+</li>
+<li><p>更改列名：视图某个列的指定名称不同于其派生来源列名称</p>
+</li>
+</ul>
+</li>
+<li><p>select语句：定义视图的SELECT 语句。可使用多个表或视图</p>
+</li>
+<li><p>CHECK OPTION:设置针对视图的所有数据修改语句必须符合select语句中规定的条件</p>
+</li>
+<li><p>ENCRYPTION：视图是加密的，使用后，无法修改视图，故创建视图时保存脚本，否则再也无法修改</p>
+</li>
+<li><p>SCHEMABINDING:和底层引用的表进行定义绑定。加上该选项，则视图引用的表不能随意更改架构（如数据类型）。修改：先DORP或ALTER 在底层表之上绑定的视图。常用于定义索引视图。</p>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span> T_V</span><br><span class="line"><span class="keyword">AS</span> <span class="keyword">SELECT</span> TNO,TN,PROF <span class="keyword">FROM</span> <span class="keyword">WHERE</span> DEPT<span class="operator">=</span><span class="string">&#x27;XXX&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3、修改视图"><a href="#3、修改视图" class="headerlink" title="3、修改视图"></a>3、修改视图</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">VIEW</span> 视图名 [(视图列表)] <span class="keyword">AS</span> 子查询</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">VIEW</span> S_C (SN,CN,SCORE)</span><br><span class="line"><span class="keyword">AS</span> <span class="keyword">SELECT</span> SN,CN,SCORE <span class="keyword">FROM</span> S,C,SC <span class="keyword">WHERE</span> S.SNO<span class="operator">=</span>SC.SNO <span class="keyword">AND</span> SC.CNO<span class="operator">=</span>C.CNO</span><br></pre></td></tr></table></figure>
+
+<h3 id="4、删除视图"><a href="#4、删除视图" class="headerlink" title="4、删除视图"></a>4、删除视图</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">VIEW</span> 视图名</span><br></pre></td></tr></table></figure>
+
+<h3 id="5、查询视图"><a href="#5、查询视图" class="headerlink" title="5、查询视图"></a>5、查询视图</h3><p>       <strong>对视图的查询操作与对基本表的一致</strong> </p>
+<h3 id="6、更新视图"><a href="#6、更新视图" class="headerlink" title="6、更新视图"></a>6、更新视图</h3><p>        <strong>视图是一张虚表，所以对视图的更新，最终转换成对基本表的更新。语法格式与基本表操作一样：添加、修改、删除。</strong> </p>
+<h2 id="四、索引"><a href="#四、索引" class="headerlink" title="四、索引"></a>四、索引</h2><h3 id="1、概述-1"><a href="#1、概述-1" class="headerlink" title="1、概述"></a>1、概述</h3><p>        索引是一种可以加快检索的<strong>数据库结构</strong> ，包含从表或视图的一列或多列生成的键,以及映射带指定数据存储位置的指针。</p>
+<p>        索引可以显著提高数据库查询和应用程序的性能。相当于书中的目录。</p>
+<p>        创建后由DBMS自动管理维护，DBMS自动更新索引。</p>
+<p>        基本表有无索引使用方法一直。</p>
+<p>        要避免在一个表中创建大量索引，否则影响插入、删除、更新数据的性能，增加索引调整的成本，简单系统响应速度。</p>
+<p><strong>索引分类：</strong></p>
+<ul>
+<li>聚集索引</li>
+</ul>
+<p>        物理存储顺序与索引键的逻辑顺序相同。</p>
+<blockquote>
+<p>一个主键自增的表就是聚集索引，id&#x3D;1（逻辑顺序）在第一条，id&#x3D;2在第二条，依次直到最后都为顺序排列,则查找第1000条只要在第一条地址（物理顺序）基础上加1000就是第1000条的地址，只需一次就能查询出来。</p>
+</blockquote>
+<p>       由于真正的物理存储只有一个，故 一个表只能有一个聚集索引</p>
+<p>        创建或修改聚集索引肯会非常耗时，因需要根据索引键的逻辑值重新调整为了存储顺序</p>
+<p>        创建PRIMARY KEY约束时，若不存在聚集索引且位置的唯一非聚集索引，则自动对PRIMARY KEY涉及的列创建唯一聚集索引。在添加UNIQUE约束时，默认将创建唯一非聚集索引。如果不存在该表的聚集索引，则可指定唯一聚集索引。</p>
+<p><strong>使用情况：</strong> </p>
+<p>        (1)包含有限数量的唯一值的列，如包含100个唯一状态吗的列</p>
+<p>        (2)使用BETWEEN 、&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;这样的运算符返回某个范围值的查询</p>
+<p>        (3)返回大型结果集的查询</p>
+<ul>
+<li>非聚集索引</li>
+</ul>
+<p>        物理存储顺序与逻辑存储顺序不一致。</p>
+<blockquote>
+<p>在一个表中有列num，其中数据无序（id&#x3D;1,num&#x3D;50;id&#x3D;2,num&#x3D;23;…）此时找到num&#x3D;100的人就要一条条遍历，n条就需要遍历n次，时间复杂度O(n),及其消耗性能。</p>
+<p>为num添加非聚集索引后，会给num排序（内部使用结构B+树），排序后只需查询此目录，即可快速查找所需数据，不需要遍历</p>
+</blockquote>
+<p>        不重复数据越多，索引效率越高</p>
+<p>        每个表可有多个非聚集索引，最多249个，不包括XML索引</p>
+<p>        非聚集索引可以提升查询速度，也会降低插入和更新速度。在更新包含非聚集索引的数据时DMBS必须同步更新索引。需要频繁更新数据的表，不应该建立太多非聚集索引</p>
+<p>        </p>
+<ul>
+<li>唯一索引</li>
+</ul>
+<p>        唯一索引能够保证索引键中不博阿寒重复的值，使表中每一行在某种方式上具有唯一性。</p>
+<p>        聚集索引和非聚集索引都可以时唯一的。</p>
+<p>        创建PRIMARY KEY 和UNIQUE约束时，自动创建为唯一索引，UNIQUE自动生成的唯一索引和手工创建的唯一索引本质上无任何区别，二者验证数据方式相同，查询优化器不会区分自动还是手动。</p>
+<p>        若目的是实现数据完整性，则应为列创建UNIQUE或PRIMARY KEY 约束，这样能使索引目标更明确。</p>
+<ul>
+<li>视图索引</li>
+</ul>
+<p>        标准视图的结果不是永久地储存在数据库中。</p>
+<p>        可通过对大量进行复杂处理的视图创建唯一聚集索引来提示性能。</p>
+<p>        视图索引对应的视图称为索引视图</p>
+<p>        对视图创建唯一索引后，结果直接储存在数据库中，类似于带有聚集索引的基本表。</p>
+<p>     </p>
+<ul>
+<li>全文索引</li>
+</ul>
+<p>        全文搜索技术也称为倒排文档技术</p>
+<p>        原理：先定义一个词库，然后统计文章中每个词条出现的频率和位置，即给文章创建目录，这样在查找某个词时能快速找到相应位置</p>
+<p>        一个表只能有一个全文索引。</p>
+<p>        创建条件：具有一个唯一且NOT NULL的列</p>
+<ul>
+<li>XML索引</li>
+</ul>
+<p>        XML索引对列中xml实列的所有标记、值和路径进行索引，从而提高查询性能。</p>
+<p>        使用情况：</p>
+<p>            对xml列进行查询在工作中很常见，若xml频繁修改，索引维护的开销将很高；</p>
+<p>            xml列的值相对较大，而检索部分相对较小，即避免在运行时分析所有数据，实现高效查询处理。</p>
+<h3 id="2、创建索引"><a href="#2、创建索引" class="headerlink" title="2、创建索引"></a>2、创建索引</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> [<span class="keyword">UNIQUE</span>] [CLUSTERED <span class="operator">|</span> NONCLUSTERED]</span><br><span class="line">INDEX index_name</span><br><span class="line"><span class="keyword">ON</span> table_or_view (<span class="keyword">column</span> [<span class="keyword">ASC</span> <span class="operator">|</span> <span class="keyword">DESC</span>][,...])</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">UNIQUE:创建唯一索引</span></span><br><span class="line"><span class="comment">CLUSTERED:创建聚集索引</span></span><br><span class="line"><span class="comment">NONCLUSTERED:创建非聚集索引</span></span><br><span class="line"><span class="comment">*/</span> </span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">UNIQUE</span> CLUSTERED INDEX course_index</span><br><span class="line"><span class="keyword">ON</span> course(cno <span class="keyword">DESC</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、修改索引"><a href="#3、修改索引" class="headerlink" title="3、修改索引"></a>3、修改索引</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> INDEX index_name </span><br><span class="line"><span class="keyword">ON</span> table_or_view</span><br><span class="line">&#123;</span><br><span class="line">    REBUILD </span><br><span class="line">    [<span class="keyword">PARTITION</span> <span class="operator">=</span> <span class="keyword">ALL</span>] [<span class="keyword">WITH</span> <span class="operator">&lt;</span>rebulid_index_option<span class="operator">&gt;</span> [,...n]]</span><br><span class="line">     <span class="operator">|</span>[<span class="keyword">PARTITION</span> <span class="operator">=</span> partition_number][<span class="keyword">WITH</span> (<span class="operator">&lt;</span>single_partition_rebulid_index_option<span class="operator">&gt;</span> [,...n])]</span><br><span class="line"><span class="operator">|</span> DISABLE </span><br><span class="line"><span class="operator">|</span> REORGANIZE [<span class="keyword">PARTITION</span> <span class="operator">=</span> partition_number] [<span class="keyword">WITH</span> (LOB_COMPACTION) <span class="operator">=</span> &#123;<span class="keyword">ON</span> <span class="operator">|</span> OFF&#125;] </span><br><span class="line"><span class="operator">|</span> <span class="keyword">SET</span> (<span class="operator">&lt;</span>set_index_option<span class="operator">&gt;</span> [,...n])</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">REBUILD:删除索引并重新生成索引</span></span><br><span class="line"><span class="comment">PARTITION:指定只重新生成或重新组织索引的一个分区</span></span><br><span class="line"><span class="comment">DISABLE:将索引标记为禁用，从而不能由数据库引擎使用</span></span><br><span class="line"><span class="comment">REORGANIZE:重新组织索引，不能为已禁用索引指定REORGANIZE</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4、删除索引"><a href="#4、删除索引" class="headerlink" title="4、删除索引"></a>4、删除索引</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DROP</span> INDEX table_or_view.index_name</span><br><span class="line"><span class="keyword">DROP</span> INDEX index_name <span class="keyword">ON</span> table_or_view</span><br></pre></td></tr></table></figure>
+
+<h3 id="5、查看索引"><a href="#5、查看索引" class="headerlink" title="5、查看索引"></a>5、查看索引</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*存储过程查看*/</span></span><br><span class="line"><span class="keyword">EXEC</span> Sp_helpindex [<span class="variable">@object</span><span class="operator">=</span>] <span class="string">&#x27;table_name&#x27;</span></span><br><span class="line"><span class="comment">/*[@object=] &#x27;table_name&#x27;:指定当前数据库中的表名*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">EXEC</span> Sp_helpindex SC</span><br><span class="line"></span><br><span class="line"><span class="comment">/*更改索引名称*/</span></span><br><span class="line"><span class="keyword">EXEC</span> Sp_rename <span class="string">&#x27;表名.索引名&#x27;</span> <span class="string">&#x27;新索引名&#x27;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>赖总笔记</category>
+      </categories>
+      <tags>
+        <tag>赖总笔记</tag>
+        <tag>sql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>sql语句对数据库的一写操作</title>
+    <url>/xuanyao/e0cd2bf7.html</url>
+    <content><![CDATA[<h1 id="SQL语句复习"><a href="#SQL语句复习" class="headerlink" title="SQL语句复习"></a>SQL语句复习</h1><h2 id="1-创建数据库"><a href="#1-创建数据库" class="headerlink" title="1.创建数据库"></a>1.创建数据库</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> database 数据库名称</span><br><span class="line"><span class="keyword">on</span></span><br><span class="line">(</span><br><span class="line">    name<span class="operator">=</span>数据文件逻辑名称,</span><br><span class="line">    filename<span class="operator">=</span><span class="string">&#x27;路径+数据文件名&#x27;</span>,</span><br><span class="line">    size<span class="operator">=</span>数据文件初始大小,</span><br><span class="line">    maxsize<span class="operator">=</span>数据文件最大容量,</span><br><span class="line">    filegrowth<span class="operator">=</span>数据文件自动增长容量</span><br><span class="line">)</span><br><span class="line">log <span class="keyword">on</span></span><br><span class="line">(</span><br><span class="line">    name<span class="operator">=</span>日志文件逻辑名称,</span><br><span class="line">    filename<span class="operator">=</span><span class="string">&#x27;路径+日志文件名&#x27;</span>,</span><br><span class="line">    size<span class="operator">=</span>日志文件初始大小,</span><br><span class="line">    maxsize<span class="operator">=</span> 日志文件最大容量,</span><br><span class="line">    filegrowth<span class="operator">=</span>日志文件自动增长容量</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<p><strong>（1）</strong> <em><strong>name:</strong></em>  数据文件名称一般为  (<em>name</em>)  _Data ，日志文件名称一般为（<em>name</em>）_Log 。</p>
+<p><strong>（2）</strong>  <em><strong>filename：</strong></em> 数据文件名后缀为 .mdf ，日志文件名后缀为 .ldf 。</p>
+<p><strong>（3）</strong> <em><strong>maxsize:</strong></em>  设置为 unlimited 时，表示文件最大大小无限制。</p>
+<p><strong>（4）</strong> <em><strong>filegrowth:</strong></em>  可以设置为具体值（—M）或者百分比（—%），设置为 unlimited 时，表示文件无限制增长。</p>
+<p><strong>（5）</strong>  某些属性不设置时，创建数据库时会按默认值创建，例如，如果只用 <em>“ create database 数据库名称 ”</em>  创建数据库时，DBMS会按照默认的 “逻辑名称” ”文件组“ ”初始大小“ ”自动增长“ 和 “路径” 等属性创建数据库。</p>
+<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p>        创建一个名为“SM”的数据库，初始大小为10MB，最大为50MB，数据库自动增长，增长方式按10%；日志文件初始大小为2MB，最大大小不受限制，按1MB增长。</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> database SM</span><br><span class="line"><span class="keyword">ON</span></span><br><span class="line">(</span><br><span class="line">name<span class="operator">=</span>SM_Data,</span><br><span class="line">filename<span class="operator">=</span><span class="string">&#x27;D:\SM.mdf&#x27;</span>,</span><br><span class="line">size<span class="operator">=</span><span class="number">10</span>,</span><br><span class="line">maxsize<span class="operator">=</span><span class="number">50</span>,</span><br><span class="line">filegrowth<span class="operator">=</span><span class="number">10</span><span class="operator">%</span></span><br><span class="line">)</span><br><span class="line">LOG <span class="keyword">ON</span></span><br><span class="line">(</span><br><span class="line">name<span class="operator">=</span>SM_Log,</span><br><span class="line">filename<span class="operator">=</span><span class="string">&#x27;D:\SM.ldf&#x27;</span>,</span><br><span class="line">size<span class="operator">=</span><span class="number">2</span>,</span><br><span class="line">maxsize<span class="operator">=</span>unlimited,</span><br><span class="line">filegrowth<span class="operator">=</span><span class="number">1</span>MB</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-在数据库中创建表"><a href="#2-在数据库中创建表" class="headerlink" title="2.在数据库中创建表"></a>2.在数据库中创建表</h2><h3 id="创建数据表"><a href="#创建数据表" class="headerlink" title="创建数据表"></a>创建数据表</h3><p><strong>sql语句如下</strong></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> 表名</span><br><span class="line">(</span><br><span class="line">    列名 数据类型和字段长度,</span><br><span class="line">    ......</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<p><strong>常用数据类型及长度范围：</strong> </p>
+<p>: <em><strong>char:</strong></em> 定长的非Unicode字符，char(n)</p>
+<p>: <em><strong>nchar：</strong></em> 定长的Unicode字符，nchar(n)</p>
+<p>: <em><strong>varchar:</strong></em> 非定长的非Unicode字符，varchar(n)</p>
+<p>: <em><strong>nvarchar:</strong></em> 非定长的Unicode字符，nvarchar(n)</p>
+<p>: <em><strong>numeric：</strong></em> 精确数值型，numeric(精确长度，小数位)</p>
+<p>: <em><strong>decimal：</strong></em> 精确数值型，decimal(精确长度，小数位)</p>
+<h3 id="定义数据表的约束"><a href="#定义数据表的约束" class="headerlink" title="定义数据表的约束"></a>定义数据表的约束</h3><p>约束是自动强制数据完整性的方式，约束定义了列中允许的取值。</p>
+<p>基本语法格式为:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">列名 数据类型 约束名 约束类型</span><br></pre></td></tr></table></figure>
+
+<p><strong>约束名：</strong> 约束不指定名称时，系统会给定一个名称。</p>
+<p><strong>约束类型：</strong> 在定义完整性约束是必须指定完整性约束的类型，以下介绍五种完整性类型的完整性约束。</p>
+<h4 id="（1）NULL-x2F-NOT-NULL-约束"><a href="#（1）NULL-x2F-NOT-NULL-约束" class="headerlink" title="（1）NULL &#x2F; NOT NULL 约束"></a>（1）NULL &#x2F; NOT NULL 约束</h4><p>当某一字段的值一定要输入值才有意义的时候，则可设置为NOT NULL。当字段允许出现空值时，可设置为 NULL。其语法如下：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">constraint</span> <span class="operator">&lt;</span>约束名<span class="operator">&gt;</span> [<span class="keyword">NULL</span> <span class="operator">|</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>]</span><br></pre></td></tr></table></figure>
+
+<p><strong>例如</strong></p>
+<p>建立一个S表，对SNo字段进行 NOT NULL 约束</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> S</span><br><span class="line">(</span><br><span class="line">    SNo <span class="type">varchar</span>(<span class="number">6</span>) <span class="keyword">constraint</span> S_CONS <span class="keyword">NOT</span> <span class="keyword">NULL</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h4 id="（2）唯一约束（UNIQUE约束）"><a href="#（2）唯一约束（UNIQUE约束）" class="headerlink" title="（2）唯一约束（UNIQUE约束）"></a>（2）唯一约束（UNIQUE约束）</h4><p>唯一约束用于指明基本表在某一列或多个列的组合上的取值必须唯一。唯一键允许为空，但为保证其唯一性，最多只可以出现一个NULL值。其语法如下：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">constraint</span> <span class="operator">&lt;</span>约束名<span class="operator">&gt;</span> <span class="keyword">unique</span></span><br></pre></td></tr></table></figure>
+
+<p>在建立唯一约束时，需考虑以下几个因素：</p>
+<ul>
+<li><p>使用唯一约束的字段允许为NULL值</p>
+</li>
+<li><p>一个表可以有多个唯一约束</p>
+</li>
+<li><p>可以把唯一约束定义在多个字段上</p>
+</li>
+</ul>
+<p><strong>例如</strong></p>
+<p>建立一个S表，定义SN为唯一键</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> S</span><br><span class="line">(</span><br><span class="line">   SN <span class="type">char</span>(<span class="number">8</span>) <span class="keyword">constraint</span> S_UNIQ <span class="keyword">unique</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h4 id="（3）主键约束（PRIMARY-KEY-约束）"><a href="#（3）主键约束（PRIMARY-KEY-约束）" class="headerlink" title="（3）主键约束（PRIMARY KEY 约束）"></a>（3）主键约束（PRIMARY KEY 约束）</h4><p>主键约束用于定义基本表的主键，起唯一标识作用，其值不能为NULL，也不能重复，以此来保证实体的完整性。其语法如下：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">constraint</span> <span class="operator">&lt;</span>约束名<span class="operator">&gt;</span> <span class="keyword">primary</span> key</span><br></pre></td></tr></table></figure>
+
+<p>在建立主键约束时，需考虑以下几个因素：</p>
+<ul>
+<li><p>一个表只能定义一个主键约束</p>
+</li>
+<li><p>使用主键约束的字段不允许出现NULL值</p>
+</li>
+<li><p>不能对同一个字段既定义唯一约束又定义主键约束</p>
+</li>
+</ul>
+<p><strong>例如</strong></p>
+<p>建立一个S表，定义SNo为S的主键</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> S</span><br><span class="line">(</span><br><span class="line">    SNo <span class="type">char</span>(<span class="number">8</span>) <span class="keyword">constraint</span> S_Prim <span class="keyword">primary</span> key</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h4 id="（4）外键约束（FOREIGN-KEY-约束）"><a href="#（4）外键约束（FOREIGN-KEY-约束）" class="headerlink" title="（4）外键约束（FOREIGN KEY 约束）"></a>（4）外键约束（FOREIGN KEY 约束）</h4><p>外键约束指定某一列或几列作为外部键。包含外部键的表称为从表，包含外部键所引用的主键或唯一键的表称为主表。其语法如下：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">constraint</span> <span class="operator">&lt;</span>约束名<span class="operator">&gt;</span> <span class="keyword">foreign</span> key <span class="keyword">references</span> <span class="operator">&lt;</span>主表名(列名)<span class="operator">&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>例如</strong></p>
+<p>建立一个SC表，定义SNo为SC的外部键</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> SC</span><br><span class="line">(</span><br><span class="line">    SNo <span class="type">char</span>(<span class="number">8</span>) <span class="keyword">constraint</span> S_Fore <span class="keyword">foreign</span> key <span class="keyword">references</span> S(SNo)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h4 id="（5）CHECK-约束"><a href="#（5）CHECK-约束" class="headerlink" title="（5）CHECK 约束"></a>（5）CHECK 约束</h4><p>check约束用来检查字段值所允许的范围。其语法如下：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">constraint</span> <span class="operator">&lt;</span>约束名<span class="operator">&gt;</span> <span class="keyword">check</span> <span class="operator">&lt;</span>条件<span class="operator">&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在建立CHECK约束时，需考虑以下几个因素：</p>
+<ul>
+<li><p>一个表中可以定义多个CHECK约束</p>
+</li>
+<li><p>每个字段只能定义一个CHECK约束</p>
+</li>
+</ul>
+<p><strong>例如</strong></p>
+<p>建立一个S表，定义Score的取值范围为0~100之间，Sex取值为男或女</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> S</span><br><span class="line">(</span><br><span class="line">    Score <span class="type">numeric</span>(<span class="number">4.1</span>) <span class="keyword">constraint</span> Score_SHK <span class="keyword">check</span>(Score <span class="operator">&gt;=</span> <span class="number">0</span> <span class="keyword">and</span> Score <span class="operator">&lt;=</span> <span class="number">100</span>),</span><br><span class="line">    Sex <span class="type">char</span>(<span class="number">2</span>) <span class="keyword">constraint</span> Sex_SHK <span class="keyword">check</span>((Sex<span class="operator">=</span><span class="string">&#x27;男&#x27;</span>) <span class="keyword">or</span> (Sex<span class="operator">=</span><span class="string">&#x27;女&#x27;</span>))</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-对数据表的修改"><a href="#3-对数据表的修改" class="headerlink" title="3.对数据表的修改"></a>3.对数据表的修改</h2><h3 id="用SQL命令修改数据表"><a href="#用SQL命令修改数据表" class="headerlink" title="用SQL命令修改数据表"></a>用SQL命令修改数据表</h3><p>SQL 使用 <em><strong>ALTER TABLE</strong></em>  命令来完成这一功能，有一下三种修改方式</p>
+<h4 id="（1）ADD-方式"><a href="#（1）ADD-方式" class="headerlink" title="（1）ADD 方式"></a>（1）ADD 方式</h4><p>ADD方式用于增加新列和完整性约束，其语法格式为：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> <span class="operator">&lt;</span>表名<span class="operator">&gt;</span> <span class="keyword">add</span> <span class="operator">&lt;</span>列定义<span class="operator">&gt;</span> <span class="operator">|</span> <span class="operator">&lt;</span>完整性约束定义<span class="operator">&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>例如</strong></p>
+<p>在S表中增加 email 列，且要求输入的 email 必须包括”@”</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> S <span class="keyword">add</span> email <span class="type">varchar</span>(<span class="number">20</span>) <span class="keyword">constraint</span> S_Chk <span class="keyword">check</span>(email <span class="keyword">like</span> <span class="string">&#x27;%@%&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h4 id="（2）ALTER-方式"><a href="#（2）ALTER-方式" class="headerlink" title="（2）ALTER 方式"></a>（2）ALTER 方式</h4><p>ALTER 方式用于修改某些列，其语法格式为</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> <span class="operator">&lt;</span>表名<span class="operator">&gt;</span> <span class="keyword">alter</span> <span class="keyword">column</span> <span class="operator">&lt;</span>列名<span class="operator">&gt;</span> <span class="operator">&lt;</span>数据列名<span class="operator">&gt;</span> [<span class="keyword">null</span> <span class="operator">|</span><span class="keyword">not</span> <span class="keyword">null</span>]</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<ul>
+<li><p>不能改变列名</p>
+</li>
+<li><p>不能将含有空值的列的定义修改为 NOT NULL 约束</p>
+</li>
+<li><p>若列中已有数据，则不能减少该列的宽度，也不能改变其数据类型</p>
+</li>
+<li><p>只能修改 null &#x2F; not null 约束，其他类型的约束在修改之前必须先将约束删除，然后再重新添加修改过的约束定义</p>
+</li>
+</ul>
+<p><strong>例如</strong></p>
+<p>把 S 表的 SN 列加宽到12个字符并不允许空值</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> S <span class="keyword">alter</span> <span class="keyword">column</span> SN <span class="type">char</span>(<span class="number">12</span>) <span class="keyword">not</span> <span class="keyword">null</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="（3）DROP方式"><a href="#（3）DROP方式" class="headerlink" title="（3）DROP方式"></a>（3）DROP方式</h4><p>DROP方式只用于删除完整性约束定义或删除表，其语法格式为：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> <span class="operator">&lt;</span>表名<span class="operator">&gt;</span> <span class="keyword">drop</span> <span class="keyword">constraint</span> <span class="operator">&lt;</span>约束名<span class="operator">&gt;</span>    <span class="operator">/</span><span class="operator">/</span>删除约束</span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> <span class="operator">&lt;</span>表名<span class="operator">&gt;</span>    <span class="operator">/</span><span class="operator">/</span>删除表</span><br></pre></td></tr></table></figure>
+
+<p><strong>例如</strong></p>
+<p>删除S表中的主键</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> S <span class="keyword">drop</span> <span class="keyword">constraint</span> S_Prim</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-对表的简单查询"><a href="#4-对表的简单查询" class="headerlink" title="4.对表的简单查询"></a>4.对表的简单查询</h2><h3 id="SQL命令对表进行查询"><a href="#SQL命令对表进行查询" class="headerlink" title="SQL命令对表进行查询"></a>SQL命令对表进行查询</h3><h4 id="（1）-无条件查询"><a href="#（1）-无条件查询" class="headerlink" title="（1） 无条件查询"></a>（1） 无条件查询</h4><p>无条件查询指只包含 <em><strong>SELECT…FROM</strong></em> 的查询，这种查询最简单，例如：</p>
+<p>在S表中查询所有学生的学号SNo，姓名SN</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo , SN <span class="keyword">from</span> S</span><br></pre></td></tr></table></figure>
+
+<h4 id="（2）条件查询"><a href="#（2）条件查询" class="headerlink" title="（2）条件查询"></a>（2）条件查询</h4><p>当在表中查询满足某些条件的行时，则需要使用 <em><strong>WHERE</strong></em> 子句指定查询条件。<em><strong>WHERE</strong></em> 一般由以下三部分组成：</p>
+<ul>
+<li><p>列名</p>
+</li>
+<li><p>比较运算符</p>
+</li>
+<li><p>列名、常数</p>
+</li>
+</ul>
+<p><strong>常用比较运算符如下</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">&#x3D; 、&gt; 、&lt; 、&gt;&#x3D; 、&lt;&#x3D; 、!&#x3D; 、&lt;&gt;</td>
+<td align="center">比较大小</td>
+</tr>
+<tr>
+<td align="center">AND 、OR 、NOT</td>
+<td align="center">多重条件</td>
+</tr>
+<tr>
+<td align="center">IN</td>
+<td align="center">确定集合</td>
+</tr>
+<tr>
+<td align="center">BETWEEN AND</td>
+<td align="center">确定范围</td>
+</tr>
+<tr>
+<td align="center">LIKE</td>
+<td align="center">字符匹配</td>
+</tr>
+<tr>
+<td align="center">IS NULL</td>
+<td align="center">空值</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>比较大小</strong></li>
+</ul>
+<p><strong>例</strong>  查询分数不低于85分的学生的学号与姓名</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo , SN <span class="keyword">from</span> S <span class="keyword">where</span> Score <span class="operator">&gt;=</span> <span class="number">85</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>多重条件</strong></li>
+</ul>
+<p>当 where 子句需要指定一个以上的查询条件时，需要使用逻辑运算符 and 、or 、not 将其连接成复合的逻辑表达式。期<strong>优先级</strong> 由高到低为： <em><strong>not、and、or</strong></em>  ，用户可使用括号改变优先级。</p>
+<p><strong>例</strong> 查询分数不低于85分的女学生的学号与姓名</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo , SN <span class="keyword">from</span> S <span class="keyword">where</span> (Sex <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span>) <span class="keyword">and</span> (Score <span class="operator">&gt;=</span> <span class="number">85</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>确定集合</strong></li>
+</ul>
+<p>利用 <strong>in</strong>  可以查询属性值属于指定集合的元组；利用 <strong>not in</strong> 可以查询指定集合外的元组</p>
+<p><strong>例</strong> 查询选了选修课程号为 C1 或 C2的学生的学号与姓名</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo , SN <span class="keyword">from</span> S <span class="keyword">where</span> CNo <span class="keyword">in</span> (<span class="string">&#x27;C1&#x27;</span> , <span class="string">&#x27;C2&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>确定范围</strong></li>
+</ul>
+<p><strong>例</strong> 查询分数在60分~85分的学生的学号与姓名</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo , SN <span class="keyword">from</span> S <span class="keyword">where</span> Score <span class="keyword">between</span> <span class="number">60</span> <span class="keyword">and</span> <span class="number">85</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>字符匹配</strong></li>
+</ul>
+<p>利用 <strong>like</strong> 进行 <strong>模糊查询</strong> ，一般格式为：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="operator">&lt;</span>属性名<span class="operator">&gt;</span> <span class="keyword">like</span> <span class="operator">&lt;</span>字符串常量<span class="operator">&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>属性名必须为字符型，字符串常量中的字符可以包含通配符，利用这些通配符，可以进行模糊查询，字符串中的通配符及功能如下表：</p>
+<table>
+<thead>
+<tr>
+<th align="center">通配符</th>
+<th align="center">功能</th>
+<th align="center">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">%</td>
+<td align="center">代表0个或多个字符</td>
+<td align="center">‘ab%’，ab后可接任意字符串</td>
+</tr>
+<tr>
+<td align="center">_</td>
+<td align="center">代表一个字符</td>
+<td align="center">‘a_b’，a与b之间有一个字符</td>
+</tr>
+<tr>
+<td align="center">[]</td>
+<td align="center">表示在某一范围的字符</td>
+<td align="center">[0-9]，0~9之间的字符</td>
+</tr>
+<tr>
+<td align="center">[^ ]</td>
+<td align="center">表示不在某一范围的字符</td>
+<td align="center">[^0-9]，不在0~9之间的字符</td>
+</tr>
+</tbody></table>
+<p><strong>例</strong> 查询姓张的同学的学号与姓名</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo , SN <span class="keyword">from</span> S <span class="keyword">where</span> SN <span class="keyword">like</span> <span class="string">&#x27;张%&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>空值查询</strong></li>
+</ul>
+<p>某个字段没有值称为具有空值（ NULL）。通常没有为一个列输入值时，该列的值就是空值，空值不同于0和空格，它不占任何储存空间。</p>
+<p><strong>例</strong> 查询没有考试成绩的学生的学号与姓名</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo , SN <span class="keyword">from</span> S <span class="keyword">where</span> Score <span class="keyword">is</span> <span class="keyword">null</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>注意空值条件为 ” is null “ 不能写为“ &#x3D; null “</strong> </p>
+<h4 id="（3）统计汇总查询"><a href="#（3）统计汇总查询" class="headerlink" title="（3）统计汇总查询"></a>（3）统计汇总查询</h4><p>SQL提供了许多库函数，增强了基本检索能力。常用的库函数如下：</p>
+<table>
+<thead>
+<tr>
+<th align="center">函数名称</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">avg</td>
+<td align="center">按列计算平均值</td>
+</tr>
+<tr>
+<td align="center">sum</td>
+<td align="center">按列计算值的总和</td>
+</tr>
+<tr>
+<td align="center">max</td>
+<td align="center">求一列的最大值</td>
+</tr>
+<tr>
+<td align="center">min</td>
+<td align="center">求一列的最小值</td>
+</tr>
+<tr>
+<td align="center">count</td>
+<td align="center">按列值统计个数</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>例1</strong></li>
+</ul>
+<p>求选 C1 课程的学生考试成绩的总分，平均分，最高分，最低分</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="built_in">sum</span>(Score) <span class="keyword">as</span> TotalScore, <span class="built_in">avg</span>(Score) <span class="keyword">as</span> AvgScore, <span class="built_in">max</span>(Score) <span class="keyword">as</span> MaxScore, <span class="built_in">min</span>(Score) <span class="keyword">as</span> MinScore</span><br><span class="line">form SC</span><br><span class="line"><span class="keyword">where</span> (CNo <span class="operator">=</span> <span class="string">&#x27;C1&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意函数 sum 与 avg 只能对数值型字段进行计算</strong></p>
+<ul>
+<li><strong>例2</strong></li>
+</ul>
+<p>求计算机系学生的总数</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(SNo) <span class="keyword">from</span> S <span class="keyword">where</span> Dept<span class="operator">=</span> <span class="string">&#x27;计算机&#x27;</span></span><br><span class="line">或</span><br><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> S <span class="keyword">where</span> Dept<span class="operator">=</span> <span class="string">&#x27;计算机&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>count(*)用来统计元组的个数，不消除重复行</strong></p>
+<ul>
+<li><strong>例3</strong></li>
+</ul>
+<p>求学校中共有多少个系</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(<span class="keyword">distinct</span> Dept) <span class="keyword">from</span> S</span><br></pre></td></tr></table></figure>
+
+<p><strong>加入关键字</strong> <em><strong>distinct</strong></em> <strong>后表示消去重复行</strong></p>
+<h4 id="（4）分组查询"><a href="#（4）分组查询" class="headerlink" title="（4）分组查询"></a>（4）分组查询</h4><p><strong>group by</strong> 子句可以将查询结果按属性列或属性列组合在行的方向上进行分组，每组在属性列或属性列组合上具有相同的值。若在分组后按照一定的条件进行筛选，则需要使用<strong>having</strong> 子句。</p>
+<ul>
+<li><strong>例</strong></li>
+</ul>
+<p>查询选修两门及以上的课程的学生的学号和选课门数</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo，<span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">from</span> SC <span class="keyword">group</span> <span class="keyword">by</span> SNo <span class="keyword">having</span>(<span class="built_in">count</span>(<span class="operator">*</span>) <span class="operator">&gt;=</span><span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+
+<p><strong>注</strong>  当一个查询中同时使用 <strong>where</strong> 子句，<strong>group by</strong> 子句，<strong>having</strong> 子句时，其顺序是 <strong>where，group by，having 。</strong> </p>
+<h4 id="（5）对查询结果排序"><a href="#（5）对查询结果排序" class="headerlink" title="（5）对查询结果排序"></a>（5）对查询结果排序</h4><p>当要对查询结果进行排序时，使用 <strong>order by</strong> 子句，<strong>order by</strong> 子句必须出现在其他子句之后。排序方式可以指定，<strong>desc</strong> 为降序，<strong>asc</strong> 为升序，缺省时为升序。</p>
+<ul>
+<li><strong>例</strong></li>
+</ul>
+<p>查询选修C1课程的学生的学号和成绩，并按成绩降序排列</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SNo，Score <span class="keyword">from</span> SC <span class="keyword">where</span> (CNo <span class="operator">=</span> <span class="string">&#x27;C1&#x27;</span>) <span class="keyword">order</span> <span class="keyword">by</span> score <span class="keyword">desc</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="5-对表的复杂查询"><a href="#5-对表的复杂查询" class="headerlink" title="5.对表的复杂查询"></a>5.对表的复杂查询</h2><h3 id="（1）连接查询"><a href="#（1）连接查询" class="headerlink" title="（1）连接查询"></a>（1）连接查询</h3><p>数据库中的各个表中存放着不同的数据，用户往往需要用多个表中的数据来组合、提炼出所需要的信息。如果一个查询需要对多个表进行操作，就称为<strong>连接查询</strong> 。</p>
+<p><strong>例</strong> </p>
+<p>对student(sno,clno,sname,ssex,sage)，course(cno,cname)，sc(sno,cno,score)三张表进行操作</p>
+<ul>
+<li>查询体育课成绩不及格的男生名单</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> sname <span class="keyword">from</span> sc,student ,course <span class="keyword">where</span> sc.cno<span class="operator">=</span>course.cno <span class="keyword">and</span> student.sno<span class="operator">=</span>sc.sno <span class="keyword">and</span> ssex<span class="operator">=</span><span class="string">&#x27;男&#x27;</span><span class="keyword">and</span> score<span class="operator">&lt;</span><span class="number">60</span> <span class="keyword">and</span> cname<span class="operator">=</span><span class="string">&#x27;体育&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>查询有多少名学生的物理课成绩不及格</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="built_in">count</span>(sno) <span class="keyword">from</span> sc,course  <span class="keyword">where</span> sc.cno<span class="operator">=</span>course.cno <span class="keyword">and</span> cname<span class="operator">=</span><span class="string">&#x27;物理&#x27;</span> <span class="keyword">and</span> score<span class="operator">&lt;</span><span class="number">60</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>当两个表中的列名相同时，引用列名要加上表名前缀，说明所指列属于哪个表，避免二义性。如果列名唯一则不需要加前缀。</strong></p>
+<h3 id="（2）子查询"><a href="#（2）子查询" class="headerlink" title="（2）子查询"></a>（2）子查询</h3><p>在 where 子句中包含另一个查询块，该查询块称为 <strong>子查询</strong> 或 <strong>嵌套查询</strong> ，包含子查询的语句称为父查询或外部查询。</p>
+<ul>
+<li><p>当子查询的返回值只有一个时，可以使用比较运算符( &#x3D;、&gt;、&lt;、&gt;&#x3D;、&lt;&#x3D;、!&#x3D;)将父查询和子查询连接起来。</p>
+</li>
+<li><p>如果子查询的返回值不止一个，而是一个集合时，则不能直接使用比较运算符，可以在比较运算符和子查询之间插入 <strong>ANY</strong> 或 <strong>ALL</strong> 。</p>
+</li>
+</ul>
+<p>: ANY 含义为任何一个</p>
+<p>: IN 可以代替 “&#x3D;ANY”</p>
+<p>: ALL 的含义是全部</p>
+<p>: &lt;&gt;ALL 的含义为不等于子查询结果中的任何一个值</p>
+<p>: NOT IN 可以替代“ &lt;&gt;ALL ”</p>
+<p>: EXISTS 的含义是存在的量词，其子查询不返回任何实际数据，它只返回逻辑值“真”或“假”</p>
+<p><strong>例</strong></p>
+<ol>
+<li>将 A 班全体学生的成绩置 0</li>
+</ol>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">update</span> sc <span class="keyword">set</span> score<span class="operator">=</span><span class="number">0</span> <span class="keyword">where</span> sno <span class="keyword">in</span>(<span class="keyword">select</span> sno <span class="keyword">from</span> student <span class="keyword">where</span> clno<span class="operator">=</span><span class="string">&#x27;A&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>删除 B 班全体学生的选课记录</li>
+</ol>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> sc <span class="keyword">where</span> sno <span class="keyword">in</span>(<span class="keyword">select</span> sno <span class="keyword">from</span> student <span class="keyword">where</span> clno<span class="operator">=</span><span class="string">&#x27;B&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>使用 exists关键字查询所有选修了 C1 号课程的学生的姓名</li>
+</ol>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">selec sname <span class="keyword">from</span> student <span class="keyword">where</span> <span class="keyword">exists</span> (<span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> sc <span class="keyword">where</span> cno<span class="operator">=</span><span class="string">&#x27;C1&#x27;</span><span class="keyword">and</span> sc.sno<span class="operator">=</span>student.sno)</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li> 查询其他班中比A班所有学生年龄都小的学生，并按年龄的降序输出</li>
+</ol>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> student <span class="keyword">where</span> sage <span class="operator">&lt;</span> <span class="keyword">all</span>(<span class="keyword">select</span> sage <span class="keyword">from</span> student <span class="keyword">where</span> clno<span class="operator">=</span><span class="string">&#x27;04001&#x27;</span>)</span><br><span class="line"><span class="keyword">and</span> clno<span class="operator">&lt;&gt;</span><span class="string">&#x27;04001&#x27;</span> </span><br><span class="line"><span class="keyword">order</span> <span class="keyword">by</span> sage <span class="keyword">desc</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="6-数据表中数据的操纵"><a href="#6-数据表中数据的操纵" class="headerlink" title="6.数据表中数据的操纵"></a>6.数据表中数据的操纵</h2>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>sql</tag>
+        <tag>学习</tag>
       </tags>
   </entry>
 </search>
