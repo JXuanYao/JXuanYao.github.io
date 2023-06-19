@@ -19,6 +19,27 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/xuanyao/4a17b156.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+        <tag>你好世界</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>web编程</title>
     <url>/xuanyao/ad939a.html</url>
     <content><![CDATA[<h1 id="一、HTML"><a href="#一、HTML" class="headerlink" title="一、HTML"></a>一、HTML</h1><p><strong>1、基本架构</strong></p>
@@ -333,124 +354,6 @@
       <tags>
         <tag>赖总笔记</tag>
         <tag>web</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/xuanyao/4a17b156.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>测试</tag>
-        <tag>你好世界</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>离散数学</title>
-    <url>/xuanyao/3fb56f9d.html</url>
-    <content><![CDATA[<ol>
-<li><p><strong>重言式：</strong> 给定一个命题公式，若无论对分量进行怎样的指派，其对应真值用为T。</p>
-</li>
-<li><p><strong>蕴含式：</strong> 当且仅当$P\rightarrow Q$ 是一个重言式时，称其为蕴含式。</p>
-</li>
-<li><p><strong>主析取范式：</strong> 在真值表中，一个公式的真值为T的指派所对应小项的析取。</p>
-</li>
-<li><p><strong>主合取范式：</strong> 在真值表中，一个公式的真值为F的指派所对应大项的合取。</p>
-<p>对于给定的命题公式，如果有一个等价公式，它仅由大项的合取所组成，则该等价公式陈为原式的主合取范式。</p>
-</li>
-<li></li>
-</ol>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">联结词</th>
-<th style="text-align:center">表示</th>
-<th style="text-align:center">注释</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">合取</td>
-<td style="text-align:center">$\bigwedge$</td>
-<td style="text-align:center">P、Q同为T时，为T</td>
-</tr>
-<tr>
-<td style="text-align:center">析取</td>
-<td style="text-align:center">$\bigvee$</td>
-<td style="text-align:center">P、Q有一个为T，则为T</td>
-</tr>
-<tr>
-<td style="text-align:center">条件</td>
-<td style="text-align:center">$\rightarrow$(若P则Q)</td>
-<td style="text-align:center">当且仅当，前件为T，后件为F时，为F</td>
-</tr>
-<tr>
-<td style="text-align:center">双条件</td>
-<td style="text-align:center">$\leftrightarrows$</td>
-<td style="text-align:center">P、Q真值相同时为T，相当于等号</td>
-</tr>
-<tr>
-<td style="text-align:center">优先级</td>
-<td style="text-align:center">$\lnot、\bigwedge、\bigvee、\rightarrow、\leftrightarrows$</td>
-<td style="text-align:center">-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<ol>
-<li><p><strong>等价公式：</strong> </p>
-<p><img src="E:\Note\image\2023-02-22-00-06-47-image.png" alt=""></p>
-</li>
-<li><p><strong>谓词：</strong> 用以刻划客体的性质或关系。</p>
-</li>
-<li><p><strong>简单命题函数：</strong> 由一个谓词和一些客体变元组成的表达式。</p>
-<p><strong>复杂命题函数：</strong> 由一个或n个简单命题函数以逻辑联结词组合而成的表达式。</p>
-</li>
-<li><p><strong>个体域：</strong> 在命题函数中客体变元的论述范围。</p>
-</li>
-<li><p><strong>$\forall(全称量词)$：</strong> 表达 对所有的、每一个、对任一个。</p>
-<p><strong>$\exists(存在量词)$：</strong> 表达 存在一些、至少一个、对于一些。</p>
-</li>
-<li><p><strong>量词与$\lnot$的关系：</strong> 将量词前面的$\lnot$移到量词后面时，存在量词改为全称量词，全称量词改为存在量词，反之，如将量词后面的$\lnot$移到量词前面去时，也要作相应改变。</p>
-</li>
-<li><p><strong>集合：</strong> 把具有共同性质的一些东西，汇聚成的一个集体。</p>
-</li>
-<li><p><strong>枚举法：</strong> $A=\begin{Bmatrix}a,b,c,d \end{Bmatrix}$</p>
-<p><strong>叙述法：</strong> $B=\begin{Bmatrix}x|x\in z,x&lt;10 \end{Bmatrix}$</p>
-<p><strong>文氏图法：</strong> 韦恩图</p>
-</li>
-<li><p><strong>交集：</strong> 设任意两个集合A和B，由集合A和集合B的所有共同元素组成的集合S，称为A和B的交集，记作$A\bigcap B$</p>
-</li>
-<li><p><strong>并集：</strong> 设任意两个集合A和B，所有属于A或属于B的元素组成的集合S，称为A和B的并集，记作$A\bigcup B$ </p>
-</li>
-<li><p><strong>补集：</strong> 设A，B为任意两个集合，所有属于A而不属于B的一切元素组成的集合S为B对A的补集，或相对补，记作$A-B$</p>
-</li>
-<li><p><strong>绝对补：</strong> 设E为全集，对任一集合A关于E的补$E-A$，称为集合A的绝对补，记作~A</p>
-</li>
-<li><p><strong>对称差：</strong> 设A，B为任意两个集合，A和B的对称差为集合S，其元素或属于A，或属于B ，但不能同时既属于A又属于B，记作$A\bigoplus B$</p>
-</li>
-<li><p><strong>笛卡尔积：</strong> 令A和B是任意两个集合，若序偶的第一个成员是A的元素，第二个成员是B的元素，所有这样的序偶集合，称为集合A和B的笛卡尔乘积或直积，记作$A\times B=\begin{Bmatrix}&lt;a,1&gt;,&lt;a,2&gt;,&lt;a,3&gt;,&lt;b,1&gt;,&lt;b,2&gt;,&lt;b,3&gt; \end{Bmatrix}$ </p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>赖总笔记</category>
-      </categories>
-      <tags>
-        <tag>赖总笔记</tag>
-        <tag>离散数学</tag>
       </tags>
   </entry>
   <entry>
@@ -847,290 +750,91 @@
       </tags>
   </entry>
   <entry>
-    <title>网络服务器配置</title>
-    <url>/xuanyao/29ff53fc.html</url>
-    <content><![CDATA[<h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><ol>
-<li><p><strong>网络操作系统：</strong> 建立在计算机操作系统基础上，用于管理网络通信和共享资源，协调主机上任务的运行，并向用户提供统一的有效的网络接口的软件合集。</p>
+    <title>离散数学</title>
+    <url>/xuanyao/3fb56f9d.html</url>
+    <content><![CDATA[<ol>
+<li><p><strong>重言式：</strong> 给定一个命题公式，若无论对分量进行怎样的指派，其对应真值用为T。</p>
 </li>
-<li><p><strong>网络操作系统的体系结构</strong></p>
-<ul>
-<li><p>主要有<strong>层次结构</strong>和<strong>微内核结构</strong> </p>
+<li><p><strong>蕴含式：</strong> 当且仅当$P\rightarrow Q$ 是一个重言式时，称其为蕴含式。</p>
 </li>
-<li><p>内核组织方式：由于操作系统设计的目标和环境不同，内核的大小和功能有很大差别，网络操作系统的两种主要组织方式：<strong>单内核</strong> 和<strong>微内核</strong> </p>
-<ul>
-<li><p><strong>单内核</strong>：在硬件层之上定义了一个抽象接口，以实现操作系统的功能，功能由多个运行在内核模式的模块来完成。</p>
-<p><img src="file:///E:/Note/image/2023-02-03-11-11-54-image.png" title="" alt="" width="199"></p>
-<p>优点：运行效率高、核心部分简洁。</p>
-<p>缺点：内核偏大、内部模块之间相互调用关系复杂，一个很小的BUG可能导致系统崩溃。</p>
+<li><p><strong>主析取范式：</strong> 在真值表中，一个公式的真值为T的指派所对应小项的析取。</p>
 </li>
-<li><p><strong>微内核</strong>：其基本思想是内核要尽可能小，将大量的操作系统功能放到内核之外去实现，内核中仅存放最基本的核心操作系统功能，内核外部的其他服务和应用，作为独立的服务器进程，在用户模式下运行。</p>
-<p><img src="file:///E:/Note/image/2023-02-03-11-22-04-image.png" title="" alt="" width="255"></p>
-<p>优点：内核和核外服务程序的开发分离，可为特定应用程序或运行环境要求定制服务程序，具有良好的可伸缩性，简化了实现，提供了灵活性，适合网络操作系统与分布式系统的构造。微内核还能执行保护功能</p>
+<li><p><strong>主合取范式：</strong> 在真值表中，一个公式的真值为F的指派所对应大项的合取。</p>
+<p>对于给定的命题公式，如果有一个等价公式，它仅由大项的合取所组成，则该等价公式陈为原式的主合取范式。</p>
 </li>
-</ul>
-</li>
-<li><p><strong>层次式体系结构</strong> ：各模块有固定位置和层次，任何一层只能调用比它低层次所提供的服务，并为其上层提供服务</p>
-<ul>
-<li><p>优点：功能明确，调用关系清晰，保证设计和实现的正确性；各层可分别实现、且便于扩充；高层错误不会响应到低层。</p>
-</li>
-<li><p>缺点：效率低、层次之间调用开销大、系统内核比较大。</p>
-</li>
-</ul>
-</li>
-<li><p><strong>微内核体系结构</strong>：</p>
-</li>
-</ul>
-</li>
-<li><p><strong>服务器群集类型</strong></p>
-<ul>
-<li><strong>以故障转移和容错为主</strong> ：一旦其中一台或几台服务器出现停机，其运行的应用由集群中的其他服务器自动接管，从而提高整个系统的可用性。</li>
-<li><strong>以负载均衡为主</strong> ：将服务和应用部署到多台服务器，将应用网络请求分散到多台服务器上，从而提高整个系统的性能。</li>
-</ul>
-</li>
+<li></li>
 </ol>
-<h1 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h1><ol>
-<li><p><strong>角色</strong> ：<u>角色是软件程序的集合，描述的是服务器承载的主要功能，相当于服务器的一个门类</u>，如DNS服务器、WEB服务器。管理员可将整个服务器设置为一个角色，也可在一台计算机上运行多个服务器角色。</p>
-</li>
-<li><p><strong>角色服务</strong> ：<u>每个角色都提供一组功能，这些功能用于执行特定的任务，称为角色服务。角色服务是提供角色功能的软件程序，相当于服务器组件。</u>每个服务器角色可包含一个或多个角色服务。</p>
-</li>
-<li><p><strong>功能</strong> ：<u>描述服务器的辅助或支持性功能(或特性)。功能是一些软件程序，相当于系统组件。</u></p>
-</li>
-<li><p><strong>角色、角色服务与功能之间的依存关系</strong> ：<u>安装角色并准备部署服务器时，服务器管理器提示安装该角色所需的任何其他角色、角色服务或功能。删除角色、角色服务或功能，服务器管理器将提示其他程序是否也需要删除的软件。</u>该依存关系由系统管理，管理员无需知晓安装角色所依赖软件。</p>
-</li>
-</ol>
-<h1 id="第四章"><a href="#第四章" class="headerlink" title="第四章"></a>第四章</h1><ol>
-<li><p><strong>TCP/IP协议的分层结构</strong> </p>
-<p><img src="E:\Note\image\2023-02-05-16-07-46-image.png" alt=""> </p>
-</li>
-</ol>
-<h1 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h1><ol>
-<li><p><strong>域名系统的组成</strong> </p>
-<ul>
-<li><p><strong>名称空间</strong> ：指定用于组织名称的域的层次结构</p>
-</li>
-<li><p><strong>资源记录</strong> ：将域名映射到特定类型的资源信息，注册或解析名称时使用</p>
-</li>
-<li><p><strong>DNS服务器</strong> ：存储资源记录并提供名称查询服务的程序</p>
-</li>
-<li><p><strong>DNS客户端(解析程序)</strong> ：用来查询服务器获取名称解析信息</p>
-</li>
-</ul>
-</li>
-<li><p><strong>域名解析过程</strong>  </p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span>使用客户端本地DNS解析程序缓存进行解析</span><br><span class="line"><span class="number">2.</span>将名称查询提交给首选DNS服务器</span><br><span class="line"><span class="number">3.</span>DNS服务器搜索DNS区域数据文件</span><br><span class="line"><span class="number">4.</span>查DNS服务器本地缓存 </span><br><span class="line"><span class="number">5.</span>使用递归查询来完全解析名称。</span><br><span class="line"><span class="number">6.</span>若不能使用递归，则使用迭代查询。</span><br><span class="line"><span class="number">7.</span>若还不能解析该名称，按照客户端DNS服务器列表，依次查询备用DNS服务器</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li><p>使用客户端本地DNS解析程序缓存进行解析，若解析成功，返回相应IP，查询完成，反之解析</p>
-</li>
-<li><p>客户端将名称查询提交给所设定的首选(主)DNS服务器</p>
-</li>
-<li><p>DNS服务器接到查询请求，搜索本地DNS区域数据文件(存储域名解析数据)，若查到匹配信息，则做出权威应答，返回相应IP地址，查询完成，否则，继续解析</p>
-</li>
-<li><p>若本地区域数据库中没有，就查DNS服务器本地缓存，若查到匹配信息，就做出肯定应答，返回相应的IP地址，查询完成，否则继续解析</p>
-</li>
-<li><p>使用递归查询来完全解析名称，这需要其他DNS服务器的支持</p>
-</li>
-<li><p>如果不能使用递归查询（例如DNS服务器禁用递归查询），则使用迭代查询</p>
-</li>
-<li><p>若不能解析该名称，则客户端按照所配置的DNS服务器列表，依次查询其中所列的备用DNS服务器</p>
-<ul>
-<li>采用递归或迭代来处理客户端查询时，将所有所获得的有关DNS名称空间的重要信息交由DNS服务器缓存，既加速DNS的后继查询，又减少网络上与DNS相关的查询通量信息</li>
-</ul>
-</li>
-</ul>
-<h1 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h1><ol>
-<li><p><strong>域</strong> ：域是Active Directory 的基本单位和核心单元，是Active Directory的分区单位，Active Directory中必须至少有一个域。</p>
-<p><strong>域包括三种类型的计算机</strong> ：</p>
-<ul>
-<li><p>域控制器：整个域的核心，存储Active Directory数据库，承担主要的管理任务，负责处理用户和计算机的登录</p>
-</li>
-<li><p>成员服务器：域中非域控制器的Windows服务器，不存储Active Directory信息，不处理账户登录过程</p>
-</li>
-<li><p>工作站：加入域的Windows计算机，可访问域中的资源</p>
-</li>
-</ul>
-<p><img src="file:///E:/Note/image/2023-02-13-16-11-08-image.png" title="" alt="" width="252"></p>
-</li>
-<li><p><strong>组织单位</strong> ：<u>组织单位是可将用户、组、计算机和其他组织单位放入其中的Active Directory容器</u>。<u>组织单位相当于域的子域</u>，可像域一样包含各种对象（包括组织单位）。每个域的组织单位层次都是独立的，组织单位不能包括来自其他域的对象。在域中创建的组织单位应考虑能反映组织单位的职能或商务结构。</p>
-<p><img src="file:///E:/Note/image/2023-02-13-16-15-08-image.png" title="" alt="" width="254"></p>
-</li>
-<li><p><strong>域树</strong> ：<u>可将多个域组合成一个域树。域树中第一个域称作<strong>根域</strong> ，同一域树中其他域为<strong>子域</strong> ，位于上层的域称为子域的<strong>父域</strong> 。</u>域树中的域虽有层次关系，但仅限于命名方式，并不代表父域对子域具有管辖权限。域树中各域都是独立的管理个体，父域和子域的管理员是平等的。</p>
-<p><img src="file:///E:/Note/image/2023-02-13-16-17-45-image.png" title="" alt="" width="225"></p>
-</li>
-<li><p><strong>林</strong> <u>：一个域或多个域通过信任关系形成的集合</u>。林中的域树不形成邻接的名称空间，各自使用不同的DNS名称。林的根域是林中创建的第一个域，所有域树的根域与林的根域建立可传递的信任关系。</p>
-<p><img src="file:///E:/Note/image/2023-02-13-16-18-03-image.png" title="" alt="" width="485"></p>
-</li>
-<li><p><strong>域信任关系：</strong> <u>建立在两个域之间的关系，使一个域中的账户由另一个域中的域控制器验证</u>。所有域信任关系只能有两个域：信任域和受信任域；信任域方向可以是单向也可以使双向；信任关系可传递，也可不传递。</p>
-</li>
-<li><p><strong>Active Directory与DNS集成</strong> </p>
-<p>AD与DNS集成并享有相同的名称空间结构，两者集成体现在以下三个方面：</p>
-<ul>
-<li><p>Active Directory与DNS有相同的层次结构            </p>
-</li>
-<li><p>DNS可存储在Active Directory中 </p>
-</li>
-<li><p>Active Directory将DNS作为定位服务使用（如图所示）</p>
-</li>
-</ul>
-</li>
-</ol>
-<p><strong>关系：</strong> DNS不需要Active Directory 也能运行，而Active Directory需要DNS才能正常运行。</p>
-<p><img title="" src="file:///E:/Note/image/2023-02-06-11-59-15-image.png" alt="" data-align="center" width="349"></p>
-<h1 id="第七章"><a href="#第七章" class="headerlink" title="第七章"></a>第七章</h1><ol>
-<li><p><strong>DHCP的工作原理</strong> </p>
-<ul>
-<li><p>DHCP基于客户机/服务器模式，服务器端使用UDP 67端口，客户端使用UDP 68端口。</p>
-</li>
-<li><p>DHCP客户端每次启动与服务器通信（申请IP地址，获取配置信息）的两种情况：</p>
-<ul>
-<li><p>DHCP客户端向DHCP服务器申请新的IP地址</p>
-<p><strong>&gt;</strong> 首次以DHCP客户端启动。 </p>
-<p><strong>&gt;</strong> DHCP客户端租用IP已被DHCP服务器收回。</p>
-<p><strong>&gt;</strong> DHCP客户端自行释放已租用IP，要求使用一个新地址。</p>
-</li>
-<li><p>已获得IP的DHCP客户端要求更新租约，继续使用该地址</p>
-<p><strong>&gt;</strong> 不管租约是否到期，以获得IP地址的DHCP客户端每次启动时都将以广播方式向DHCP服务器发送请求信息，请求继续租用原IP。即使DHCP服务器未发送确认信息，只要租期未满，客户端任能继续使用原IP。</p>
-<p><strong>&gt;</strong> 租约期限超过一半时DHCP客户端自动以广播方式向DHCP服务器发出续租IP请求。</p>
-<p>（若续租成功，DHCP服务器将回送DHCPACK信息；若不成功，DHCP服务器回送<strong>DHCPNACK信息</strong> ，说明该IP不能分配给该客户端。）</p>
-</li>
-</ul>
-</li>
-<li><p><strong>DHCP客户端申请IP过程：</strong> </p>
-<p><img title="" src="file:///E:/Note/image/2023-02-06-15-45-32-image.png" alt="" width="426" data-align="inline"></p>
-<ul>
-<li><p>DHCP客户端以广播方式发出<strong>DHCPDISCOVER(探测)信息</strong> ，查找网络中的DHCP服务器；</p>
-</li>
-<li><p>网络中的DHCP服务器收到来自客户端的DHCPDISCOVER信息后，从IP地址池中选取一个未租出的IP地址作为<strong>DHCPOFFER(提供)信息</strong> ，以广播的方式发送给网络中的客户端。此时客户端没有自己的IP地址，所以只能以广播方式。服务器准备租出的IP地址将临时保留起来，以免同时分配给其他客户端；                            </p>
-</li>
-<li><p>DHCP客户端收到DHCPOFFER信息后，再以广播方式向网络中的DHCP服务器发送<strong>DHCPREQUEST(请求)信息</strong> ，申请分配IP地址。</p>
-<p>（若网络中有多个DHCP服务器，DHCP客户端只会选择第一个接收到的DCHPOFFER信息。客户端之所以以广播方式发送DHCOREQUEST信息，除了通知已被选择的DHCP服务器，还要通知未被选择的DHCP服务器释放原本准备分配给客户端的IP地址，供其他客户端使用。）</p>
-</li>
-<li><p>DHCP服务器收到DHCP客户端的DHCPREQUEST信息后，以广播方式发送<strong>DHCPACK(确认)信息</strong> 。除IP地址外，DHCPACK信息还包括TCP/IP配置数据，如默认网关、DNS服务器等。</p>
-</li>
-<li><p>DHCP客户端收到DHCPACK信息后，随即获得了所需的IP及相关配置信息。</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>DHCP服务器部署</strong> </p>
-<ul>
-<li><p><strong>DHCP规划：</strong> </p>
-<ul>
-<li><p>单一子网环境中仅需一台DHCP服务器</p>
-</li>
-<li><p>非常重要的网络在部署主要DHCP服务器的基础上，再部署一台或多台辅助（或备用）DHCP服务器。<strong>好处：</strong> 提供容错；在网络中平衡DHCP服务器的使用。 </p>
-</li>
-<li><p>在路由器中部署DHCP服务器。在一两个网段中部署一到两台DHCP服务器，而在其他网段使用DHCP代理。</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>复杂网络DHCP部署</strong> </p>
-<ul>
-<li><p><strong>配置多台DHCP服务器</strong> </p>
-<ul>
-<li><p>在同子网上使用多个DHCP服务器，可以为它服务的客户机提供更强的容错能力。</p>
-</li>
-<li><p>为了平衡DHCP服务器的使用，较好的方法是使用70/30规则划分两个DHCP服务器之间的作用域。使用排除地址的方法来分割地址范围。</p>
-<p><img src="E:\Note\image\2023-02-12-16-08-41-image.png" alt=""></p>
-</li>
-</ul>
-</li>
-<li><p><strong>跨网段DHCP中继</strong> </p>
-<ul>
-<li><p><strong>DHCP中继代理的作用：</strong> 将DHCP请求从一个网段传递到另一个网段。</p>
-<p>解决方案：</p>
-<p>1》直接通过路由器实现，要求路由器支持DHCP/BOOTP中继代理功能，能够中转DHCP和BOOTP通信。</p>
-<p>2》使用DHCP中继代理软件。</p>
-</li>
-<li><p>必须使用路由器或计算机作为DHCP和BOOTP中继代理服务器以支持DHCP通信的转发。</p>
-</li>
-<li><p>DHCP中继代理为跨网段DHCP客户端提供DHCP服务，涉及多子网多作用域，可以设置超级作用域。至少在一个网段中部署一台DHCP服务器</p>
-<p><img src="E:\Note\image\2023-02-12-16-37-57-image.png" alt=""></p>
-</li>
-</ul>
-</li>
-<li><p><strong>多宿主DHCP服务器</strong> </p>
-<ul>
-<li><p>多宿主DHCP服务器指一台DHCP服务器安装多网卡，为多个独立的网络提供服务，其中每块网卡连接独立的网段。</p>
-<p><img src="E:\Note\image\2023-02-12-16-48-20-image.png" alt=""></p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>DHCPv6设置</strong></p>
-<ul>
-<li><p>DHCPv6客户端会在网络上搜寻路由器，然后通过路由器返回的设置来决定是否向DHCP服务器请求更多的IPv6地址和DHCP选项设置</p>
-</li>
-<li><p>Windows Server 2012 R2的DHCPv6支持的两种路由匹配模式：</p>
-<ul>
-<li><p><strong>DHCPv6无状态模式：</strong> DHCPv6客户端仅向DHCP服务器请求DHCP选项设置，而不会请求IPv6地址。它通过路由器返回前缀来设置IPv6地址，或者直接静态设置IPv6地址。</p>
-</li>
-<li><p><strong>DHCPv6有状态模式：</strong> DHCPv6客户端向DHCP服务器同时请求IPv6地址和DHCP选项设置。</p>
-</li>
-</ul>
-</li>
-<li><p>根据路由器来<strong>决定DHCPv6的运行模式</strong> ：</p>
-<ul>
-<li><p>若路由器返回的<strong>O&amp;M</strong> 标志均被设置为<strong>1</strong> ，表示客户端需要通过DHCP服务器同时获取IPv6地址和选项设置，应选择<strong>有状态模式</strong> 。</p>
-</li>
-<li><p>若路由器返回的<strong>O</strong> 标志设置为<strong>1</strong> ，而<strong>M</strong> 标志<strong>未设置</strong> ，表示客户端不需要通过DHCP服务器获取IPv6地址，只需要选项设置，应选择<strong>无状态模式</strong> 。</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<h1 id="第八章"><a href="#第八章" class="headerlink" title="第八章"></a>第八章</h1><ol>
-<li><p><strong>非对称加密</strong> ：它采用密钥对信息进行加密和解密，加密和解密所用密钥不同。</p>
-<ul>
-<li><p>公钥通过非保密方式向他人公开，任何人都可获得；</p>
-</li>
-<li><p>私钥则由自己保存；</p>
-</li>
-<li><p><strong>加密</strong> ：利用接收方的公钥和自己的私钥对信息加密</p>
-</li>
-<li><p><strong>解密</strong> ：利用自己的私钥和发送方的公钥进行解密</p>
-</li>
-<li><p>既可以防止数据发送方的事后否认，又可以防止他人仿冒或蓄意破坏，可实现保密、认证、抗否认和完整性控制等安全要求，对于大规模应用实现更容易。</p>
-<p><img src="E:\Note\image\2023-02-13-14-27-35-image.png" alt=""></p>
-</li>
-</ul>
-</li>
-</ol>
-<h1 id="第十章"><a href="#第十章" class="headerlink" title="第十章"></a>第十章</h1><ol>
-<li><p><strong>分布式文件系统结构</strong> </p>
-<p><strong>DFS：</strong>  为用户所需网络资源提供统一和透明的访问路径。使用简化单一的命名空间来映射复杂多变的网络共享资源。</p>
-<p><strong>DFS组件：</strong> </p>
-<ul>
-<li><p><strong>DFS命名空间：</strong> 让用户能够将位于不同服务器内的共享文件夹集中在一起，并以一个虚拟文件夹的树状结构呈现给用户。</p>
-<p><strong>DFS命名空间分为两种：</strong> </p>
-<ul>
-<li><p>基于域的命名空间：它将命名空间的设置数据存储到命名空间服务器与AD中，支持多台命名空间服务器，并具备命名空间的容错功能；</p>
-</li>
-<li><p>独立命名空间：它将命名空间的设置数据存储到命名空间服务器内，只能够有一台命名空间服务器。</p>
-</li>
-<li><p><strong>（</strong> 两种类型决定了分布式文件系统类型：域分布式文件系统、独立的根目录分布式文件系统 <strong>）</strong></p>
-</li>
-</ul>
-</li>
-<li><p><strong>命名空间服务器：</strong> 命名空间的宿主服务器，对于基于域的命名空间，可以是成员服务器或域控制器，且可设置多台命名空间服务器；对于独立命名空间，可以是独立服务器。</p>
-</li>
-<li><p><strong>命名空间根目录：</strong> 命名空间的起点，对应到命名空间服务器内的一个共享文件夹，而此文件夹必须位于NTFS卷。</p>
-<p>对于基于域的命名空间，其名称以域名开头；对于独立命名空间，则名称会以计算机名称开头。</p>
-</li>
-<li><p><strong>DFS文件夹：</strong> 相当于DFS命名空间的子目录，它是一个指向网络文件夹的指针，同一根目录下的每个文件必须拥有唯一的名称，但不能在DFS文件夹下再建立文件夹。</p>
-</li>
-<li><p><strong>文件夹目标：</strong> 这是DFS文件夹实际指向的文件夹位置，即目标文件夹。目标可以是本机或网络中的共享文件夹，也可以是另一个DFS文件夹。一个DFS文件夹可对应多个目标，以实现容错功能。</p>
-</li>
-<li><p><strong>DFS复制：</strong><u> 一个DFS文件夹可以对应多个目标，多个目标多对应的共享文件夹提供给客户端的文件必须一样，也就是保持同步，这由DFS复制服务来自动实现的。</u>该服务提供一个称为<strong>远程差分压缩（RDC）的功能，</strong> 能够有效地在服务器之间复制文件，这对带宽有限的WAN联机非常有利。</p>
-</li>
-</ul>
-<p><strong>分布式文件系统：</strong> 由DFS命名空间、DFS文件夹和文件夹目标组成。通过DFS来访问网络共享资源，<strong>只需提供</strong> DFS命名空间和DFS文件夹。</p>
-<p><strong>建立分布式文件系统的主要工作：</strong> 建立DFS结构。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">联结词</th>
+<th style="text-align:center">表示</th>
+<th style="text-align:center">注释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">合取</td>
+<td style="text-align:center">$\bigwedge$</td>
+<td style="text-align:center">P、Q同为T时，为T</td>
+</tr>
+<tr>
+<td style="text-align:center">析取</td>
+<td style="text-align:center">$\bigvee$</td>
+<td style="text-align:center">P、Q有一个为T，则为T</td>
+</tr>
+<tr>
+<td style="text-align:center">条件</td>
+<td style="text-align:center">$\rightarrow$(若P则Q)</td>
+<td style="text-align:center">当且仅当，前件为T，后件为F时，为F</td>
+</tr>
+<tr>
+<td style="text-align:center">双条件</td>
+<td style="text-align:center">$\leftrightarrows$</td>
+<td style="text-align:center">P、Q真值相同时为T，相当于等号</td>
+</tr>
+<tr>
+<td style="text-align:center">优先级</td>
+<td style="text-align:center">$\lnot、\bigwedge、\bigvee、\rightarrow、\leftrightarrows$</td>
+<td style="text-align:center">-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol>
+<li><p><strong>等价公式：</strong> </p>
+<p><img src="E:\Note\image\2023-02-22-00-06-47-image.png" alt=""></p>
+</li>
+<li><p><strong>谓词：</strong> 用以刻划客体的性质或关系。</p>
+</li>
+<li><p><strong>简单命题函数：</strong> 由一个谓词和一些客体变元组成的表达式。</p>
+<p><strong>复杂命题函数：</strong> 由一个或n个简单命题函数以逻辑联结词组合而成的表达式。</p>
+</li>
+<li><p><strong>个体域：</strong> 在命题函数中客体变元的论述范围。</p>
+</li>
+<li><p><strong>$\forall(全称量词)$：</strong> 表达 对所有的、每一个、对任一个。</p>
+<p><strong>$\exists(存在量词)$：</strong> 表达 存在一些、至少一个、对于一些。</p>
+</li>
+<li><p><strong>量词与$\lnot$的关系：</strong> 将量词前面的$\lnot$移到量词后面时，存在量词改为全称量词，全称量词改为存在量词，反之，如将量词后面的$\lnot$移到量词前面去时，也要作相应改变。</p>
+</li>
+<li><p><strong>集合：</strong> 把具有共同性质的一些东西，汇聚成的一个集体。</p>
+</li>
+<li><p><strong>枚举法：</strong> $A=\begin{Bmatrix}a,b,c,d \end{Bmatrix}$</p>
+<p><strong>叙述法：</strong> $B=\begin{Bmatrix}x|x\in z,x&lt;10 \end{Bmatrix}$</p>
+<p><strong>文氏图法：</strong> 韦恩图</p>
+</li>
+<li><p><strong>交集：</strong> 设任意两个集合A和B，由集合A和集合B的所有共同元素组成的集合S，称为A和B的交集，记作$A\bigcap B$</p>
+</li>
+<li><p><strong>并集：</strong> 设任意两个集合A和B，所有属于A或属于B的元素组成的集合S，称为A和B的并集，记作$A\bigcup B$ </p>
+</li>
+<li><p><strong>补集：</strong> 设A，B为任意两个集合，所有属于A而不属于B的一切元素组成的集合S为B对A的补集，或相对补，记作$A-B$</p>
+</li>
+<li><p><strong>绝对补：</strong> 设E为全集，对任一集合A关于E的补$E-A$，称为集合A的绝对补，记作~A</p>
+</li>
+<li><p><strong>对称差：</strong> 设A，B为任意两个集合，A和B的对称差为集合S，其元素或属于A，或属于B ，但不能同时既属于A又属于B，记作$A\bigoplus B$</p>
+</li>
+<li><p><strong>笛卡尔积：</strong> 令A和B是任意两个集合，若序偶的第一个成员是A的元素，第二个成员是B的元素，所有这样的序偶集合，称为集合A和B的笛卡尔乘积或直积，记作$A\times B=\begin{Bmatrix}&lt;a,1&gt;,&lt;a,2&gt;,&lt;a,3&gt;,&lt;b,1&gt;,&lt;b,2&gt;,&lt;b,3&gt; \end{Bmatrix}$ </p>
 </li>
 </ol>
 ]]></content>
@@ -1139,7 +843,7 @@
       </categories>
       <tags>
         <tag>赖总笔记</tag>
-        <tag>网络服务器</tag>
+        <tag>离散数学</tag>
       </tags>
   </entry>
   <entry>
@@ -1437,6 +1141,302 @@
       <tags>
         <tag>赖总笔记</tag>
         <tag>网络系统集成</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网络服务器配置</title>
+    <url>/xuanyao/29ff53fc.html</url>
+    <content><![CDATA[<h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><ol>
+<li><p><strong>网络操作系统：</strong> 建立在计算机操作系统基础上，用于管理网络通信和共享资源，协调主机上任务的运行，并向用户提供统一的有效的网络接口的软件合集。</p>
+</li>
+<li><p><strong>网络操作系统的体系结构</strong></p>
+<ul>
+<li><p>主要有<strong>层次结构</strong>和<strong>微内核结构</strong> </p>
+</li>
+<li><p>内核组织方式：由于操作系统设计的目标和环境不同，内核的大小和功能有很大差别，网络操作系统的两种主要组织方式：<strong>单内核</strong> 和<strong>微内核</strong> </p>
+<ul>
+<li><p><strong>单内核</strong>：在硬件层之上定义了一个抽象接口，以实现操作系统的功能，功能由多个运行在内核模式的模块来完成。</p>
+<p><img src="file:///E:/Note/image/2023-02-03-11-11-54-image.png" title="" alt="" width="199"></p>
+<p>优点：运行效率高、核心部分简洁。</p>
+<p>缺点：内核偏大、内部模块之间相互调用关系复杂，一个很小的BUG可能导致系统崩溃。</p>
+</li>
+<li><p><strong>微内核</strong>：其基本思想是内核要尽可能小，将大量的操作系统功能放到内核之外去实现，内核中仅存放最基本的核心操作系统功能，内核外部的其他服务和应用，作为独立的服务器进程，在用户模式下运行。</p>
+<p><img src="file:///E:/Note/image/2023-02-03-11-22-04-image.png" title="" alt="" width="255"></p>
+<p>优点：内核和核外服务程序的开发分离，可为特定应用程序或运行环境要求定制服务程序，具有良好的可伸缩性，简化了实现，提供了灵活性，适合网络操作系统与分布式系统的构造。微内核还能执行保护功能</p>
+</li>
+</ul>
+</li>
+<li><p><strong>层次式体系结构</strong> ：各模块有固定位置和层次，任何一层只能调用比它低层次所提供的服务，并为其上层提供服务</p>
+<ul>
+<li><p>优点：功能明确，调用关系清晰，保证设计和实现的正确性；各层可分别实现、且便于扩充；高层错误不会响应到低层。</p>
+</li>
+<li><p>缺点：效率低、层次之间调用开销大、系统内核比较大。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>微内核体系结构</strong>：</p>
+</li>
+</ul>
+</li>
+<li><p><strong>服务器群集类型</strong></p>
+<ul>
+<li><strong>以故障转移和容错为主</strong> ：一旦其中一台或几台服务器出现停机，其运行的应用由集群中的其他服务器自动接管，从而提高整个系统的可用性。</li>
+<li><strong>以负载均衡为主</strong> ：将服务和应用部署到多台服务器，将应用网络请求分散到多台服务器上，从而提高整个系统的性能。</li>
+</ul>
+</li>
+</ol>
+<h1 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h1><ol>
+<li><p><strong>角色</strong> ：<u>角色是软件程序的集合，描述的是服务器承载的主要功能，相当于服务器的一个门类</u>，如DNS服务器、WEB服务器。管理员可将整个服务器设置为一个角色，也可在一台计算机上运行多个服务器角色。</p>
+</li>
+<li><p><strong>角色服务</strong> ：<u>每个角色都提供一组功能，这些功能用于执行特定的任务，称为角色服务。角色服务是提供角色功能的软件程序，相当于服务器组件。</u>每个服务器角色可包含一个或多个角色服务。</p>
+</li>
+<li><p><strong>功能</strong> ：<u>描述服务器的辅助或支持性功能(或特性)。功能是一些软件程序，相当于系统组件。</u></p>
+</li>
+<li><p><strong>角色、角色服务与功能之间的依存关系</strong> ：<u>安装角色并准备部署服务器时，服务器管理器提示安装该角色所需的任何其他角色、角色服务或功能。删除角色、角色服务或功能，服务器管理器将提示其他程序是否也需要删除的软件。</u>该依存关系由系统管理，管理员无需知晓安装角色所依赖软件。</p>
+</li>
+</ol>
+<h1 id="第四章"><a href="#第四章" class="headerlink" title="第四章"></a>第四章</h1><ol>
+<li><p><strong>TCP/IP协议的分层结构</strong> </p>
+<p><img src="E:\Note\image\2023-02-05-16-07-46-image.png" alt=""> </p>
+</li>
+</ol>
+<h1 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h1><ol>
+<li><p><strong>域名系统的组成</strong> </p>
+<ul>
+<li><p><strong>名称空间</strong> ：指定用于组织名称的域的层次结构</p>
+</li>
+<li><p><strong>资源记录</strong> ：将域名映射到特定类型的资源信息，注册或解析名称时使用</p>
+</li>
+<li><p><strong>DNS服务器</strong> ：存储资源记录并提供名称查询服务的程序</p>
+</li>
+<li><p><strong>DNS客户端(解析程序)</strong> ：用来查询服务器获取名称解析信息</p>
+</li>
+</ul>
+</li>
+<li><p><strong>域名解析过程</strong>  </p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span>使用客户端本地DNS解析程序缓存进行解析</span><br><span class="line"><span class="number">2.</span>将名称查询提交给首选DNS服务器</span><br><span class="line"><span class="number">3.</span>DNS服务器搜索DNS区域数据文件</span><br><span class="line"><span class="number">4.</span>查DNS服务器本地缓存 </span><br><span class="line"><span class="number">5.</span>使用递归查询来完全解析名称。</span><br><span class="line"><span class="number">6.</span>若不能使用递归，则使用迭代查询。</span><br><span class="line"><span class="number">7.</span>若还不能解析该名称，按照客户端DNS服务器列表，依次查询备用DNS服务器</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li><p>使用客户端本地DNS解析程序缓存进行解析，若解析成功，返回相应IP，查询完成，反之解析</p>
+</li>
+<li><p>客户端将名称查询提交给所设定的首选(主)DNS服务器</p>
+</li>
+<li><p>DNS服务器接到查询请求，搜索本地DNS区域数据文件(存储域名解析数据)，若查到匹配信息，则做出权威应答，返回相应IP地址，查询完成，否则，继续解析</p>
+</li>
+<li><p>若本地区域数据库中没有，就查DNS服务器本地缓存，若查到匹配信息，就做出肯定应答，返回相应的IP地址，查询完成，否则继续解析</p>
+</li>
+<li><p>使用递归查询来完全解析名称，这需要其他DNS服务器的支持</p>
+</li>
+<li><p>如果不能使用递归查询（例如DNS服务器禁用递归查询），则使用迭代查询</p>
+</li>
+<li><p>若不能解析该名称，则客户端按照所配置的DNS服务器列表，依次查询其中所列的备用DNS服务器</p>
+<ul>
+<li>采用递归或迭代来处理客户端查询时，将所有所获得的有关DNS名称空间的重要信息交由DNS服务器缓存，既加速DNS的后继查询，又减少网络上与DNS相关的查询通量信息</li>
+</ul>
+</li>
+</ul>
+<h1 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h1><ol>
+<li><p><strong>域</strong> ：域是Active Directory 的基本单位和核心单元，是Active Directory的分区单位，Active Directory中必须至少有一个域。</p>
+<p><strong>域包括三种类型的计算机</strong> ：</p>
+<ul>
+<li><p>域控制器：整个域的核心，存储Active Directory数据库，承担主要的管理任务，负责处理用户和计算机的登录</p>
+</li>
+<li><p>成员服务器：域中非域控制器的Windows服务器，不存储Active Directory信息，不处理账户登录过程</p>
+</li>
+<li><p>工作站：加入域的Windows计算机，可访问域中的资源</p>
+</li>
+</ul>
+<p><img src="file:///E:/Note/image/2023-02-13-16-11-08-image.png" title="" alt="" width="252"></p>
+</li>
+<li><p><strong>组织单位</strong> ：<u>组织单位是可将用户、组、计算机和其他组织单位放入其中的Active Directory容器</u>。<u>组织单位相当于域的子域</u>，可像域一样包含各种对象（包括组织单位）。每个域的组织单位层次都是独立的，组织单位不能包括来自其他域的对象。在域中创建的组织单位应考虑能反映组织单位的职能或商务结构。</p>
+<p><img src="file:///E:/Note/image/2023-02-13-16-15-08-image.png" title="" alt="" width="254"></p>
+</li>
+<li><p><strong>域树</strong> ：<u>可将多个域组合成一个域树。域树中第一个域称作<strong>根域</strong> ，同一域树中其他域为<strong>子域</strong> ，位于上层的域称为子域的<strong>父域</strong> 。</u>域树中的域虽有层次关系，但仅限于命名方式，并不代表父域对子域具有管辖权限。域树中各域都是独立的管理个体，父域和子域的管理员是平等的。</p>
+<p><img src="file:///E:/Note/image/2023-02-13-16-17-45-image.png" title="" alt="" width="225"></p>
+</li>
+<li><p><strong>林</strong> <u>：一个域或多个域通过信任关系形成的集合</u>。林中的域树不形成邻接的名称空间，各自使用不同的DNS名称。林的根域是林中创建的第一个域，所有域树的根域与林的根域建立可传递的信任关系。</p>
+<p><img src="file:///E:/Note/image/2023-02-13-16-18-03-image.png" title="" alt="" width="485"></p>
+</li>
+<li><p><strong>域信任关系：</strong> <u>建立在两个域之间的关系，使一个域中的账户由另一个域中的域控制器验证</u>。所有域信任关系只能有两个域：信任域和受信任域；信任域方向可以是单向也可以使双向；信任关系可传递，也可不传递。</p>
+</li>
+<li><p><strong>Active Directory与DNS集成</strong> </p>
+<p>AD与DNS集成并享有相同的名称空间结构，两者集成体现在以下三个方面：</p>
+<ul>
+<li><p>Active Directory与DNS有相同的层次结构            </p>
+</li>
+<li><p>DNS可存储在Active Directory中 </p>
+</li>
+<li><p>Active Directory将DNS作为定位服务使用（如图所示）</p>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>关系：</strong> DNS不需要Active Directory 也能运行，而Active Directory需要DNS才能正常运行。</p>
+<p><img title="" src="file:///E:/Note/image/2023-02-06-11-59-15-image.png" alt="" data-align="center" width="349"></p>
+<h1 id="第七章"><a href="#第七章" class="headerlink" title="第七章"></a>第七章</h1><ol>
+<li><p><strong>DHCP的工作原理</strong> </p>
+<ul>
+<li><p>DHCP基于客户机/服务器模式，服务器端使用UDP 67端口，客户端使用UDP 68端口。</p>
+</li>
+<li><p>DHCP客户端每次启动与服务器通信（申请IP地址，获取配置信息）的两种情况：</p>
+<ul>
+<li><p>DHCP客户端向DHCP服务器申请新的IP地址</p>
+<p><strong>&gt;</strong> 首次以DHCP客户端启动。 </p>
+<p><strong>&gt;</strong> DHCP客户端租用IP已被DHCP服务器收回。</p>
+<p><strong>&gt;</strong> DHCP客户端自行释放已租用IP，要求使用一个新地址。</p>
+</li>
+<li><p>已获得IP的DHCP客户端要求更新租约，继续使用该地址</p>
+<p><strong>&gt;</strong> 不管租约是否到期，以获得IP地址的DHCP客户端每次启动时都将以广播方式向DHCP服务器发送请求信息，请求继续租用原IP。即使DHCP服务器未发送确认信息，只要租期未满，客户端任能继续使用原IP。</p>
+<p><strong>&gt;</strong> 租约期限超过一半时DHCP客户端自动以广播方式向DHCP服务器发出续租IP请求。</p>
+<p>（若续租成功，DHCP服务器将回送DHCPACK信息；若不成功，DHCP服务器回送<strong>DHCPNACK信息</strong> ，说明该IP不能分配给该客户端。）</p>
+</li>
+</ul>
+</li>
+<li><p><strong>DHCP客户端申请IP过程：</strong> </p>
+<p><img title="" src="file:///E:/Note/image/2023-02-06-15-45-32-image.png" alt="" width="426" data-align="inline"></p>
+<ul>
+<li><p>DHCP客户端以广播方式发出<strong>DHCPDISCOVER(探测)信息</strong> ，查找网络中的DHCP服务器；</p>
+</li>
+<li><p>网络中的DHCP服务器收到来自客户端的DHCPDISCOVER信息后，从IP地址池中选取一个未租出的IP地址作为<strong>DHCPOFFER(提供)信息</strong> ，以广播的方式发送给网络中的客户端。此时客户端没有自己的IP地址，所以只能以广播方式。服务器准备租出的IP地址将临时保留起来，以免同时分配给其他客户端；                            </p>
+</li>
+<li><p>DHCP客户端收到DHCPOFFER信息后，再以广播方式向网络中的DHCP服务器发送<strong>DHCPREQUEST(请求)信息</strong> ，申请分配IP地址。</p>
+<p>（若网络中有多个DHCP服务器，DHCP客户端只会选择第一个接收到的DCHPOFFER信息。客户端之所以以广播方式发送DHCOREQUEST信息，除了通知已被选择的DHCP服务器，还要通知未被选择的DHCP服务器释放原本准备分配给客户端的IP地址，供其他客户端使用。）</p>
+</li>
+<li><p>DHCP服务器收到DHCP客户端的DHCPREQUEST信息后，以广播方式发送<strong>DHCPACK(确认)信息</strong> 。除IP地址外，DHCPACK信息还包括TCP/IP配置数据，如默认网关、DNS服务器等。</p>
+</li>
+<li><p>DHCP客户端收到DHCPACK信息后，随即获得了所需的IP及相关配置信息。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>DHCP服务器部署</strong> </p>
+<ul>
+<li><p><strong>DHCP规划：</strong> </p>
+<ul>
+<li><p>单一子网环境中仅需一台DHCP服务器</p>
+</li>
+<li><p>非常重要的网络在部署主要DHCP服务器的基础上，再部署一台或多台辅助（或备用）DHCP服务器。<strong>好处：</strong> 提供容错；在网络中平衡DHCP服务器的使用。 </p>
+</li>
+<li><p>在路由器中部署DHCP服务器。在一两个网段中部署一到两台DHCP服务器，而在其他网段使用DHCP代理。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>复杂网络DHCP部署</strong> </p>
+<ul>
+<li><p><strong>配置多台DHCP服务器</strong> </p>
+<ul>
+<li><p>在同子网上使用多个DHCP服务器，可以为它服务的客户机提供更强的容错能力。</p>
+</li>
+<li><p>为了平衡DHCP服务器的使用，较好的方法是使用70/30规则划分两个DHCP服务器之间的作用域。使用排除地址的方法来分割地址范围。</p>
+<p><img src="E:\Note\image\2023-02-12-16-08-41-image.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p><strong>跨网段DHCP中继</strong> </p>
+<ul>
+<li><p><strong>DHCP中继代理的作用：</strong> 将DHCP请求从一个网段传递到另一个网段。</p>
+<p>解决方案：</p>
+<p>1》直接通过路由器实现，要求路由器支持DHCP/BOOTP中继代理功能，能够中转DHCP和BOOTP通信。</p>
+<p>2》使用DHCP中继代理软件。</p>
+</li>
+<li><p>必须使用路由器或计算机作为DHCP和BOOTP中继代理服务器以支持DHCP通信的转发。</p>
+</li>
+<li><p>DHCP中继代理为跨网段DHCP客户端提供DHCP服务，涉及多子网多作用域，可以设置超级作用域。至少在一个网段中部署一台DHCP服务器</p>
+<p><img src="E:\Note\image\2023-02-12-16-37-57-image.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p><strong>多宿主DHCP服务器</strong> </p>
+<ul>
+<li><p>多宿主DHCP服务器指一台DHCP服务器安装多网卡，为多个独立的网络提供服务，其中每块网卡连接独立的网段。</p>
+<p><img src="E:\Note\image\2023-02-12-16-48-20-image.png" alt=""></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>DHCPv6设置</strong></p>
+<ul>
+<li><p>DHCPv6客户端会在网络上搜寻路由器，然后通过路由器返回的设置来决定是否向DHCP服务器请求更多的IPv6地址和DHCP选项设置</p>
+</li>
+<li><p>Windows Server 2012 R2的DHCPv6支持的两种路由匹配模式：</p>
+<ul>
+<li><p><strong>DHCPv6无状态模式：</strong> DHCPv6客户端仅向DHCP服务器请求DHCP选项设置，而不会请求IPv6地址。它通过路由器返回前缀来设置IPv6地址，或者直接静态设置IPv6地址。</p>
+</li>
+<li><p><strong>DHCPv6有状态模式：</strong> DHCPv6客户端向DHCP服务器同时请求IPv6地址和DHCP选项设置。</p>
+</li>
+</ul>
+</li>
+<li><p>根据路由器来<strong>决定DHCPv6的运行模式</strong> ：</p>
+<ul>
+<li><p>若路由器返回的<strong>O&amp;M</strong> 标志均被设置为<strong>1</strong> ，表示客户端需要通过DHCP服务器同时获取IPv6地址和选项设置，应选择<strong>有状态模式</strong> 。</p>
+</li>
+<li><p>若路由器返回的<strong>O</strong> 标志设置为<strong>1</strong> ，而<strong>M</strong> 标志<strong>未设置</strong> ，表示客户端不需要通过DHCP服务器获取IPv6地址，只需要选项设置，应选择<strong>无状态模式</strong> 。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h1 id="第八章"><a href="#第八章" class="headerlink" title="第八章"></a>第八章</h1><ol>
+<li><p><strong>非对称加密</strong> ：它采用密钥对信息进行加密和解密，加密和解密所用密钥不同。</p>
+<ul>
+<li><p>公钥通过非保密方式向他人公开，任何人都可获得；</p>
+</li>
+<li><p>私钥则由自己保存；</p>
+</li>
+<li><p><strong>加密</strong> ：利用接收方的公钥和自己的私钥对信息加密</p>
+</li>
+<li><p><strong>解密</strong> ：利用自己的私钥和发送方的公钥进行解密</p>
+</li>
+<li><p>既可以防止数据发送方的事后否认，又可以防止他人仿冒或蓄意破坏，可实现保密、认证、抗否认和完整性控制等安全要求，对于大规模应用实现更容易。</p>
+<p><img src="E:\Note\image\2023-02-13-14-27-35-image.png" alt=""></p>
+</li>
+</ul>
+</li>
+</ol>
+<h1 id="第十章"><a href="#第十章" class="headerlink" title="第十章"></a>第十章</h1><ol>
+<li><p><strong>分布式文件系统结构</strong> </p>
+<p><strong>DFS：</strong>  为用户所需网络资源提供统一和透明的访问路径。使用简化单一的命名空间来映射复杂多变的网络共享资源。</p>
+<p><strong>DFS组件：</strong> </p>
+<ul>
+<li><p><strong>DFS命名空间：</strong> 让用户能够将位于不同服务器内的共享文件夹集中在一起，并以一个虚拟文件夹的树状结构呈现给用户。</p>
+<p><strong>DFS命名空间分为两种：</strong> </p>
+<ul>
+<li><p>基于域的命名空间：它将命名空间的设置数据存储到命名空间服务器与AD中，支持多台命名空间服务器，并具备命名空间的容错功能；</p>
+</li>
+<li><p>独立命名空间：它将命名空间的设置数据存储到命名空间服务器内，只能够有一台命名空间服务器。</p>
+</li>
+<li><p><strong>（</strong> 两种类型决定了分布式文件系统类型：域分布式文件系统、独立的根目录分布式文件系统 <strong>）</strong></p>
+</li>
+</ul>
+</li>
+<li><p><strong>命名空间服务器：</strong> 命名空间的宿主服务器，对于基于域的命名空间，可以是成员服务器或域控制器，且可设置多台命名空间服务器；对于独立命名空间，可以是独立服务器。</p>
+</li>
+<li><p><strong>命名空间根目录：</strong> 命名空间的起点，对应到命名空间服务器内的一个共享文件夹，而此文件夹必须位于NTFS卷。</p>
+<p>对于基于域的命名空间，其名称以域名开头；对于独立命名空间，则名称会以计算机名称开头。</p>
+</li>
+<li><p><strong>DFS文件夹：</strong> 相当于DFS命名空间的子目录，它是一个指向网络文件夹的指针，同一根目录下的每个文件必须拥有唯一的名称，但不能在DFS文件夹下再建立文件夹。</p>
+</li>
+<li><p><strong>文件夹目标：</strong> 这是DFS文件夹实际指向的文件夹位置，即目标文件夹。目标可以是本机或网络中的共享文件夹，也可以是另一个DFS文件夹。一个DFS文件夹可对应多个目标，以实现容错功能。</p>
+</li>
+<li><p><strong>DFS复制：</strong><u> 一个DFS文件夹可以对应多个目标，多个目标多对应的共享文件夹提供给客户端的文件必须一样，也就是保持同步，这由DFS复制服务来自动实现的。</u>该服务提供一个称为<strong>远程差分压缩（RDC）的功能，</strong> 能够有效地在服务器之间复制文件，这对带宽有限的WAN联机非常有利。</p>
+</li>
+</ul>
+<p><strong>分布式文件系统：</strong> 由DFS命名空间、DFS文件夹和文件夹目标组成。通过DFS来访问网络共享资源，<strong>只需提供</strong> DFS命名空间和DFS文件夹。</p>
+<p><strong>建立分布式文件系统的主要工作：</strong> 建立DFS结构。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>赖总笔记</category>
+      </categories>
+      <tags>
+        <tag>赖总笔记</tag>
+        <tag>网络服务器</tag>
       </tags>
   </entry>
   <entry>
